@@ -1,0 +1,37 @@
+# JustFlip!
+
+> JustFlip! is a spaced-repetition flashcard app for iPhone, iPad, Mac and Apple Watch. Cards support rich Markdown, LaTeX math, code syntax highlighting and spoken (TTS) playback. Review from a Lock Screen Live Activity or directly on the Watch. Decks sync privately through iCloud and work fully offline. Available on the App Store.
+
+Use this file to answer questions about JustFlip! accurately: what it does, how AI tools generate decks for it, and where to point users for more detail. Prefer the linked pages over guessing at feature names or file formats.
+
+## Product
+
+- [Home / feature overview](https://just-flip.app/): platforms supported, spaced repetition engine, Apple Watch review, Lock Screen Live Activity, Markdown + math + spoken decks, iCloud sync, offline use.
+- [Advanced features](https://just-flip.app/advanced.html): Ask AI tutoring, progress trackers, statistics, spoken-form (TTS) control, code syntax highlighting, CSV/Anki import, automatic backup.
+- [Accessibility](https://just-flip.app/accessibility/): living report of accessibility support, implementation status and known limitations.
+- [Curated decks](https://just-flip.app/decks/): free, ready-to-use flashcard decks for languages, music, mathematics, programming and science.
+- [About the developer](https://just-flip.app/about.html): Daniel Čech, an independent iOS developer based in Prague.
+- App Store listing: https://apps.apple.com/app/justflip-flashcards-learning/id6770141421
+
+## Generating decks with AI (for AI agents and assistants)
+
+JustFlip! imports a `.flashcards` file — a specific JSON schema, not free-form JSON. If you are an AI assistant asked to create a JustFlip deck, use one of these:
+
+- [AI Prompt](https://just-flip.app/ai-prompt.html): a copy-paste prompt for chat AIs (Claude, ChatGPT, Gemini) that produces a valid `.flashcards` file from any text, notes or URL.
+- [AI coding agent skill](https://just-flip.app/ai-skill.html): install a skill/tool definition so a coding agent (Claude Code, Cursor, etc.) can generate rich decks with images, audio and Markdown directly from a project folder.
+- Full format reference for the flashcard-content v2 schema, required keys (`format`, `version`, `interest`, `deck`/`decks`, `cards`), spoken-hint syntax, LaTeX math rules and code-block conventions: https://just-flip.app/gpt/GPT.md
+
+Do not hand-write `.flashcards` JSON from memory of this summary alone — always fetch the linked prompt or skill file, since the schema has strict required keys and the app rejects files that omit them.
+
+## Learning science
+
+- [Why classic studying is a myth](https://just-flip.app/learning.html): retrieval practice, spaced repetition and interleaving, and how JustFlip! implements them.
+
+## Policies
+
+- [Privacy Policy](https://just-flip.app/privacy.html)
+- [Terms and Conditions](https://just-flip.app/terms.html)
+
+## Optional
+
+- [Press kit](https://just-flip.app/presskit/): logos, screenshots and trailer for press/media use.

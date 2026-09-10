@@ -14,11 +14,59 @@
   <title data-i18n="skill.metaTitle">JustFlip! Rich decks from your AI coding agent</title>
   <meta name="description" content="Install one skill, point your AI coding agent at a folder, and get back a rich JustFlip deck with images, audio and Markdown — no copy-pasting." data-i18n-attr="content" data-i18n-content="skill.metaDescription" />
 
+  <link rel="canonical" href="https://just-flip.app/ai-skill.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JustFlip!" />
+  <meta property="og:url" content="https://just-flip.app/ai-skill.html" />
+  <meta property="og:title" content="JustFlip! Rich decks from your AI coding agent" />
+  <meta property="og:description" content="Install one skill, point your AI coding agent at a folder, and get back a rich JustFlip deck with images, audio and Markdown — no copy-pasting." />
+  <meta property="og:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="JustFlip! Rich decks from your AI coding agent" />
+  <meta name="twitter:description" content="Install one skill, point your AI coding agent at a folder, and get back a rich JustFlip deck with images, audio and Markdown — no copy-pasting." />
+  <meta name="twitter:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is this different from the AI Prompt page?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A chat AI can only return text, so the AI Prompt page gives you a text-only .flashcards file. A coding agent can read files on your machine, so this skill returns a .flashcards.zip bundle with local images and audio already attached." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which coding agents does this work with?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Any agent that supports skills.sh, including Claude Code, Codex and OpenCode." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to install a skill from GitHub?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The skill's source is public — read it on GitHub before installing, the same way you would review any dependency." }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of media can be attached to a card?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Local images and audio clips on either side of a card, plus rich Markdown, LaTeX math and syntax-highlighted code — all rendered natively in JustFlip." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I open the finished deck in JustFlip!?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The agent writes a .flashcards.zip file in your project folder. Open it with the JustFlip app and the deck — with its images and audio — imports automatically." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -327,6 +375,57 @@
           <span style="--c: #8fc28a">OpenCode</span>
           <strong data-i18n="skill.platformOpenCode">Learn more</strong>
         </a>
+      </div>
+    </section>
+
+    <section class="section section--faq" data-section>
+      <header class="section__head">
+        <span class="section__number">03</span>
+        <div>
+          <h2 class="headline" data-i18n="skill.faqTitle">Frequently asked <em>questions.</em></h2>
+        </div>
+      </header>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="skill.faqQ1">How is this different from the AI Prompt page?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="skill.faqA1">A chat AI can only return text, so the <a href="ai-prompt.html">AI Prompt</a> gives you a text-only <code>.flashcards</code> file. A coding agent can read files on your machine, so this skill returns a <code>.flashcards.zip</code> bundle with local images and audio already attached.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="skill.faqQ2">Which coding agents does this work with?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="skill.faqA2">Any agent that supports <a href="https://skills.sh" target="_blank" rel="noopener">skills.sh</a>, including Claude Code, Codex and OpenCode.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="skill.faqQ3">Is it safe to install a skill from GitHub?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="skill.faqA3">The skill's source is public — read it on <a href="https://github.com/DanielCech/JustFlip-Skills" target="_blank" rel="noopener">GitHub</a> before installing, the same way you would review any dependency.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="skill.faqQ4">What kind of media can be attached to a card?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="skill.faqA4">Local images and audio clips on either side of a card, plus rich Markdown, LaTeX math and syntax-highlighted code — all rendered natively in JustFlip.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="skill.faqQ5">How do I open the finished deck in JustFlip!?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="skill.faqA5">The agent writes a <code>.flashcards.zip</code> file in your project folder. Open it with the JustFlip app and the deck — with its images and audio — imports automatically.</p>
+        </details>
       </div>
     </section>
 

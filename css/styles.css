@@ -4951,3 +4951,62 @@ main { display: block; }
   }
   .accessibility-contact-card .btn { width: 100%; justify-content: center; }
 }
+
+/* =====================================================================
+   FAQ (reusable <details> accordion)
+   ===================================================================== */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 860px;
+}
+
+.faq__item {
+  border: 1px solid rgba(78,70,53,0.35);
+  border-radius: var(--radius-md, 14px);
+  background: rgba(28,27,27,0.45);
+  overflow: hidden;
+}
+
+.faq__summary {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.1rem clamp(1rem, 2vw, 1.5rem);
+  cursor: pointer;
+  list-style: none;
+  color: var(--on-surface);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 200ms var(--ease), color 200ms var(--ease);
+}
+
+.faq__summary::-webkit-details-marker { display: none; }
+
+.faq__summary:hover {
+  background: rgba(255,205,87,0.05);
+  color: var(--primary-container);
+}
+
+.faq__chevron {
+  flex: none;
+  margin-left: auto;
+  color: var(--primary-container);
+  transition: transform 220ms var(--ease);
+}
+
+.faq__item[open] .faq__chevron {
+  transform: rotate(90deg);
+}
+
+.faq__answer {
+  margin: 0;
+  padding: 0 clamp(1rem, 2vw, 1.5rem) 1.2rem;
+  color: var(--on-surface-variant);
+  font-size: 0.96rem;
+  line-height: 1.6;
+  max-width: 72ch;
+}
+
+.faq__answer a { color: var(--primary-container); }

@@ -15,11 +15,115 @@
   <title data-i18n="meta.title">JustFlip! — Spaced-repetition flashcards. Study quietly.</title>
   <meta name="description" content="JustFlip! is a spaced-repetition flashcard app for iPhone, iPad, Mac and Apple Watch. Review on your wrist or from a Lock Screen Live Activity, write cards in rich Markdown and listen to spoken decks — offline, and synced through iCloud." data-i18n-attr="content" data-i18n-content="meta.description" />
 
+  <link rel="canonical" href="https://just-flip.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JustFlip!" />
+  <meta property="og:url" content="https://just-flip.app/" />
+  <meta property="og:title" content="JustFlip! — Spaced-repetition flashcards. Study quietly." />
+  <meta property="og:description" content="JustFlip! is a spaced-repetition flashcard app for iPhone, iPad, Mac and Apple Watch. Review on your wrist or from a Lock Screen Live Activity, write cards in rich Markdown and listen to spoken decks — offline, and synced through iCloud." />
+  <meta property="og:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="JustFlip! — Spaced-repetition flashcards. Study quietly." />
+  <meta name="twitter:description" content="JustFlip! is a spaced-repetition flashcard app for iPhone, iPad, Mac and Apple Watch. Review on your wrist or from a Lock Screen Live Activity, write cards in rich Markdown and listen to spoken decks — offline, and synced through iCloud." />
+  <meta name="twitter:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "JustFlip!",
+    "url": "https://just-flip.app/",
+    "description": "JustFlip! is a spaced-repetition flashcard app for iPhone, iPad, Mac and Apple Watch. Review on your wrist or from a Lock Screen Live Activity, write cards in rich Markdown and listen to spoken decks — offline, and synced through iCloud.",
+    "applicationCategory": "EducationApplication",
+    "operatingSystem": "iOS, iPadOS, macOS, watchOS",
+    "image": "https://just-flip.app/images/web-app-manifest-512x512.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Daniel Čech",
+      "url": "https://just-flip.app/about.html"
+    },
+    "sameAs": [
+      "https://apps.apple.com/cz/app/justflip-flashcards-learning/id6770141421?mt=12"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "JustFlip!",
+    "url": "https://just-flip.app/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is JustFlip! free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JustFlip! is free to download and use for creating and reviewing decks. JustFlip! Pro unlocks additional features such as Ask AI reports and Lock Screen Live Activity background listening."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does JustFlip! work without an internet connection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. JustFlip! is offline-first — your decks, reviews and scheduling engine all run on-device. iCloud is used only to sync between your own devices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Apple devices does JustFlip! support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iPhone, iPad, Mac and Apple Watch — running iOS, iPadOS, macOS or watchOS. Decks sync across all of them through iCloud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I review flashcards on my Apple Watch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Turn the Digital Crown, feel the tap and rate a card directly from your wrist — no phone required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I create decks using ChatGPT, Claude or Gemini?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Describe what you want to learn on the AI Prompt page and copy one prompt into any chat AI, or use the coding agent skill for rich decks with images and audio. Both return an importable .flashcards file."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What languages is JustFlip! available in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The app and this website are localized into nine languages: English, Deutsch, Español, Français, Italiano, Português (Brasil), 日本語, 한국어 and Čeština."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -750,6 +854,69 @@
         </div>
       </div>
       <p class="accessibility-home-link"><a class="legal-link" href="accessibility/">Read the full accessibility report →</a></p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--faq" id="faq" data-section>
+      <header class="section__head">
+        <span class="section__number">13</span>
+        <div>
+          <h2 class="headline" data-i18n="faq.title">Frequently asked <em>questions.</em></h2>
+          <p class="kicker" data-i18n="faq.kicker">
+            The short answers. For anything deeper, the sections above cover each feature in detail.
+          </p>
+        </div>
+      </header>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="faq.q1">Is JustFlip! free to use?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="faq.a1">JustFlip! is free to download and use for creating and reviewing decks. JustFlip! Pro unlocks additional features such as Ask AI reports and Lock Screen Live Activity background listening.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="faq.q2">Does JustFlip! work without an internet connection?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="faq.a2">Yes. JustFlip! is offline-first — your decks, reviews and scheduling engine all run on-device. iCloud is used only to sync between your own devices.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="faq.q3">Which Apple devices does JustFlip! support?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="faq.a3">iPhone, iPad, Mac and Apple Watch — running iOS, iPadOS, macOS or watchOS. Decks sync across all of them through iCloud.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="faq.q4">Can I review flashcards on my Apple Watch?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="faq.a4">Yes. Turn the Digital Crown, feel the tap and rate a card directly from your wrist — no phone required.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="faq.q5">Can I create decks using ChatGPT, Claude or Gemini?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="faq.a5">Yes. Describe what you want to learn on the <a href="ai-prompt.html">AI Prompt page</a> and copy one prompt into any chat AI, or use the <a href="ai-skill.html">coding agent skill</a> for rich decks with images and audio. Both return an importable <code>.flashcards</code> file.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="faq.q6">What languages is JustFlip! available in?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="faq.a6">The app and this website are localized into nine languages: English, Deutsch, Español, Français, Italiano, Português (Brasil), 日本語, 한국어 and Čeština.</p>
+        </details>
+      </div>
     </section>
 
     <!-- Download -->

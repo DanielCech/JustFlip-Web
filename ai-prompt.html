@@ -14,11 +14,59 @@
   <title data-i18n="prompt.metaTitle">JustFlip! AI Prompt for Claude and Gemini</title>
   <meta name="description" content="Describe the deck you want, copy one prompt into Claude, Gemini, or any chat AI, and get an importable JustFlip .flashcards file back." data-i18n-attr="content" data-i18n-content="prompt.metaDescription" />
 
+  <link rel="canonical" href="https://just-flip.app/ai-prompt.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JustFlip!" />
+  <meta property="og:url" content="https://just-flip.app/ai-prompt.html" />
+  <meta property="og:title" content="JustFlip! AI Prompt for Claude and Gemini" />
+  <meta property="og:description" content="Describe the deck you want, copy one prompt into Claude, Gemini, or any chat AI, and get an importable JustFlip .flashcards file back." />
+  <meta property="og:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="JustFlip! AI Prompt for Claude and Gemini" />
+  <meta name="twitter:description" content="Describe the deck you want, copy one prompt into Claude, Gemini, or any chat AI, and get an importable JustFlip .flashcards file back." />
+  <meta name="twitter:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What file format does JustFlip! import?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A .flashcards file — a strictly formatted JSON document, not free-form text. The prompt on this page bundles the exact schema so any chat AI produces a file JustFlip can import directly. The full spec is also published at just-flip.app/gpt/GPT.md." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which AI tools can create a JustFlip! deck?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Any chat AI with a code interpreter can build a valid deck from the prompt on this page — Claude and Gemini included. ChatGPT has a ready-made JustFlip GPT you can open directly, no copy-pasting required." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to know how to code?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. You only write the topic or paste your notes; the button adds the technical build instructions for you. The AI runs the code that saves the file." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get the deck into JustFlip!?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Download the .flashcards file the AI hands you, then open it with the JustFlip app — it imports the deck automatically." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I add images or audio to a deck this way?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Not with a chat AI — this prompt produces text-only decks (Markdown and LaTeX math render natively, no images needed for most content). For decks with images, audio and local files, use the AI coding agent skill instead." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -237,6 +285,57 @@ A tracker is a non-review card: a name plus a 0–100 % bar the user adjusts the
           <span style="--c: #8fc28a">ChatGPT</span>
           <strong data-i18n="prompt.openChatGPT">Open JustFlip GPT</strong>
         </a>
+      </div>
+    </section>
+
+    <section class="section section--faq" data-section>
+      <header class="section__head">
+        <span class="section__number">03</span>
+        <div>
+          <h2 class="headline" data-i18n="prompt.faqTitle">Frequently asked <em>questions.</em></h2>
+        </div>
+      </header>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="prompt.faqQ1">What file format does JustFlip! import?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="prompt.faqA1">A <code>.flashcards</code> file — a strictly formatted JSON document, not free-form text. The prompt on this page bundles the exact schema so any chat AI produces a file JustFlip can import directly. The full spec is also published at <a href="gpt/GPT.md">just-flip.app/gpt/GPT.md</a>.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="prompt.faqQ2">Which AI tools can create a JustFlip! deck?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="prompt.faqA2">Any chat AI with a code interpreter can build a valid deck from the prompt on this page — Claude and Gemini included. ChatGPT has a ready-made JustFlip GPT you can open directly, no copy-pasting required.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="prompt.faqQ3">Do I need to know how to code?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="prompt.faqA3">No. You only write the topic or paste your notes; the button adds the technical build instructions for you. The AI runs the code that saves the file.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="prompt.faqQ4">How do I get the deck into JustFlip!?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="prompt.faqA4">Download the <code>.flashcards</code> file the AI hands you, then open it with the JustFlip app — it imports the deck automatically.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="prompt.faqQ5">Can I add images or audio to a deck this way?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="prompt.faqA5">Not with a chat AI — this prompt produces text-only decks (Markdown and LaTeX math render natively, no images needed for most content). For decks with images, audio and local files, use the <a href="ai-skill.html">AI coding agent skill</a> instead.</p>
+        </details>
       </div>
     </section>
 
