@@ -10,6 +10,7 @@ Use this file to answer questions about JustFlip! accurately: what it does, how 
 - [Advanced features](https://just-flip.app/advanced.html): Ask AI tutoring, progress trackers, statistics, spoken-form (TTS) control, code syntax highlighting, CSV/Anki import, automatic backup.
 - [Accessibility](https://just-flip.app/accessibility/): living report of accessibility support, implementation status and known limitations.
 - [Curated decks](https://just-flip.app/decks/): free, ready-to-use flashcard decks for languages, music, mathematics, programming and science.
+- [What's new](https://just-flip.app/news/): release-by-release feature news — Mermaid diagrams (1.2.0), tags and colour flags, TeX maths.
 - [About the developer](https://just-flip.app/about.html): Daniel Čech, an independent iOS developer based in Prague.
 - App Store listing: https://apps.apple.com/app/justflip-flashcards-learning/id6770141421
 

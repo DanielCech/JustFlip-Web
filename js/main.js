@@ -2,6 +2,14 @@
    ----------------------------------------------------- */
 
 (() => {
+  // Embed mode (?embed=1): the in-app "What's new" view hides site chrome.
+  // news/index.html sets this inline in <head> too, to avoid a nav flash.
+  try {
+    if (new URLSearchParams(location.search).get('embed') === '1') {
+      document.documentElement.classList.add('is-embedded');
+    }
+  } catch (_) { /* ignore */ }
+
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Year in footer
@@ -38,6 +46,7 @@
       '.watch__stage, .trailer__copy, .trailer__frame, ' +
       '.trust__title, .trust__item, .hero__usp, .faq'
       + ', .decks-hero__copy, .decks-hero__stack, .decks-ai-bridge, .decks-library__head, .decks-filter, .deck-tile, .decks-final-cta'
+      + ', .news-release'
     );
     candidates.forEach((el, i) => {
       el.setAttribute('data-reveal', '');
