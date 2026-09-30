@@ -621,5 +621,7 @@
   "news.cta.title": "Uč se dál<br><em>s nejnovějším JustFlipem.</em>",
   "news.cta.lede": "Stáhni si JustFlip v App Storu, nebo se vrať a podívej se, co všechno umí.",
   "news.cta.download": "Stáhnout z App Storu",
-  "news.cta.home": "Zpět na úvod"
+  "news.cta.home": "Zpět na úvod",
+  "nav.demo": "Demo",
+  "nav.manual": "Příručka"
 }

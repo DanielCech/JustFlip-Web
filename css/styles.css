@@ -234,14 +234,14 @@ code {
 
 .nav__links {
   display: flex;
-  gap: 1.6rem;
+  gap: clamp(0.75rem, 1.25vw, 1.6rem);
   justify-self: center;
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   color: var(--on-surface-variant);
   text-transform: lowercase;
 }
-.nav__links a { position: relative; padding: 0.35rem 0; }
+.nav__links a { position: relative; padding: 0.35rem 0; white-space: nowrap; }
 .nav__links a::after {
   content: "";
   position: absolute;
@@ -356,7 +356,12 @@ code {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1320px) {
+  .nav__links { font-size: 0.78rem; letter-spacing: 0.04em; }
+}
+.nav__cta { white-space: nowrap; }
+
+@media (max-width: 1280px) {
   .nav { grid-template-columns: 1fr auto; }
   .nav__links { display: none; }
 }

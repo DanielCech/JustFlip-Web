@@ -567,5 +567,7 @@
   "news.cta.title": "Continue d’apprendre avec<br><em>le dernier JustFlip.</em>",
   "news.cta.lede": "Télécharge JustFlip sur l’App Store, ou reviens découvrir tout ce qu’il sait faire.",
   "news.cta.download": "Télécharger sur l’App Store",
-  "news.cta.home": "Retour à l’accueil"
+  "news.cta.home": "Retour à l’accueil",
+  "nav.demo": "Démo",
+  "nav.manual": "Manuel"
 }

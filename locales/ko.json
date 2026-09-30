@@ -567,5 +567,7 @@
   "news.cta.title": "최신 JustFlip으로<br><em>계속 배우세요.</em>",
   "news.cta.lede": "App Store에서 JustFlip을 다운로드하거나 홈으로 돌아가 모든 기능을 살펴보세요.",
   "news.cta.download": "App Store에서 다운로드",
-  "news.cta.home": "홈으로 돌아가기"
+  "news.cta.home": "홈으로 돌아가기",
+  "nav.demo": "데모",
+  "nav.manual": "매뉴얼"
 }

@@ -522,5 +522,7 @@
   "news.cta.title": "Keep learning with<br><em>the latest JustFlip.</em>",
   "news.cta.lede": "Download JustFlip on the App Store, or head back to see everything it can do.",
   "news.cta.download": "Download on the App Store",
-  "news.cta.home": "Back to home"
+  "news.cta.home": "Back to home",
+  "nav.demo": "Demo",
+  "nav.manual": "Manual"
 }
