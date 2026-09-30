@@ -34,10 +34,8 @@ ${nav()}
         <h1 class="display">JustFlip! <em>$manual-title$</em></h1>
 $body$
         <div class="m-hero__actions">
-$for(chapters)$
-$if(chapters.slug)$
-          <a class="btn btn--primary" href="$chapters.slug$/">$labels.read-online$: $chapters.title$</a>
-$endif$
+$for(chapters/first)$
+          <a class="btn btn--primary" href="$it.slug$/">$labels.read-online$</a>
 $endfor$
           <a class="btn btn--ghost" href="$pdf-file$" download>$labels.download-pdf$</a>
         </div>
