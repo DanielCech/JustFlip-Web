@@ -269,7 +269,7 @@ Set it in any of three places:
   [Review Priority]{.ui}. The sheet shows the [Interest priority]{.ui}
   slider and, under [Deck priority]{.ui}, one row for each deck.
 
-![The Review Priority sheet: the interest slider on top, then one row per deck with its own Inherit from interest switch.](images/manual/{lang}/06-review-priority.png){.phone}
+![The Review Priority sheet: the interest slider on top, then one row per deck with its own Inherit from interest switch.](images/manual/{lang}/06-review-priority.jpg){.phone}
 
 ### How the mix works
 
@@ -318,7 +318,7 @@ Then choose for how long: [Tomorrow]{.ui}, [In 3 days]{.ui},
 [Resume on]{.ui}. A hold lasts until the start of that day, so
 "Tomorrow" means all of tomorrow, not 24 hours from now.
 
-![The Postpone menu during a review, with the card, deck and interest options.](images/manual/{lang}/06-postpone-menu.png){.phone}
+![The Postpone menu during a review, with the card, deck and interest options.](images/manual/{lang}/06-postpone-menu.jpg){.phone}
 
 The held cards leave the running session right away. If you postpone the
 deck or interest of a single-deck review, the session ends, because
@@ -383,7 +383,7 @@ tracking?]{.ui}) and, if you like, notes. Later, tap the tracker and
 move the [Progress]{.ui} slider, from 0 to 100 in steps of five, to
 match how far along you feel.
 
-![A deck with two progress trackers above its flashcards, each with its own progress bar.](images/manual/{lang}/06-progress-tracker.png){.phone}
+![A deck of progress trackers, each with its own progress bar and percentage.](images/manual/{lang}/06-progress-tracker.jpg){.phone}
 
 What a tracker does and doesn't do:
 

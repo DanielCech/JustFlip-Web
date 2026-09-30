@@ -37,7 +37,7 @@ All three live in **Settings › Data Safety**. Open Settings from the
 gear icon at the top of the Interests list and scroll to the
 [Data Safety]{.ui} section.
 
-![Settings › Data Safety: Sync status, the last full backup and progress snapshot, Backup Location, Recently Deleted, and the Export Backup and Restore Backup buttons.](images/manual/{lang}/10-data-safety.png){.phone}
+![Settings › Data Safety: Sync status, the last full backup and progress snapshot, Backup Location, Recently Deleted, and the Export Backup and Restore Backup buttons.](images/manual/{lang}/10-data-safety.jpg){.phone}
 
 ::: gotcha
 #### Sync is not a backup
@@ -126,7 +126,7 @@ Tap [Sync status]{.ui} for the details:
 - [Recent Sync Activity]{.ui}: a log of recent sync events on this
   device, useful when you contact support.
 
-![The iCloud Sync screen with the upload and download times, Check Again, and the recent activity log.](images/manual/{lang}/10-icloud-sync.png){.phone}
+![The iCloud Sync screen with the upload and download times, Check Again, and the recent activity log.](images/manual/{lang}/10-icloud-sync.jpg){.phone}
 
 ::: tip
 #### Compare two devices side by side
@@ -194,7 +194,7 @@ Archives]{.ui}, newest first, each with its file name and date. Tap one
 to restore it. A message confirms when it is done: "Restore completed.
 Interests have been merged."
 
-![Restore Backup: the list of available archives, newest first.](images/manual/{lang}/10-restore-backup.png){.phone}
+![Restore Backup: the list of available archives, newest first.](images/manual/{lang}/10-restore-backup.jpg){.phone}
 
 A restore **merges**; it never wipes your library first:
 
@@ -243,7 +243,7 @@ that JustFlip! set aside for you, such as the empty copy left behind
 after two interests or decks were merged. The row shows how many items
 are waiting, or [Empty]{.ui}.
 
-![Recently Deleted, with an item and its Restore and Delete buttons.](images/manual/{lang}/10-recently-deleted.png){.phone}
+![Recently Deleted, with an item and its Restore and Delete buttons.](images/manual/{lang}/10-recently-deleted.jpg){.phone}
 
 Each item shows its name, the interest it belonged to, and when it was
 set aside. Two buttons:

@@ -44,7 +44,7 @@ format.
 The main import accepts several files at once, and whole folders: every
 supported file inside is imported.
 
-![The Add or import menu on the Interests screen, with Import cards and Paste cards.](images/manual/{lang}/05-import-menu.png){.phone}
+![The Add or import menu on the Interests screen, with Import cards and Paste cards.](images/manual/{lang}/05-import-menu.jpg){.phone}
 
 ### What each file becomes
 
@@ -135,7 +135,7 @@ first — [Checking the package…]{.ui}, [Unpacking…]{.ui},
 [Reading cards…]{.ui} — then shows [Ready to study]{.ui}: how many Anki
 decks, [Cards]{.ui}, [Images]{.ui} and [Audio]{.ui} it found.
 
-![The Import from Anki sheet: the summary, What changed and Options.](images/manual/{lang}/05-anki-report.png){.phone}
+![The Import from Anki sheet: the summary, What changed and Options.](images/manual/{lang}/05-anki-report.jpg){.phone}
 
 Under [What changed]{.ui} is the import report: one plain sentence for
 each thing worth knowing before you commit. For example:
@@ -206,7 +206,7 @@ After [Continue]{.ui}, [Import CSV]{.ui} shows a live preview:
 
 Tap **Import (N)** when it looks right.
 
-![The Import CSV preview with the separator, header switch, column mapping and a preview of the rows.](images/manual/{lang}/05-csv-preview.png){.phone}
+![The Import CSV preview with the separator, header switch, column mapping and a preview of the rows.](images/manual/{lang}/05-csv-preview.jpg){.phone}
 
 A few details that save a second attempt:
 

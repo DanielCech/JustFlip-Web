@@ -132,8 +132,8 @@ $highlighting-macros$
   \if\relax\detokenize{#3}\relax\else{\centering\begin{minipage}{#1}\jfcaption{#3}\end{minipage}\par}\fi\medskip}
 \newcommand\jfcardshot[1]{\jfroundimg{\linewidth}{#1}{3mm}}
 % a phone: screenshot inside a dark bezel with a drop shadow
-\newcommand\jfphone[2]{%
-  \begingroup\sbox0{\includegraphics[width=0.86\linewidth]{#1}}%
+\newcommand\jfphone[2]{\par\needspace{0.62\textheight}%
+  \begingroup\sbox0{\includegraphics[width=0.86\linewidth,height=0.58\textheight,keepaspectratio]{#1}}%
   {\centering\begin{tikzpicture}
     \fill[jfink,rounded corners=7mm,blur shadow={shadow blur steps=10,shadow xshift=0.6mm,shadow yshift=-1.2mm,shadow opacity=35}]
       (-2.4mm,-2.4mm) rectangle ($$(\wd0,\ht0)+(2.4mm,2.4mm)$$);

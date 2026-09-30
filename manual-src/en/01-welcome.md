@@ -47,7 +47,7 @@ Everything you learn sits in a three-level library:
 An interest holds decks, and a deck holds cards. A card belongs to
 exactly one deck, but you can move it to another one at any time.
 
-![The Interests screen: the Today panel on top, then your interests with their icons, deck counts and mastery.](images/manual/{lang}/01-interests.png){.phone}
+![The Interests screen: the Today panel on top, then your interests with their icons, deck counts and mastery.](images/manual/{lang}/01-interests.jpg){.phone}
 
 ### Names
 
@@ -125,7 +125,7 @@ The offer appears only once, but the library stays open to you: go to
 **Settings › Help › Library** at any time. For more decks, browse
 [just-flip.app/decks](https://just-flip.app/decks/).
 
-![The Starter library, with its language picker and a few decks already ticked.](images/manual/{lang}/01-starter-library.png){.phone}
+![The Starter library, with its language picker and a few decks already ticked.](images/manual/{lang}/01-starter-library.jpg){.phone}
 
 ### Write your own
 
@@ -170,7 +170,7 @@ start with. It shows how many cards are waiting across all your interests
 and starts a review with one tap. It appears as soon as your library
 holds cards. Chapter 2 is all about it.
 
-![The Decks screen for one interest: totals on top, each deck with its mastery ring, the ▶ review menu and the folder menu.](images/manual/{lang}/01-decks.png){.phone}
+![The Decks screen for one interest: totals on top, each deck with its mastery ring, the ▶ review menu and the folder menu.](images/manual/{lang}/01-decks.jpg){.phone}
 
 ::: tip
 #### The ring and the dot

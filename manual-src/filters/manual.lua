@@ -89,6 +89,7 @@ end
 -- back to English. Returns false when no file exists yet (→ placeholder).
 local function resolve(img)
   if img.src:match('^%a+:') or site_root == '' then return true end
+  img.src = img.src:gsub('%%7[Bb]lang%%7[Dd]', '{lang}')
   if img.src:find('{lang}', 1, true) then
     local localized = img.src:gsub('{lang}', lang)
     if lang ~= 'en' and not exists(site_root .. '/' .. localized) then

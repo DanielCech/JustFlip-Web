@@ -136,7 +136,7 @@ lists, statistics and the text on your cards all grow with it.
 You can also give JustFlip! a size of its own, separate from the rest of the
 device. Go to **Settings › Appearance**:
 
-![The Appearance section in Settings: the theme menu, the Follow system text size switch and the Text size slider with its preview.](images/manual/{lang}/11-appearance-settings.png){.phone}
+![The Appearance section in Settings: the theme menu, the Follow system text size switch and the Text size slider with its preview.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
 
 - [Follow system text size]{.ui} is on by default. JustFlip! then uses the
   device's size.
@@ -259,7 +259,7 @@ theme you have now:
 | [Mist]{.ui} | A calm, mineral light palette with clear-water blue, juniper and sage |
 | [Mist Dark]{.ui} | Mist on deep ink-coloured surfaces |
 
-![The five themes side by side: System, JustFlip Light, JustFlip Dark, Mist and Mist Dark.](images/manual/{lang}/11-theme-swatches.png){.shot width=80%}
+![The five themes side by side: System, JustFlip Light, JustFlip Dark, Mist and Mist Dark.](images/manual/{lang}/11-theme-swatches.jpg){.shot width=80%}
 
 The change is instant: the whole app repaints as soon as you pick a theme,
 with no restart. Every theme has light or dark built in, so there's no

@@ -31,12 +31,14 @@ interest's Decks. The **detail column** on the right shows the cards of the
 deck you selected. You browse on the left and study on the right, without
 losing your place.
 
-![JustFlip! on iPad in landscape. Interests and decks in the sidebar, the card list in the detail column.](images/manual/{lang}/08-ipad-split.png){.shot width=80%}
+![JustFlip! on iPad: the decks of one interest in the sidebar, that deck's cards in the detail column.](images/manual/{lang}/08-ipad-split.jpg){.shot width=80%}
 
 The layout follows the way you hold the iPad:
 
-- **Landscape** shows both columns side by side.
-- **Portrait** gives the whole screen to the cards. The sidebar slides in
+- **With room to spare** (landscape, or a large iPad in portrait), both
+  columns sit side by side.
+- **When space is tight** (a smaller iPad in portrait, or JustFlip! next
+  to another app), the cards get the whole screen. The sidebar slides in
   when you tap the sidebar button in the top corner or swipe in from the
   left edge.
 
@@ -75,7 +77,7 @@ the Interests column tucks away behind the sidebar button, so the decks and
 cards keep enough room. In a very narrow window only the cards stay on
 screen. Widen the window again and all three columns come back.
 
-![JustFlip! on the Mac. Three columns: interests, decks and the card list.](images/manual/{lang}/08-mac-three-columns.png){.shot width=80%}
+![JustFlip! on the Mac. Three columns: interests, decks and the card list.](images/manual/{lang}/08-mac-three-columns.jpg){.shot width=80%}
 
 ### The menu bar
 
@@ -166,7 +168,7 @@ due and lets you review them from your wrist. You'll find it handy in a
 queue, on a walk, or anywhere you can't take out your phone.
 
 :::: split
-![The watch Today screen: cards due, your streak, the Review button and a line per interest.](images/manual/{lang}/08-watch-today.png){.phone}
+![The watch Today screen: cards due, your streak, the Review button and a line per interest.](images/manual/{lang}/08-watch-today.jpg){.phone}
 
 ::: text
 The watch's Today screen shows:
@@ -199,7 +201,7 @@ first card of your first session explains the gesture once, and a small
 [Hold to rate]{.ui} hint stays under the card after that. You can rate a card
 from the question side too, when you know it at a glance.
 
-![Rating a card on Apple Watch: press and hold the card, then pick a grade.](images/manual/{lang}/08-watch-rating.png){.phone}
+![Rating a card on Apple Watch: press and hold the card, then pick a grade.](images/manual/{lang}/08-watch-rating.jpg){.shot width=40%}
 
 ### What the watch shows
 
@@ -265,7 +267,7 @@ The watch app has a dark design only, like most watch apps.
 The **Cards Due** widget shows what's waiting for you without opening the
 app. Tap it and JustFlip! opens straight into today's review.
 
-![The Cards Due widget in small, medium and large sizes.](images/manual/{lang}/08-widget-sizes.png){.shot width=80%}
+![The Cards Due widget on the Lock Screen (left) and, in its medium size, on the Home Screen (right).](images/manual/{lang}/08-widget-sizes.jpg){.shot width=80%}
 
 It comes in three Home Screen sizes and three Lock Screen sizes:
 

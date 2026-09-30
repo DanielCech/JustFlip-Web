@@ -38,7 +38,7 @@ early, close the session and confirm with [Exit]{.ui}. Everything you
 have graded so far is saved; the session is simply not counted as
 complete.
 
-![A review session on the answer side, with the four grade buttons and each button's next interval above its name.](images/manual/{lang}/02-grade-buttons.png){.phone}
+![A review session on the answer side, with the four grade buttons and each button's next interval above its name.](images/manual/{lang}/02-grade-buttons.jpg){.phone}
 
 ::: tip
 #### Grade before you flip
@@ -168,7 +168,7 @@ The **Today** panel at the top of the Interests screen answers one
 question: what should I review right now? It gathers due cards from all
 your interests into one session.
 
-![The Today panel with cards due, the estimated time, the streak, and a chip for each interest.](images/manual/{lang}/02-today.png){.phone}
+![The Today panel with cards due, the estimated time, the streak, and a chip for each interest.](images/manual/{lang}/02-today.jpg){.phone}
 
 - **The headline** reads, for example, [12 due · 5 new]{.ui}. Below it is
   a time estimate, such as [About 5 min]{.ui}.
@@ -229,7 +229,7 @@ When the session ends, you see [Practice Complete]{.ui} with your success
 rate, the number of [Cards Reviewed]{.ui}, and your [Study Time]{.ui}.
 The success rate counts Good and Easy as correct.
 
-![The results screen, with the success rate, the grade tally and a "You know these well" suggestion.](images/manual/{lang}/02-results.png){.phone}
+![The results screen: the success rate, cards reviewed, study time and a tally of every grade.](images/manual/{lang}/02-results.jpg){.phone}
 
 If more cards are waiting beyond this batch, the heading reads, for
 example, [Nice — 20 done]{.ui}, and a [Review 15 more]{.ui} button

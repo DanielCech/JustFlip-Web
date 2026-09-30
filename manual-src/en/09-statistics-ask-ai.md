@@ -80,7 +80,7 @@ The full Statistics screen is a **Pro** feature. Open it from the
 then choose [Statistics]{.ui}. Without Pro, the menu item wears a lock and
 opens the Pro screen instead. A Pro free trial unlocks it too.
 
-![The Statistics screen: the interest picker, the four summary tiles and the collection stages.](images/manual/{lang}/09-statistics-overview.png){.phone}
+![The Statistics screen: the interest picker, the four summary tiles and the collection stages.](images/manual/{lang}/09-statistics-overview.jpg){.phone}
 
 Statistics always looks at **one interest at a time**. Pick it under
 [Scope]{.ui} at the top. Everything below it, from the summary tiles to
@@ -140,7 +140,7 @@ The [Mature Retention]{.ui} chart plots that rate per day. Choose the
 window with the segmented control: [7D]{.ui}, [30D]{.ui}, [90D]{.ui} or
 [All]{.ui}.
 
-![The retention chart over 90 days. Each point is one day's share of remembered mature reviews.](images/manual/{lang}/09-retention-chart.png){.shot width=80%}
+![The retention chart over 90 days. Each point is one day's share of remembered mature reviews.](images/manual/{lang}/09-retention-chart.jpg){.shot width=80%}
 
 **Mature** is the important word. A review counts as mature when the
 card had already reached an interval of **at least 30 days** before you
@@ -172,7 +172,7 @@ weeks**. Every square is one day, and a darker square means more reviews
 that day, measured against your busiest day in the window. Today's square
 has a small dot.
 
-![The Consistency heatmap: 12 weeks of review days, darker squares for busier days.](images/manual/{lang}/09-heatmap.png){.shot width=80%}
+![The Consistency heatmap: 12 weeks of review days, darker squares for busier days.](images/manual/{lang}/09-heatmap.jpg){.shot width=80%}
 
 Look for gaps and clumps, not for colour. Ten minutes every day beats
 an hour every Sunday, because spaced repetition depends on seeing cards
@@ -272,7 +272,7 @@ that you paste into ChatGPT, Claude, Gemini or any other assistant.
 Single cards and session reports are free. Deck reports are **Pro**:
 without Pro, those menu items show a lock and open the Pro screen.
 
-![The Ask AI sheet: Copy Prompt and Save Prompt, the Open in a chat AI links, and the prompt preview.](images/manual/{lang}/09-ask-ai-sheet.png){.phone}
+![The Ask AI sheet: Copy Prompt and Save Prompt, the Open in a chat AI links, and the prompt preview.](images/manual/{lang}/09-ask-ai-sheet.jpg){.phone}
 
 ### What goes into the report
 

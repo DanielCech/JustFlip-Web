@@ -46,7 +46,7 @@ a flag, a leaf, an X-ray.
 text field. JustFlip! stores the image itself, not a link to where it
 came from, and inserts the marker for you.
 
-![The Image tab of the card editor, with a photo chosen and the description and licence fields below it.](images/manual/{lang}/04-image-tab.png){.phone}
+![The Image tab of the card editor, with a photo chosen and the description and licence fields below it.](images/manual/{lang}/04-image-tab.jpg){.phone}
 
 A side holds one picture. Choosing another one replaces it; to take a
 picture off, open the [Image]{.ui} tab and tap [Remove]{.ui}.
@@ -168,7 +168,7 @@ On the card, a small ⓘ button appears in the footer. Tapping it opens a
 sheet with the full text, so the credit is there for anyone who wants it
 without cluttering the card.
 
-![A card with a photo and the ⓘ licence button in its footer; the Image license sheet open over it.](images/manual/{lang}/04-licence-sheet.png){.phone}
+![A card with a photo and the ⓘ licence button in its footer; the Image license sheet open over it.](images/manual/{lang}/04-licence-sheet.jpg){.phone}
 
 Curated and AI-made decks can carry licences too, in their
 `q_image_license` and `a_image_license` fields (Chapter 5).
@@ -212,7 +212,7 @@ button to remove it, and [Replace Audio]{.ui}. Below them is the side's
 JustFlip! doesn't record from the microphone. Record with Voice Memos,
 share the memo to Files, and choose it from there.
 
-![The Audio tab with an audio file chosen: its name, size, trash button and Replace Audio.](images/manual/{lang}/04-audio-tab.png){.phone}
+![The Audio tab with an audio file chosen: its name, size, trash button and Replace Audio.](images/manual/{lang}/04-audio-tab.jpg){.phone}
 
 ### How it plays
 
@@ -250,7 +250,7 @@ asks "What's under here?". It is the fastest way to learn a map, an
 anatomy plate, a circuit, a fingering chart — anything that is a picture
 full of labels.
 
-![The occlusion editor: an anatomy diagram with rectangles drawn over the labels, and the tools row above.](images/manual/{lang}/04-occlusion-editor.png){.shot width=80%}
+![The occlusion editor: an anatomy diagram with rectangles drawn over the labels, and the tools row above.](images/manual/{lang}/04-occlusion-editor.jpg){.shot width=80%}
 
 ### Making occlusion cards
 
@@ -317,7 +317,7 @@ and the covered region opens, outlined, while the rest stays as it was.
 Then grade it like any other card. Pinch to zoom into a detailed
 diagram.
 
-![An occlusion card during review, before and after Show answer.](images/manual/{lang}/04-occlusion-review.png){.phone}
+![An occlusion card during review, before and after Show answer.](images/manual/{lang}/04-occlusion-review.jpg){.phone}
 
 Occlusion cards are part of your normal reviews on iPhone, iPad and Mac.
 The Apple Watch leaves them out and tells you how many cards are

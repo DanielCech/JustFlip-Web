@@ -62,7 +62,7 @@ hear that side. It turns into [Stop]{.ui} while it speaks, so tap it
 again to stop. The button appears on cards in the card list and during a
 review. It is free.
 
-![A vocabulary card with the Play button in its bottom-left corner.](images/manual/{lang}/07-play-button.png){.shot width=80%}
+![A vocabulary card with the Play button in its bottom-left corner.](images/manual/{lang}/07-play-button.jpg){.shot width=80%}
 
 If the side also has a sound file (Chapter 4), an [Audio]{.ui} button
 appears next to the Play button. The two are separate: Play reads the
@@ -76,7 +76,7 @@ needed. Open a deck, tap the play button at the top of the card list and
 choose [Speak Cards]{.ui}. To start part-way through, press and hold a
 card and choose [Speak from Here]{.ui}.
 
-![The card list's play menu, with Speak Cards below the review modes.](images/manual/{lang}/07-speak-cards-menu.png){.phone}
+![The card list's play menu, with Speak Cards below the review modes.](images/manual/{lang}/07-speak-cards-menu.jpg){.phone}
 
 For every card, JustFlip!:
 
@@ -165,7 +165,7 @@ Go to **Settings › Speech › Voices**. JustFlip! picks a voice **for each
 language separately**. The row's subtitle summarises your choices, for
 example "English: Automatic · German: Anna".
 
-![The Voices screen: your card languages on top, each with the voice that will read it.](images/manual/{lang}/07-voices.png){.phone}
+![The Voices screen: your card languages on top, each with the voice that will read it.](images/manual/{lang}/07-voices.jpg){.phone}
 
 The screen has two lists:
 
@@ -191,7 +191,7 @@ cards in that language, so you hear what the voice will really read. If
 none of your cards uses the language yet, the voice introduces itself
 with its name and its language. Tap the button again to stop.
 
-![One language's voices, grouped by quality, each with a preview button.](images/manual/{lang}/07-language-voices.png){.phone}
+![One language's voices, grouped by quality, each with a preview button.](images/manual/{lang}/07-language-voices.jpg){.phone}
 
 ### What Automatic picks
 

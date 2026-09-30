@@ -27,7 +27,7 @@ want.
 ## The card editor at a glance {#editor}
 
 :::: split
-![The card editor. Each side has its own Text, Image and Audio tabs, a formatting toolbar and a Language picker.](images/markdown.png){.phone}
+![The card editor. Each side has its own Text, Image and Audio tabs, a formatting toolbar and a Language picker.](images/manual/{lang}/03-editor.jpg){.phone}
 
 ::: text
 Every card has two sides, **Question** and **Answer**, and each side is
