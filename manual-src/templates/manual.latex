@@ -1,0 +1,354 @@
+% JustFlip! User Manual — LuaLaTeX template for pandoc.
+% The look follows just-flip.app ("Gilded Scholar"): ink-black and gold for
+% covers, openers and anything that is the app itself (cards, code); warm paper
+% for reading. Environments here are emitted by filters/manual.lua.
+\documentclass[10pt,a4paper,oneside]{article}
+
+\usepackage[top=25mm,bottom=24mm,left=24mm,right=24mm,headsep=9mm,footskip=12mm]{geometry}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc,shadows.blur}
+\usepackage[most]{tcolorbox}
+\usepackage{eso-pic}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{longtable,array,booktabs}
+\usepackage{fontawesome5}
+\usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage{needspace}
+
+% ---------------------------------------------------------------- colours
+\definecolor{jfink}{HTML}{131313}
+\definecolor{jfsurface}{HTML}{1C1B1B}
+\definecolor{jfsurfhigh}{HTML}{2A2A2A}
+\definecolor{jfcardedge}{HTML}{3A352C}
+\definecolor{jfcream}{HTML}{F5ECD9}
+\definecolor{jfvariant}{HTML}{D2C5AF}
+\definecolor{jfprimary}{HTML}{FFEED1}
+\definecolor{jfgold}{HTML}{FFCD57}
+\definecolor{jftint}{HTML}{F0C04B}
+\definecolor{jfoutline}{HTML}{6E6450}
+% on paper: darker variants that pass WCAG AA as text
+\definecolor{jfpaper}{HTML}{FFFDF8}
+\definecolor{jfpaper2}{HTML}{F7F2E7}
+\definecolor{jftext}{HTML}{25221E}
+\definecolor{jfmuted}{HTML}{6D6558}
+\definecolor{jfrule}{HTML}{E3D9C4}
+\definecolor{jfgoldtext}{HTML}{8A6300}
+\definecolor{jftip}{HTML}{2F6F7C}
+\definecolor{jftipbg}{HTML}{EDF5F6}
+\definecolor{jfgotcha}{HTML}{A8452F}
+\definecolor{jfgotchabg}{HTML}{FBEFE9}
+\definecolor{jfnote}{HTML}{8A6300}
+\definecolor{jfnotebg}{HTML}{FAF3E2}
+
+\pagecolor{jfpaper}
+\color{jftext}
+
+% ---------------------------------------------------------------- fonts
+% Fallbacks cover glyphs Plus Jakarta Sans lacks (kana, ♯/♭, arrows).
+\directlua{
+  luaotfload.add_fallback("jffallback", {
+    "HiraginoSans-W3:mode=harf;",
+    "AppleSDGothicNeo-Regular:mode=harf;",
+    "Apple Symbols:mode=harf;",
+  })
+}
+\setmainfont{PlusJakartaSans}[
+  Path=$fontpath$/, Extension=.otf,
+  UprightFont=*-Regular, BoldFont=*-Bold,
+  ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic,
+  RawFeature={fallback=jffallback}, WordSpace={1,1.1,0.4},
+  FontFace={sb}{n}{*-SemiBold}, FontFace={sb}{it}{*-SemiBoldItalic},
+  FontFace={m}{n}{*-Medium}, FontFace={l}{n}{*-Light},
+  FontFace={eb}{n}{*-ExtraBold}]
+\setmonofont{JetBrainsMono}[
+  Path=$fontpath$/, Extension=.otf, Scale=0.86,
+  UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic,
+  RawFeature={fallback=jffallback;-calt;-liga}]
+\setmathfont{latinmodern-math.otf}
+\newcommand\semibold{\fontseries{sb}\selectfont}
+\newcommand\medium{\fontseries{m}\selectfont}
+\newcommand\light{\fontseries{l}\selectfont}
+\newcommand\extrabold{\fontseries{eb}\selectfont}
+\newcommand\jftracked[1]{{\addfontfeatures{LetterSpace=16}#1}}
+
+\linespread{1.22}
+\setlength\parindent{0pt}
+\setlength\parskip{0.62em plus 0.2em minus 0.1em}
+\setlength\emergencystretch{2em}
+\raggedbottom
+
+% ---------------------------------------------------------------- pandoc glue
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+$highlighting-macros$
+\usepackage{fvextra}
+\RecustomVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},breaklines,breakanywhere,fontsize=\small,baselinestretch=1.15}
+\newtcolorbox{jfcode}{enhanced,breakable,colback=jfsurface,colframe=jfsurface,boxrule=0pt,arc=2.2mm,
+  left=9pt,right=9pt,top=7pt,bottom=7pt,before skip=8pt,after skip=10pt,
+  fontupper=\color{jfcream}}
+\renewenvironment{Shaded}{\begin{jfcode}}{\end{jfcode}}
+\makeatletter
+\renewcommand\verbatim@font{\ttfamily\small}
+\makeatother
+
+% inline code on paper: a warm chip
+\let\jforigtexttt\texttt
+\renewcommand\texttt[1]{\leavevmode\textcolor{jfgoldtext}{\jforigtexttt{#1}}}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true,linkcolor=jfgoldtext,urlcolor=jfgoldtext,
+  pdftitle={JustFlip! $manual-title$},pdfauthor={JustFlip!},pdflang={$lang$}}
+\usepackage{bookmark}
+
+% ---------------------------------------------------------------- small parts
+\newcommand\jfeyebrow[2][jfgoldtext]{{\color{#1}\rule[0.33ex]{16pt}{0.6pt}\hspace{7pt}%
+  \fontsize{7.6}{10}\selectfont\semibold\jftracked{\MakeUppercase{#2}}}}
+\newcommand\jfui[1]{{\semibold #1}}
+\newcommand\jfblank[1]{\tcbox[on line,colback=jfgold!20!jfsurface,colframe=jfgold!20!jfsurface,
+  boxrule=0pt,arc=1.3mm,boxsep=0pt,left=3pt,right=3pt,top=1.5pt,bottom=1.5pt]{\bfseries\color{jfgold}#1}}
+\newcommand\jfreveal[1]{\tcbox[on line,colback=jfgold!30,colframe=jfgold!30,boxrule=0pt,arc=1.2mm,
+  boxsep=0pt,left=2.5pt,right=2.5pt,top=1pt,bottom=1pt]{\semibold #1}}
+\newcommand\jfcaption[1]{\par\vspace{3pt}{\fontsize{8.4}{12}\selectfont\color{jfmuted}#1\par}}
+
+% rounded picture; #1 width, #2 file, #3 radius
+\newcommand\jfroundimg[3]{%
+  \begingroup\sbox0{\includegraphics[width=#1]{#2}}%
+  \begin{tikzpicture}
+    \begin{scope}
+      \clip[rounded corners=#3] (0,0) rectangle (\wd0,\ht0);
+      \node[anchor=south west,inner sep=0pt] at (0,0) {\usebox0};
+    \end{scope}
+    \draw[rounded corners=#3,line width=0.5pt,jfcardedge] (0,0) rectangle (\wd0,\ht0);
+  \end{tikzpicture}\endgroup}
+\newcommand\jfshot[3]{\par\medskip{\centering\jfroundimg{#1}{#2}{3mm}\par}%
+  \if\relax\detokenize{#3}\relax\else{\centering\begin{minipage}{#1}\jfcaption{#3}\end{minipage}\par}\fi\medskip}
+\newcommand\jfcardshot[1]{\jfroundimg{\linewidth}{#1}{3mm}}
+% a phone: screenshot inside a dark bezel with a drop shadow
+\newcommand\jfphone[2]{%
+  \begingroup\sbox0{\includegraphics[width=0.86\linewidth]{#1}}%
+  {\centering\begin{tikzpicture}
+    \fill[jfink,rounded corners=7mm,blur shadow={shadow blur steps=10,shadow xshift=0.6mm,shadow yshift=-1.2mm,shadow opacity=35}]
+      (-2.4mm,-2.4mm) rectangle ($$(\wd0,\ht0)+(2.4mm,2.4mm)$$);
+    \begin{scope}
+      \clip[rounded corners=5mm] (0,0) rectangle (\wd0,\ht0);
+      \node[anchor=south west,inner sep=0pt] at (0,0) {\usebox0};
+    \end{scope}
+  \end{tikzpicture}\par}\endgroup
+  \if\relax\detokenize{#2}\relax\else\jfcaption{#2}\fi}
+
+% ---------------------------------------------------------------- lists
+\setlist{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=16pt}
+\setlist[itemize]{label={\color{jfgoldtext}\rule[0.33ex]{5pt}{1.1pt}}}
+\setlist[enumerate]{label={\color{jfgoldtext}\bfseries\arabic*}.,leftmargin=18pt}
+
+% ---------------------------------------------------------------- headings
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\titleformat{\subsection}[display]{\normalfont\raggedright}
+  {\jfeyebrow{\thesubsection}}{3pt}
+  {\fontsize{18.5}{22}\selectfont\bfseries\color{jftext}}
+\titlespacing*{\subsection}{0pt}{20pt plus 4pt}{6pt}
+\titleformat{\subsubsection}{\fontsize{12.2}{15}\selectfont\bfseries\color{jftext}}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{14pt plus 3pt}{2pt}
+\newcommand\jfcurrentchapter{}
+% keep a heading with its eyebrow number and the first lines below it
+\preto\subsection{\par\needspace{9\baselineskip}}
+\preto\subsubsection{\par\needspace{5\baselineskip}}
+
+% ---------------------------------------------------------------- page style
+\pagestyle{fancy}
+\fancyhf{}
+\newcommand\jfheadtext[1]{\fontsize{7.2}{9}\selectfont\semibold\jftracked{\MakeUppercase{#1}}}
+\fancyhead[L]{\color{jfmuted}\jfheadtext{JustFlip! \,\textperiodcentered\, $manual-title$}}
+\fancyhead[R]{\color{jfgoldtext}\jfheadtext{\jfcurrentchapter}}
+\fancyfoot[L]{\color{jfmuted}\fontsize{7.6}{9}\selectfont just-flip.app}
+\fancyfoot[R]{\tcbox[on line,colback=jfsurface,colframe=jfsurface,arc=2.4mm,boxsep=0pt,
+  left=6pt,right=6pt,top=2.2pt,bottom=2.2pt]{\fontsize{7.6}{9}\selectfont\semibold\color{jfgold}\thepage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\headrule{{\color{jfrule}\hrule height\headrulewidth width\headwidth}}
+
+% full-bleed dark page with a gold glow; #1 extra TikZ drawn on top
+\newcommand\jfdarkpage[1]{%
+  \AddToShipoutPictureBG*{\begin{tikzpicture}[remember picture,overlay]
+    \fill[jfink] (current page.south west) rectangle (current page.north east);
+    \shade[inner color=jfgold!34!jfink,outer color=jfink]
+      ($$(current page.north east)+(-2.5cm,-4cm)$$) circle (10cm);
+    \begin{scope}[shift={($$(current page.north east)+(-6cm,0)$$)},rotate=-24]
+      \shade[left color=jfink,right color=jfink,middle color=jfgold!16!jfink,opacity=0.9]
+        (-1.2cm,-34cm) rectangle (1.2cm,4cm);
+    \end{scope}
+    #1
+  \end{tikzpicture}}}
+
+% ---------------------------------------------------------------- chapter opener
+% \begin{jfopener}{number}{Chapter label}{Title}{id}
+\newenvironment{jfopener}[4]{%
+  \clearpage\thispagestyle{empty}%
+  \jfdarkpage{\node[anchor=south east,inner sep=0pt,text=jfgold,opacity=0.11]
+      at ($$(current page.south east)+(-1.2cm,1.1cm)$$) {\fontsize{330}{330}\selectfont\extrabold #1};}%
+  \setcounter{section}{\numexpr #1-1\relax}\refstepcounter{section}%
+  \phantomsection\hypertarget{#4}{}\label{#4}%
+  \addcontentsline{toc}{section}{\protect\numberline{#1}#3}%
+  \gdef\jfcurrentchapter{#3}%
+  \color{jfcream}\vspace*{48mm}%
+  \jfeyebrow[jfgold]{#2 #1}\par\vspace{10pt}%
+  {\raggedright\fontsize{40}{44}\selectfont\bfseries\color{jfcream}#3\par}\vspace{16pt}%
+}{\clearpage\color{jftext}}
+\newenvironment{jflede}{\begin{minipage}{0.84\linewidth}\fontsize{13.2}{20}\selectfont\light\color{jfvariant}}{\end{minipage}\par\vspace{18pt}}
+\newenvironment{jfinthischapter}[1]{\par\jfeyebrow[jfgold]{#1}\par\vspace{2pt}\color{jfcream}%
+  \setlist[itemize]{label={\color{jfgold}\rule[0.33ex]{8pt}{0.8pt}},itemsep=3pt,leftmargin=18pt}}{\par}
+
+% ---------------------------------------------------------------- callouts
+\newtcolorbox{jfcalloutbox}[1]{enhanced,breakable,colback=jf#1bg,colframe=jf#1,
+  boxrule=0pt,leftrule=2.6pt,arc=0pt,outer arc=0pt,
+  left=11pt,right=11pt,top=8pt,bottom=8pt,before skip=12pt,after skip=12pt,
+  parbox=false}
+\newcommand\jfcalloutsymbol[1]{%
+  \ifstrequal{#1}{tip}{\faLightbulb[regular]}{%
+  \ifstrequal{#1}{gotcha}{\faExclamationTriangle}{\faInfoCircle}}}
+\newenvironment{jfcallout}[3]{%
+  \par\needspace{6\baselineskip}\begin{jfcalloutbox}{#1}%
+  {\color{jf#1}\fontsize{8.4}{10}\selectfont\jfcalloutsymbol{#1}\hspace{5pt}\semibold\jftracked{\MakeUppercase{#2}}}\par
+  \if\relax\detokenize{#3}\relax\else{\vspace{1pt}\fontsize{11.4}{14.5}\selectfont\bfseries #3\par}\fi
+  \setlength\parskip{0.5em}}{\end{jfcalloutbox}}
+
+% ---------------------------------------------------------------- cards
+% \begin{jfcard}{Side label}{Flip label} … \end{jfcard}
+\newtcolorbox{jfcardbox}{enhanced,colback=jfsurface,colframe=jfcardedge,boxrule=0.7pt,arc=4mm,
+  left=13pt,right=13pt,top=9pt,bottom=7pt,before skip=0pt,after skip=4pt,
+  drop fuzzy shadow={black!45},
+  fontupper=\color{jfcream}\fontsize{11}{15.5}\selectfont\raggedright,parbox=false}
+\newcommand\jfcardflip{}
+\newcommand\jfherotext{\centering\fontsize{56}{64}\selectfont\medium}
+\newenvironment{jfcard}[2]{%
+  \gdef\jfcardflip{#2}%
+  \begin{jfcardbox}%
+  \setlength\parskip{0.45em}%
+  \renewcommand\texttt[1]{\leavevmode\textcolor{jfgold}{\jforigtexttt{##1}}}%
+  \def\jfheadrow{\rowcolor{jfsurfhigh}}\def\jfoddrow{}\def\jfevenrow{\rowcolor{jfsurfhigh!45!jfsurface}}%
+  \def\jfth##1{\leavevmode\textcolor{jfcream}{\bfseries ##1}}%
+  \renewenvironment{Shaded}{\begin{tcolorbox}[enhanced,colback=jfsurfhigh!70!jfsurface,colframe=jfsurfhigh!70!jfsurface,
+    boxrule=0pt,arc=2mm,left=7pt,right=7pt,top=5pt,bottom=5pt,fontupper=\color{jfcream}]}{\end{tcolorbox}}%
+  {\raggedright\color{jfgold}\fontsize{7.2}{9}\selectfont\semibold\jftracked{\MakeUppercase{#1}}\par}\vspace{7pt}%
+}{%
+  \par\vspace{8pt}{\raggedleft\tcbox[on line,colback=jfsurfhigh,colframe=jfsurfhigh,arc=2.6mm,boxsep=0pt,
+    left=6pt,right=7pt,top=2.6pt,bottom=2.6pt]{\color{jfprimary}\fontsize{7.8}{9}\selectfont\faSync\hspace{4pt}\jfcardflip}\par}%
+  \end{jfcardbox}}
+\newcommand\jfspoken[2]{\par\vspace{6pt}{\fontsize{8.8}{12.5}\selectfont
+  {\color{jfgoldtext}\faVolumeUp\hspace{5pt}\semibold #1:}\hspace{4pt}{\itshape “#2”}\par}}
+
+% ---------------------------------------------------------------- tables
+\setlength\tabcolsep{6pt}
+\renewcommand\arraystretch{1.45}
+\newcommand\jfheadrow{\rowcolor{jfgold!24}}
+\newcommand\jfoddrow{}
+\newcommand\jfevenrow{\rowcolor{jfpaper2}}
+\newcommand\jfth[1]{{\semibold #1}}
+\newenvironment{jftable}[1]{\par\fontsize{9.4}{13}\selectfont\begin{longtable}{@{}#1@{}}}{\end{longtable}\par}
+\newenvironment{jfcardtable}[1]{\par\vspace{2pt}\fontsize{10}{13}\selectfont\begin{tabular}{@{}#1@{}}}{\end{tabular}\par}
+
+% ---------------------------------------------------------------- pair / split
+\newcommand\jfpairlabel[1]{{\color{jfmuted}\fontsize{7.4}{9}\selectfont\semibold\jftracked{\MakeUppercase{#1}}}\par\vspace{4pt}}
+\newcommand\jfpairright{}
+\newenvironment{jfpair}[2]{%
+  \gdef\jfpairright{#2}\par\vspace{6pt}\noindent
+  \begin{minipage}[t]{0.47\linewidth}\setlength\parskip{0.5em}\jfpairlabel{#1}}{%
+  \end{minipage}\par\vspace{12pt}}
+\newcommand\jfpairmiddle{\end{minipage}\hfill
+  \begin{minipage}[t]{0.05\linewidth}\vspace{24pt}\centering{\color{jfgoldtext}\faArrowRight}\end{minipage}\hfill
+  \begin{minipage}[t]{0.44\linewidth}\setlength\parskip{0.5em}\jfpairlabel{\jfpairright}}
+\newenvironment{jfsplit}{\par\vspace{4pt}\noindent\begin{minipage}[t]{0.36\linewidth}\vspace{0pt}}{\end{minipage}\par\vspace{8pt}}
+\newcommand\jfsplitmiddle{\end{minipage}\hfill\begin{minipage}[t]{0.58\linewidth}\vspace{0pt}\raggedright\setlength\parskip{0.62em}}
+
+% ---------------------------------------------------------------- contents
+\makeatletter
+\renewcommand\tableofcontents{\@starttoc{toc}}
+\makeatother
+\titlecontents{section}[0pt]{\addvspace{12pt}\fontsize{13}{16}\selectfont\bfseries}
+  {\makebox[30pt][l]{\color{jfgoldtext}\thecontentslabel}}{}
+  {\hfill\color{jfmuted}\medium\thecontentspage}[\vspace{3pt}]
+\titlecontents{subsection}[30pt]{\fontsize{9.6}{12.4}\selectfont}
+  {\makebox[26pt][l]{\color{jfmuted}\thecontentslabel}}{}
+  {\hfill\color{jfmuted}\thecontentspage}
+
+\begin{document}
+
+% ================================================================ cover
+\thispagestyle{empty}
+\jfdarkpage{%
+  % a fanned little deck of cards
+  \begin{scope}[shift={($$(current page.center)+(1.6cm,2.4cm)$$)}]
+    \begin{scope}[rotate=14]
+      \fill[jfsurface,rounded corners=4mm,draw=jfcardedge,line width=0.7pt] (-4.2,-2.7) rectangle (4.2,2.7);
+      \node[text=jfgold!80,font=\fontsize{30}{30}\selectfont] at (0.5,0) {$$\int_0^1 x^2\,dx$$};
+    \end{scope}
+    \begin{scope}[rotate=5,shift={(-0.6,-0.4)}]
+      \fill[jfsurface,rounded corners=4mm,draw=jfcardedge,line width=0.7pt] (-4.2,-2.7) rectangle (4.2,2.7);
+      \node[text=jfcream,font=\fontsize{44}{44}\selectfont\medium] at (0.4,-0.1) {あ};
+    \end{scope}
+    \begin{scope}[rotate=-5,shift={(-1.3,-1.1)}]
+      \fill[jfsurface,rounded corners=4mm,draw=jfgold!70!jfink,line width=0.9pt,
+        blur shadow={shadow blur steps=12,shadow opacity=60,shadow yshift=-2mm}] (-4.2,-2.7) rectangle (4.2,2.7);
+      \node[anchor=north west,text=jfgold,font=\fontsize{7.5}{9}\selectfont\semibold] at (-3.7,2.25)
+        {\jftracked{\MakeUppercase{$labels.question$}}};
+      \node[anchor=west,text=jfcream,font=\fontsize{15}{20}\selectfont,text width=7cm,align=left] at (-3.7,0.1)
+        {$cover-card$ \jfblank{[…]}.};
+      \node[anchor=south east,fill=jfsurfhigh,rounded corners=2.5mm,text=jfprimary,
+        font=\fontsize{8}{9}\selectfont,inner xsep=6pt,inner ysep=3.5pt] at (3.7,-2.25) {\faSync\hspace{4pt}Flip};
+    \end{scope}
+  \end{scope}
+  % brand
+  \node[anchor=north west,inner sep=0pt] (icon) at ($$(current page.north west)+(2.4cm,-2.4cm)$$)
+    {\jfroundimg{11mm}{$iconpath$}{2.6mm}};
+  \node[anchor=west,text=jfcream,font=\fontsize{15}{18}\selectfont\bfseries] at ($$(icon.east)+(3.5mm,0)$$) {JustFlip!};
+  % title block
+  \node[anchor=south west,inner sep=0pt,text width=16.5cm,align=left]
+    at ($$(current page.south west)+(2.4cm,4.6cm)$$) {%
+      {\jfeyebrow[jfgold]{$edition$}}\par\vspace{12pt}
+      {\color{jfgold}\fontsize{58}{60}\selectfont\bfseries $manual-title$}\par\vspace{14pt}
+      {\color{jfvariant}\fontsize{13}{19}\selectfont\light\begin{minipage}{11.5cm}$manual-subtitle$\end{minipage}}};
+  \node[anchor=south west,text=jfoutline,font=\fontsize{8}{10}\selectfont] at ($$(current page.south west)+(2.4cm,2.2cm)$$)
+    {just-flip.app};
+}
+\null
+\clearpage
+
+% ================================================================ contents
+\thispagestyle{empty}
+\vspace*{4mm}
+{\jfeyebrow{JustFlip! \,\textperiodcentered\, $manual-title$}}\par\vspace{8pt}
+{\fontsize{34}{38}\selectfont\bfseries $labels.contents$\par}
+\vspace{10pt}
+{\hypersetup{linkcolor=jftext}\tableofcontents}
+\vspace{18pt}
+\begin{tcolorbox}[enhanced,breakable,colback=jfpaper2,colframe=jfpaper2,arc=2mm,left=12pt,right=12pt,top=10pt,bottom=10pt]
+{\color{jfgoldtext}\fontsize{8}{10}\selectfont\semibold\jftracked{\MakeUppercase{$labels.coming-soon$}}}\par\vspace{4pt}
+\fontsize{9.4}{16}\selectfont\color{jftext}\raggedright
+$for(chapters)$
+$if(chapters.slug)$
+$else$
+\mbox{{\color{jfgoldtext}\semibold $chapters.number$}\enspace $chapters.title$}\quad
+$endif$
+$endfor$
+\end{tcolorbox}
+\clearpage
+
+$body$
+
+% ================================================================ back cover
+\clearpage\thispagestyle{empty}
+\jfdarkpage{%
+  \node[inner sep=0pt] (icon) at ($$(current page.center)+(0,1.2cm)$$) {\jfroundimg{18mm}{$iconpath$}{4mm}};
+  \node[text=jfcream,font=\fontsize{20}{24}\selectfont\bfseries] at ($$(icon.south)+(0,-1cm)$$) {JustFlip!};
+  \node[text=jfgold,font=\fontsize{10}{12}\selectfont] at ($$(icon.south)+(0,-1.8cm)$$) {just-flip.app};
+}
+\null
+\end{document}
