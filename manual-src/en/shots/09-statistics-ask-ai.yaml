@@ -1,0 +1,31 @@
+- file: 09-statistics-overview.png
+  device: iPhone
+  crop: full
+  screen: Statistics, top of the screen
+  state: Pro active; an interest with several decks and a few months of review history selected under Scope; the four summary tiles and the Collection stages visible
+  steps: Launch → Interests → gear (Settings) menu → Statistics
+  notes: Needs Pro (or the UI-test Pro override) and a seed with real history, otherwise the tiles show "—" and the empty state. Dismiss the "Choose what to measure" guide first.
+
+- file: 09-retention-chart.png
+  device: iPhone
+  crop: region (the Mature Retention section card only)
+  screen: Statistics, Mature Retention section
+  state: 90D selected; the mature line (not the overall fallback) with visible day points; caption under the chart reads the mature hint
+  steps: Launch → gear menu → Statistics → scroll to Mature Retention → tap 90D
+  notes: The seed must contain reviews of cards whose interval was already 30+ days, or the chart shows the overall fallback caption instead.
+
+- file: 09-heatmap.png
+  device: iPhone
+  crop: region (the Consistency section card only)
+  screen: Statistics, Consistency section
+  state: Current and Longest streak badges above a 12-week heatmap with varied intensity and a few gaps
+  steps: Launch → gear menu → Statistics → scroll to Consistency
+  notes: Today's square carries a small dot; make sure today has reviews so it is visible.
+
+- file: 09-ask-ai-sheet.png
+  device: iPhone
+  crop: full
+  screen: Ask AI sheet
+  state: A deck-scoped prompt; Copy Prompt / Save Prompt buttons, the Open in a chat AI list (ChatGPT, Claude, Gemini) and the start of the Prompt preview visible
+  steps: Launch → an interest → long-press a deck → Ask AI (Pro) → dismiss the "How Ask AI Works" explainer with Continue
+  notes: The explainer opens automatically the first time; close it before capturing. Use a deck with a few lapsed cards so the preview shows the "Cards the learner repeatedly struggles with" section.

@@ -1,0 +1,35 @@
+- file: 04-image-tab.png
+  device: iPhone
+  crop: full
+  screen: Card editor (Add Card / Edit Card), Question side, Image tab
+  state: A photo chosen on the Image tab; Replace and Remove below it; Image Description and Image license fields filled in
+  steps: "Launch → open an interest → open a deck → More actions (…) → Add Card → Question: Image tab → Choose Image → pick a photo → type a description and a licence"
+  notes: "Use a photo you own or a CC-licensed one; the licence field should read like \"Photo: Jane Doe, CC BY 4.0\"."
+- file: 04-licence-sheet.png
+  device: iPhone
+  crop: full
+  screen: Card view with the Image license sheet presented
+  state: A card whose picture has a licence; the ⓘ button tapped, sheet titled "Image license" showing the attribution text with a link
+  steps: Launch → deck containing a card with an image licence → tap the ⓘ button in the card footer
+  notes: The ⓘ button only appears when the side has a whole-side or stacked picture and a non-empty licence. The Debug gallery sample with `imageLicense` set also shows it.
+- file: 04-audio-tab.png
+  device: iPhone
+  crop: full
+  screen: Card editor, Answer side, Audio tab
+  state: An audio file chosen — waveform icon, filename, file size, trash button, Replace Audio; Language row below
+  steps: "Launch → deck → More actions → Add Card → Answer: Audio tab → Choose Audio File → pick an .m4a from Files"
+  notes: Use a short, descriptively named file such as "perro.m4a".
+- file: 04-occlusion-editor.png
+  device: iPad
+  crop: full
+  screen: Image occlusion editor
+  state: A labelled anatomy diagram with 5–8 rectangles over the labels, one selected (corner handle visible); tools row (Select, Rectangle, Ellipse, Undo, Redo, Duplicate, Delete); Mode set to Hide one, guess one; Save N cards enabled
+  steps: Launch → deck → More actions → Add image occlusion cards → Select image → drag to draw regions → tap Select and tap one region
+  notes: Landscape. The bundled "Image Occlusion" demo content (anatomy) is a good source image.
+- file: 04-occlusion-review.png
+  device: iPhone
+  crop: region (two stills side by side — question state and after Show answer)
+  screen: Review session, image-occlusion card
+  state: Left — tested region covered, Show answer button at the top, hint "Study the covered region, then show the answer."; right — region revealed with accent outline, grade buttons visible
+  steps: Launch → deck with occlusion cards → Start review → capture → tap Show answer → capture
+  notes: Use Hide all, guess one for one of the stills if you want the question-mark glyph visible; keep the same card in both halves.

@@ -1,0 +1,35 @@
+- file: 08-ipad-split.png
+  device: iPad
+  crop: full
+  screen: Main split view, landscape
+  state: An interest selected in the sidebar with its decks listed; a deck selected so the detail column shows its card list
+  steps: Launch on iPad in landscape → tap an interest → tap a deck
+  notes: Landscape, so both columns are visible. Use a seeded library with several decks and cards that have text and a picture.
+- file: 08-mac-three-columns.png
+  device: Mac
+  crop: region (the app window only, no desktop)
+  screen: Main window, three columns
+  state: Interests, Decks and Cards columns all visible; one interest and one deck selected
+  steps: Launch the Mac app → widen the window until all three columns show → click an interest → click a deck
+  notes: Window wide enough for the three-column layout. Optionally open the File menu to show Import Cards… (⇧⌘I) and Export Interest… (⇧⌘E).
+- file: 08-watch-today.png
+  device: Watch
+  crop: full
+  screen: Watch Today screen
+  state: A non-zero due count, a streak, the Review button and two or three interest rows
+  steps: Pair with a phone that has due cards → open JustFlip on the watch
+  notes: The watch screenshot pipeline (scripts/generate_watch_screenshots.sh, scenario "today") can produce this frame.
+- file: 08-watch-rating.png
+  device: Watch
+  crop: full
+  screen: Watch review, rating grid
+  state: The 2×2 grade grid (Again, Hard, Good, Easy) raised over a card
+  steps: Watch Today → Review → tap to flip → press and hold the card
+  notes: Watch screenshot pipeline scenario "rating".
+- file: 08-widget-sizes.png
+  device: Widget
+  crop: region (small, medium and large widgets side by side on a Home Screen)
+  screen: Cards Due widget, three Home Screen sizes
+  state: Cards due with some new cards, a streak, and review activity over the last week so the green and gold bars show
+  steps: Home Screen → Edit → Add Widget → JustFlip → Cards Due, add each size
+  notes: The widget reads the app's saved snapshot; open and leave the app once after seeding so the counts are current.

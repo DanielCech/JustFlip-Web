@@ -1,0 +1,21 @@
+- file: 06-review-priority.png
+  device: iPhone
+  crop: full
+  screen: Decks screen › Deck options › Review Priority sheet
+  state: An interest with three decks; interest slider at 75 %; one deck with Inherit from interest switched off and its slider at 100 %; ideally one deck postponed so the Postponed section shows
+  steps: Launch → Interests → pick an interest → Decks screen → folder icon (Deck options) → Review Priority
+  notes: To show the Postponed section, first postpone a deck from a review (clock icon › Postpone this deck › In 3 days)
+- file: 06-postpone-menu.png
+  device: iPhone
+  crop: full
+  screen: Review session, Postpone menu open
+  state: A card on the question side; the clock-icon menu open showing Postpone this card / this deck / this interest, ideally with the Postpone this deck submenu expanded (Tomorrow, In 3 days, In 1 week, Custom date…)
+  steps: Launch → Today → Start review → tap the clock icon in the review header → Postpone this deck
+  notes: The clock icon sits next to the typed-answer toggle at the top right of the review screen
+- file: 06-progress-tracker.png
+  device: iPhone
+  crop: full
+  screen: Card list of a deck with progress trackers
+  state: A deck with two trackers (e.g. "Moonlight Sonata, 1st movement" at 60 %, "Scales in all keys" at 35 %) above regular flashcards; Pro active
+  steps: Launch → Interests → Decks → open a deck → More actions (…) → Add Progress Tracker → create two trackers and set their sliders
+  notes: Requires Pro (or a trial); without Pro the trackers collapse into a single locked row

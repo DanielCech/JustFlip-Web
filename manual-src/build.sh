@@ -42,7 +42,7 @@ pandoc --metadata-file="$META" "$SRC/index.md" \
   --from markdown --to html5 \
   --template "$HERE/templates/index.html" \
   --lua-filter "$FILTER" \
-  -M asset-prefix="../$UP" -V root="../$UP" -V manualroot="" \
+  -M asset-prefix="../$UP" -M site-root="$SITE" -V root="../$UP" -V manualroot="" \
   -o "$OUT/index.html"
 
 for chapter in "${CHAPTERS[@]}"; do
@@ -55,7 +55,7 @@ for chapter in "${CHAPTERS[@]}"; do
     --lua-filter "$FILTER" \
     --toc --toc-depth=2 --number-sections --number-offset="$number" \
     --mathml --syntax-highlighting="$THEME" \
-    -M asset-prefix="../../$UP" -V root="../../$UP" -V manualroot="../" \
+    -M asset-prefix="../../$UP" -M site-root="$SITE" -V root="../../$UP" -V manualroot="../" \
     -o "$OUT/$slug/index.html"
   echo "  $slug/index.html"
 done
@@ -69,7 +69,7 @@ pandoc --metadata-file="$META" "${CHAPTERS[@]}" \
   --template "$HERE/templates/manual.latex" \
   --lua-filter "$FILTER" \
   --syntax-highlighting="$THEME" \
-  -M asset-prefix="$SITE/" \
+  -M asset-prefix="$SITE/" -M site-root="$SITE" \
   -V fontpath="$HERE/fonts" -V iconpath="$SITE/images/Icon.png" \
   -o "$BUILD/manual.tex"
 

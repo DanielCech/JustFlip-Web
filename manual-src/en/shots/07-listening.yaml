@@ -1,0 +1,28 @@
+- file: 07-play-button.png
+  device: iPhone
+  crop: card
+  screen: Card list or review, a single card
+  state: A Spanish vocabulary card (question language Spanish) showing the Play pill in the bottom-left corner of the card
+  steps: Launch → Interests → Decks → open a vocabulary deck whose cards have a language set
+  notes: Crop tightly to the card; the Play button only appears when the side has text and an installed voice for its language
+- file: 07-speak-cards-menu.png
+  device: iPhone
+  crop: full
+  screen: Card list, play menu open
+  state: The toolbar play menu open, showing Due Cards, All Cards, Struggling Cards, a divider and Speak Cards
+  steps: Launch → Interests → Decks → open a deck → tap the play button in the toolbar
+  notes: Capture with Pro active so Speak Cards has no lock; a second variant without Pro (lock badge) is optional
+- file: 07-voices.png
+  device: iPhone
+  crop: full
+  screen: Settings › Speech › Voices
+  state: Your languages lists at least English, Spanish and Czech with their voices; at least one language marked Standard only; Other languages collapsed; Get better voices note visible if it fits
+  steps: Launch → Settings → Speech → Voices
+  notes: Make sure the library has cards in several languages so Your languages is populated
+- file: 07-language-voices.png
+  device: iPhone
+  crop: full
+  screen: Settings › Speech › Voices › English
+  state: Automatic · <voice> at the top with a checkmark, then Premium / Enhanced / Standard groups, each row with its preview button
+  steps: Launch → Settings → Speech → Voices → English
+  notes: Download at least one Enhanced or Premium English voice on the capture device first, so more than one group appears

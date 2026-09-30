@@ -1,0 +1,21 @@
+- file: 01-interests.png
+  device: iPhone
+  crop: full
+  screen: Interests (start screen)
+  state: Three or four interests with icons, deck counts and mastery; the Today panel on top showing cards due and new
+  steps: Launch with the marketing seed profile → stay on Interests
+  notes: Dismiss the Interests guide first (or pre-mark it seen), so no coachmark covers the list
+- file: 01-starter-library.png
+  device: iPhone
+  crop: full
+  screen: Starter library sheet
+  state: Language picker set to the capture locale; the default decks ticked; the "Add selected decks" button visible
+  steps: Launch → Settings (gear menu) → Help › Library
+  notes: The first-run offer only appears on an empty library; the Settings entry works at any time
+- file: 01-decks.png
+  device: iPhone
+  crop: full
+  screen: Decks screen for one interest
+  state: Four or five decks with mastery rings at different fills and at least one due dot glowing; header totals visible
+  steps: Launch → Interests → tap an interest with several decks
+  notes: Dismiss the "More on every deck" guide first

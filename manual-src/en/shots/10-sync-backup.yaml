@@ -1,0 +1,31 @@
+- file: 10-data-safety.png
+  device: iPhone
+  crop: full
+  screen: Settings, Data Safety section
+  state: Sync status "Available" with a recent "Last successful upload"; Last full backup and Last progress snapshot with recent dates; Backup Location; Recently Deleted with a count; Export Backup and Restore Backup buttons
+  steps: Launch → Interests → gear (Settings) menu → Settings → scroll to Data Safety
+  notes: Needs a signed-in, syncing device so the status is not "Unavailable". Run Export Backup once beforehand so the dates are filled in.
+
+- file: 10-icloud-sync.png
+  device: iPhone
+  crop: full
+  screen: iCloud Sync (sync diagnostics)
+  state: Current status Available; Last successful upload and download both recent; Check Again button; "No sync errors"; a few entries under Recent Sync Activity
+  steps: Launch → gear menu → Settings → Data Safety → Sync status
+  notes: The screen also shows CloudKit container and Application group rows; make sure they show the Production values, not a Development build.
+
+- file: 10-restore-backup.png
+  device: iPhone
+  crop: full
+  screen: Restore Backup
+  state: Available Archives listing three or more .justflip backups with dates
+  steps: Launch → gear menu → Settings → Data Safety → Restore Backup
+  notes: Do NOT tap a row while capturing — tapping restores immediately, without confirmation.
+
+- file: 10-recently-deleted.png
+  device: iPhone
+  crop: full
+  screen: Recently Deleted
+  state: Archived Items with one deleted interest and one deleted deck (showing its parent interest), each with Restore and Delete buttons
+  steps: Delete a demo deck and a demo interest → gear menu → Settings → Data Safety → Recently Deleted
+  notes: Use throwaway demo content; Delete here is permanent.

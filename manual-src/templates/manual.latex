@@ -144,6 +144,18 @@ $highlighting-macros$
   \end{tikzpicture}\par}\endgroup
   \if\relax\detokenize{#2}\relax\else\jfcaption{#2}\fi}
 
+% a screenshot that has not been captured yet
+\newcommand\jfplaceholder[3]{%
+  \ifstrequal{#1}{phone}%
+    {\def\jfphw{0.42\linewidth}\def\jfphh{0.8\linewidth}\def\jfpharc{6mm}}%
+    {\def\jfphw{0.8\linewidth}\def\jfphh{0.32\linewidth}\def\jfpharc{3mm}}%
+  \par\medskip{\centering
+  \begin{tcolorbox}[enhanced,width=\jfphw,height=\jfphh,valign=center,halign=center,
+    colback=jfpaper2,colframe=jfrule,boxrule=0.8pt,arc=\jfpharc]
+    {\color{jfmuted}\faImage[regular]\par\vspace{4pt}\fontsize{7.6}{10}\selectfont\ttfamily #2}
+  \end{tcolorbox}\par}
+  \jfcaption{#3}\medskip}
+
 % ---------------------------------------------------------------- lists
 \setlist{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=16pt}
 \setlist[itemize]{label={\color{jfgoldtext}\rule[0.33ex]{5pt}{1.1pt}}}
@@ -328,17 +340,7 @@ $highlighting-macros$
 {\fontsize{34}{38}\selectfont\bfseries $labels.contents$\par}
 \vspace{10pt}
 {\hypersetup{linkcolor=jftext}\tableofcontents}
-\vspace{18pt}
-\begin{tcolorbox}[enhanced,breakable,colback=jfpaper2,colframe=jfpaper2,arc=2mm,left=12pt,right=12pt,top=10pt,bottom=10pt]
-{\color{jfgoldtext}\fontsize{8}{10}\selectfont\semibold\jftracked{\MakeUppercase{$labels.coming-soon$}}}\par\vspace{4pt}
-\fontsize{9.4}{16}\selectfont\color{jftext}\raggedright
-$for(chapters)$
-$if(chapters.slug)$
-$else$
-\mbox{{\color{jfgoldtext}\semibold $chapters.number$}\enspace $chapters.title$}\quad
-$endif$
-$endfor$
-\end{tcolorbox}
+
 \clearpage
 
 $body$

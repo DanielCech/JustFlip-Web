@@ -492,3 +492,22 @@
   .m-figure--phone img { max-width: 240px; }
   .m-hero__number { display: none; }
 }
+
+/* ---------------------------------------------------------------- screenshot placeholders */
+/* Rendered by the filter while a screenshot has not been captured yet. */
+.m-placeholder {
+  display: grid;
+  place-content: center;
+  gap: 0.6rem;
+  margin: 1.8rem 0 2rem;
+  min-height: 220px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1.5px dashed var(--outline);
+  border-radius: 18px;
+  background: repeating-linear-gradient(135deg, var(--surface-low) 0 14px, var(--surface) 14px 28px);
+}
+.m-placeholder--phone { max-width: 280px; min-height: 520px; border-radius: 38px; }
+.m-placeholder__file { font-family: var(--m-mono); font-size: 0.8rem; color: var(--primary-container); }
+.m-placeholder__caption { font-size: 0.86rem; color: var(--on-surface-variant); }
+.m-placeholder__caption p { margin: 0; }

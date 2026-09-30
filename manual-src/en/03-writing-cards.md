@@ -34,16 +34,17 @@ Every card has two sides, **Question** and **Answer**, and each side is
 edited on its own. A side has three tabs:
 
 - **Text** — what you type, with the formatting toolbar above it.
-- **Image** — one picture from Photos, the camera or a file.
-- **Audio** — a recording or an audio file (`.mp3`, `.m4a`, `.wav`).
+- **Image** — one picture from Photos (or pasted into the text).
+- **Audio** — an audio file, such as `.mp3`, `.m4a` or `.wav`.
 
 Below the text field you will find [Formatting help]{.ui} — a pocket
 version of this chapter, always one tap away — and the side's
 [Language]{.ui}.
 
-A side can use any mix of text, picture and sound, but it can't be
-empty: both the question and the answer need at least one of them before
-[Save]{.ui} lights up.
+A side can't be empty: both the question and the answer need text, a
+picture or a sound before [Save]{.ui} lights up. Which tab you save from
+matters, too — Chapter 4 explains how to combine text with a picture or a
+sound without losing either.
 :::
 ::::
 
@@ -361,9 +362,10 @@ and disappear completely on a dark one. Give diagrams, notation and
 line art a solid white background before you add them.
 :::
 
-Use photos and bitmaps (PNG, JPEG). SVG files aren't supported. Keep files
-reasonably small, too: JustFlip! warns you about anything over 10 MB,
-because big files slow down iCloud sync on all your devices.
+Use photos and bitmaps (PNG, JPEG). SVG files aren't supported. There is
+no need to shrink big photos first: JustFlip! scales a picture down to
+3,000 pixels on its long side when you save, which keeps iCloud sync quick
+on all your devices. Chapter 4 has more on pictures that work well.
 
 ## Tell the voice what to say {#speech}
 
@@ -424,8 +426,13 @@ under **Settings › Speech › Voices**.
 
 JustFlip! first tries to fit everything on the card. If the text doesn't
 fit, it shrinks slightly, down to 80 % of the normal size. If it still
-doesn't fit, the bottom fades out and a **•••** button appears — tap it to
-read the full content.
+doesn't fit, the text is cut at the last whole line and the bottom of the
+card fades out.
+
+Nothing is lost, though. The **•••** button at the bottom of a card opens
+the full content of that side in a sheet. On a card whose diagram or
+picture fits, the same spot holds **Zoom** instead, which opens the
+picture full screen.
 
 That is a safety net, not a writing style. A card you can't read at a
 glance is usually two or three cards pretending to be one.

@@ -1,0 +1,14 @@
+- file: 11-appearance-settings.png
+  device: iPhone
+  crop: full
+  screen: Settings, Appearance section
+  state: Theme menu showing the current theme with its swatch; Follow system text size on; Text size slider and its preview line visible
+  steps: Launch → Interests → gear button → Settings → scroll to Appearance
+  notes: Default theme (System), default text size, light appearance.
+- file: 11-theme-swatches.png
+  device: iPhone
+  crop: region (five narrow crops of the same screen, one per theme, side by side)
+  screen: A deck's card list, or the Interests screen
+  state: The same screen captured under System (light), JustFlip Light, JustFlip Dark, Mist and Mist Dark
+  steps: Settings → Appearance → Theme → pick each theme in turn → capture the same screen
+  notes: Keep the content identical across the five crops; label each crop with the theme name when composing.

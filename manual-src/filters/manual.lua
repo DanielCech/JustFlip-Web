@@ -22,6 +22,8 @@ local is_html = FORMAT:match('html') ~= nil
 
 local labels = {}
 local asset_prefix = ''
+local site_root = ''
+local lang = 'en'
 
 local function label(key)
   return labels[key] or key
@@ -69,11 +71,46 @@ local function read_meta(meta)
     for k, v in pairs(meta.labels) do labels[k] = stringify(v) end
   end
   if meta['asset-prefix'] then asset_prefix = stringify(meta['asset-prefix']) end
+  if meta['site-root'] then site_root = stringify(meta['site-root']) end
+  if meta.lang then lang = stringify(meta.lang) end
 end
 
 --------------------------------------------------------------------------
 -- Images
 --------------------------------------------------------------------------
+
+local function exists(path)
+  local f = io.open(path, 'rb')
+  if f then f:close() return true end
+  return false
+end
+
+-- `images/manual/{lang}/x.png` resolves to this language's screenshot, falling
+-- back to English. Returns false when no file exists yet (→ placeholder).
+local function resolve(img)
+  if img.src:match('^%a+:') or site_root == '' then return true end
+  if img.src:find('{lang}', 1, true) then
+    local localized = img.src:gsub('{lang}', lang)
+    if lang ~= 'en' and not exists(site_root .. '/' .. localized) then
+      localized = img.src:gsub('{lang}', 'en')
+    end
+    img.src = localized
+  end
+  return exists(site_root .. '/' .. img.src)
+end
+
+local function placeholder(img, caption_blocks)
+  local kind = has_class(img, 'phone') and 'phone' or 'shot'
+  local cap = caption_blocks and #caption_blocks > 0 and caption_blocks or { pandoc.Plain(img.caption) }
+  if is_latex then
+    return raw_block(string.format('\\jfplaceholder{%s}{%s}{%s}', kind,
+      tex_escape(img.src:match('[^/]+$')), latex_of(cap)))
+  end
+  return pandoc.Div({
+    pandoc.Div({ pandoc.Plain({ pandoc.Str(img.src:match('[^/]+$')) }) }, pandoc.Attr('', { 'm-placeholder__file' })),
+    pandoc.Div(cap, pandoc.Attr('', { 'm-placeholder__caption' })),
+  }, pandoc.Attr('', { 'm-placeholder', 'm-placeholder--' .. kind }))
+end
 
 local function fix_src(img)
   if not img.src:match('^%a+:') and not img.src:match('^/') and not img.src:match('^%.%./') then
@@ -114,6 +151,7 @@ local function Figure(fig)
   local img
   fig.content:walk({ Image = function(i) img = i end })
   if not img then return nil end
+  if not resolve(img) then return placeholder(img, fig.caption.long) end
   fix_src(img)
   if is_latex then
     return raw_block(latex_image(img, fig.caption.long, image_kind(img)))
@@ -124,6 +162,10 @@ local function Figure(fig)
 end
 
 local function Image(img)
+  if not resolve(img) then
+    local ph = placeholder(img, nil)
+    return is_latex and pandoc.RawInline('latex', ph.text) or pandoc.Span(pandoc.utils.blocks_to_inlines({ ph }))
+  end
   fix_src(img)
   if is_latex and (has_class(img, 'card-shot') or has_class(img, 'phone') or has_class(img, 'shot')) then
     return raw_inline(latex_image(img, nil, image_kind(img)))
@@ -148,8 +190,14 @@ local function latex_table(tbl, in_card)
   for c = 1, ncols do total = total + lens[c] end
   local spec = {}
   local avail = 1 - 0.035 * ncols
+  local min_share = 0.5 / ncols
+  local raw, raw_total = {}, 0
   for c = 1, ncols do
-    local w = math.max(0.22, lens[c] / total) * avail
+    raw[c] = math.max(min_share, lens[c] / total)
+    raw_total = raw_total + raw[c]
+  end
+  for c = 1, ncols do
+    local w = raw[c] / raw_total * avail
     spec[c] = string.format('>{\\raggedright\\arraybackslash}p{%.3f\\linewidth}', w)
   end
   local env = in_card and 'jfcardtable' or 'jftable'
@@ -327,6 +375,13 @@ local function Span(span)
   end
 end
 
+-- Authoring notes such as <!-- VERIFY: … --> never reach either output.
+local function is_comment(el)
+  return el.format:match('html') and el.text:match('^%s*<!%-%-') and el.text:match('%-%->%s*$')
+end
+local function RawBlock(el) if is_comment(el) then return {} end end
+local function RawInline(el) if is_comment(el) then return {} end end
+
 local function Table(tbl)
   if is_latex then return latex_table(tbl, false) end
 end
@@ -335,7 +390,37 @@ end
 -- Chapter opener: H1 ... first H2
 --------------------------------------------------------------------------
 
+-- In the one-document PDF, section ids repeat across chapters (#export,
+-- #troubleshooting). Prefix each with its chapter's id, and rewrite the
+-- chapter's own #links to match.
+local function scope_ids(blocks)
+  local chapter = nil
+  local out = pandoc.List()
+  for _, b in ipairs(blocks) do
+    if b.t == 'Header' and b.level == 1 then
+      chapter = b.identifier
+      out:insert(b)
+    elseif chapter then
+      local c = chapter
+      out:insert(pandoc.walk_block(b, {
+        Header = function(h)
+          if h.identifier ~= '' then h.identifier = c .. '--' .. h.identifier end
+          return h
+        end,
+        Link = function(l)
+          if l.target:match('^#') then l.target = '#' .. c .. '--' .. l.target:sub(2) end
+          return l
+        end,
+      }))
+    else
+      out:insert(b)
+    end
+  end
+  return out
+end
+
 local function Pandoc(doc)
+  if is_latex then doc.blocks = scope_ids(doc.blocks) end
   local out = pandoc.List()
   local hero = nil
   local i = 1
@@ -386,6 +471,7 @@ end
 
 return {
   { Meta = read_meta },
+  { RawBlock = RawBlock, RawInline = RawInline },
   { Figure = Figure },
   { Image = Image },
   { Div = CardTables },

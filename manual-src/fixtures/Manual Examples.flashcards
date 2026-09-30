@@ -1,0 +1,50 @@
+{
+  "format": "flashcard-content",
+  "version": "1",
+  "interest": "User Manual",
+  "interest_key": "user-manual",
+  "deck": "Manual Examples",
+  "deck_key": "manual-examples",
+  "deck_icon": "book.fill",
+  "deck_q_lang": "en",
+  "deck_a_lang": "en",
+  "cards": [
+    {
+      "q": "The capital of France is {{c1::Paris}}.",
+      "a": "Paris has been the capital since 987."
+    },
+    {
+      "q": "{{c1::Mitochondria::organelle}} produce most of the cell's ATP.",
+      "a": "Most ATP comes from oxidative phosphorylation."
+    },
+    {
+      "q": "::: hero\nあ\n:::",
+      "a": "**a** — the first hiragana",
+      "q_lang": "ja"
+    },
+    {
+      "q": "What is the derivative of $f$ at $x$?",
+      "a": "The instantaneous rate of change:\n\n$$\nf'(x) = \\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\n$$"
+    },
+    {
+      "q": "What does this Swift snippet print?\n\n```swift\nlet answer = 6 * 7\nprint(answer)\n```",
+      "a": "`42`"
+    },
+    {
+      "q": "How does a review session decide what to show?\n\n```mermaid\ngraph TD\n  A[Start review] --> B{Card due?}\n  B -->|Yes| C[Show question]\n  B -->|No| D[All caught up]\n```",
+      "a": "Due cards first; when none are left, you are all caught up."
+    },
+    {
+      "q": "Forms of the verb *to go*",
+      "a": "| Tense | Form |\n|---|---|\n| Present | I go |\n| Past | I went |\n| Perfect | I have gone |"
+    },
+    {
+      "q": "Enable [iOS]{eye oh ess} background refresh.",
+      "a": "Settings › General › Background App Refresh."
+    },
+    {
+      "q": "Name the three branches of government and explain what each of them does.",
+      "a": "The **legislative** branch makes the laws: in most democracies it is an elected parliament or congress, often split into two chambers that must both agree before a bill becomes law. The **executive** branch carries the laws out: the head of state or government, the ministers and the civil service that runs the country day to day. The **judicial** branch interprets the laws: courts decide disputes, review whether the other two branches acted within the constitution, and protect individual rights. Each branch checks the others, so no single part of government can rule alone — the principle called the separation of powers, described by Montesquieu in 1748 and built into many modern constitutions."
+    }
+  ]
+}

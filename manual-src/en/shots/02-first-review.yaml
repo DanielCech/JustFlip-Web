@@ -1,0 +1,21 @@
+- file: 02-grade-buttons.png
+  device: iPhone
+  crop: full
+  screen: Review session (Testing), answer side
+  state: A short vocabulary card flipped to the answer; all four grade buttons visible with their interval labels
+  steps: Launch → Interests → Today › Start review → tap the card to flip
+  notes: Use the trailer seed profile (the marketing profile shows "All caught up"); dismiss the "Rate your recall" guide; Stricter grading must be OFF so Good and Easy show
+- file: 02-today.png
+  device: iPhone
+  crop: region (the Today panel at the top of Interests)
+  screen: Interests, Today panel
+  state: Headline like "12 due · 5 new", "About N min", a streak of several days, and chips for at least two interests
+  steps: Launch with a seed that has due cards in two or more interests → Interests
+  notes: Chips only appear when two or more interests have cards in today's plan
+- file: 02-results.png
+  device: iPhone
+  crop: full
+  screen: Review results
+  state: "Practice Complete" with success rate, Cards Reviewed and Study Time, and a "You know these well" section with a Retire button
+  steps: Launch → Today › Start review → grade every card in the batch
+  notes: The retire suggestion needs a card with interval ≥ 90 days and ≥ 4 correct in a row, graded Good or Easy in this session; seed one

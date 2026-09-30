@@ -1,0 +1,21 @@
+- file: 05-import-menu.png
+  device: iPhone
+  crop: full
+  screen: Interests screen with the Add or import menu open
+  state: Menu open showing New Interest, Import cards, Paste cards, Reorder, Refresh
+  steps: Launch → Interests → tap the tray button (Add or import) in the top-right
+  notes: Needs at least one interest so the menu is in the toolbar rather than the empty state.
+- file: 05-anki-report.png
+  device: iPhone
+  crop: full
+  screen: Import from Anki sheet, ready state
+  state: '"Ready to study" summary with Cards / Images / Audio metrics; What changed expanded with 2–4 sentences (scheduling note, question echo, images unavailable); Options expanded showing "If you already have these cards" and the Decks list with a "Parent / Child" name'
+  steps: "Launch → Add or import → Import cards → pick a small .apkg with media and a nested deck → Import Cards sheet: choose interest → Continue"
+  notes: Use a package you have the rights to show (build a tiny one in Anki). Avoid third-party deck names on the screenshot.
+- file: 05-csv-preview.png
+  device: iPhone
+  crop: full
+  screen: Import CSV sheet
+  state: Separator = Comma, Skip first row as header ON, Front = Column 1, Back = Column 2, Preview listing 5–6 Spanish/English rows; Import (N) button enabled
+  steps: "Launch → Add or import → Import cards → pick vocabulary.csv → Import Cards sheet: choose interest, deck name → Continue"
+  notes: Use the three-line example from the chapter extended to ~8 rows, with a header row.
