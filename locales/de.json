@@ -569,5 +569,9 @@
   "news.cta.download": "Im App Store laden",
   "news.cta.home": "Zur Startseite",
   "nav.demo": "Demo",
-  "nav.manual": "Handbuch"
+  "nav.manual": "Handbuch",
+  "prompt.quote1": "Mach 20 Karten aus meinen Bio-Notizen.",
+  "prompt.quote2": "Spanische Verben, die ich ständig verwechsle — ser oder estar.",
+  "prompt.quote3": "Der Citratzyklus, ein Schritt pro Karte.",
+  "prompt.quote4": "Mach aus dieser Vorlesungsmitschrift ein Deck."
 }

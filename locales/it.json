@@ -569,5 +569,9 @@
   "news.cta.download": "Scarica dall’App Store",
   "news.cta.home": "Torna alla home",
   "nav.demo": "Demo",
-  "nav.manual": "Manuale"
+  "nav.manual": "Manuale",
+  "prompt.quote1": "Crea 20 carte dai miei appunti di biologia.",
+  "prompt.quote2": "I verbi spagnoli che confondo sempre — ser o estar.",
+  "prompt.quote3": "Il ciclo di Krebs, un passaggio per carta.",
+  "prompt.quote4": "Trasforma la trascrizione di questa lezione in un mazzo."
 }

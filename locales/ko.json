@@ -569,5 +569,9 @@
   "news.cta.download": "App Store에서 다운로드",
   "news.cta.home": "홈으로 돌아가기",
   "nav.demo": "데모",
-  "nav.manual": "매뉴얼"
+  "nav.manual": "매뉴얼",
+  "prompt.quote1": "생물 노트로 카드 20장 만들어 줘.",
+  "prompt.quote2": "자꾸 헷갈리는 영어 시제.",
+  "prompt.quote3": "크렙스 회로, 카드 한 장에 한 단계씩.",
+  "prompt.quote4": "이 강의 녹취록을 덱으로 만들어 줘."
 }

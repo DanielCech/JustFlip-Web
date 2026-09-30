@@ -1388,6 +1388,66 @@ main { display: block; }
   min-width: 0;
 }
 
+/* Decorative prompt examples drifting around the How-it-works card.
+   Parallax moves the wrapper; the tilt lives on the text so it survives. */
+.prompt-hero__side {
+  position: relative;
+  min-width: 0;
+  padding: clamp(6rem, 9vw, 7.5rem) 0 clamp(8rem, 11vw, 9.5rem);
+}
+.prompt-hero__quotes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.prompt-quote { position: absolute; max-width: 92%; }
+.prompt-quote__text {
+  display: block;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, Times, serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+  line-height: 1.35;
+}
+.prompt-quote--1 { top: 0; left: -10%; max-width: 78%; }
+.prompt-quote--1 .prompt-quote__text { color: var(--on-surface); }
+.prompt-quote--2 { top: 3.9rem; right: -8%; max-width: 70%; text-align: right; }
+.prompt-quote--2 .prompt-quote__text { color: var(--primary-container); font-size: clamp(0.95rem, 1.25vw, 1.15rem); }
+.prompt-quote--3 { bottom: 4.4rem; left: -4%; max-width: 72%; }
+.prompt-quote--3 .prompt-quote__text { color: var(--secondary); }
+.prompt-quote--4 { bottom: 0.2rem; right: -12%; max-width: 72%; text-align: right; }
+.prompt-quote--4 .prompt-quote__text { color: var(--on-surface-variant); font-size: clamp(0.95rem, 1.25vw, 1.15rem); }
+
+/* Ideas floating in your mind: a slow drift and a gentle fade in and out,
+   each on its own rhythm so they never move in step. */
+.prompt-quote__text {
+  animation: prompt-idea-drift var(--drift, 11s) ease-in-out infinite alternate,
+             prompt-idea-breathe var(--breathe, 9s) ease-in-out infinite alternate;
+  animation-delay: var(--delay, 0s), var(--delay, 0s);
+}
+.prompt-quote--1 .prompt-quote__text { --drift: 12s; --breathe: 8s;  --delay: -3s; --tilt: -3deg; --peak: 0.55; }
+.prompt-quote--2 .prompt-quote__text { --drift: 14s; --breathe: 11s; --delay: -7s; --tilt: 2deg;  --peak: 0.4; filter: blur(0.6px); }
+.prompt-quote--3 .prompt-quote__text { --drift: 10s; --breathe: 9s;  --delay: -1s; --tilt: 2.5deg; --peak: 0.5; }
+.prompt-quote--4 .prompt-quote__text { --drift: 15s; --breathe: 12s; --delay: -9s; --tilt: -1.5deg; --peak: 0.38; filter: blur(0.8px); }
+
+@keyframes prompt-idea-drift {
+  from { transform: translate(0, 0) rotate(var(--tilt, 0deg)); }
+  to   { transform: translate(10px, -14px) rotate(calc(var(--tilt, 0deg) * -0.4)); }
+}
+@keyframes prompt-idea-breathe {
+  from { opacity: calc(var(--peak, 0.5) * 0.35); }
+  to   { opacity: var(--peak, 0.5); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prompt-quote__text { animation: none; opacity: var(--peak, 0.5); transform: rotate(var(--tilt, 0deg)); }
+}
+
+@media (max-width: 920px) {
+  .prompt-hero__side { padding: 0; }
+  .prompt-hero__quotes { display: none; }
+}
+
 .prompt-hero__panel {
   position: relative;
   z-index: 1;

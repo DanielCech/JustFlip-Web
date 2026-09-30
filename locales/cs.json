@@ -623,5 +623,9 @@
   "news.cta.download": "Stáhnout z App Storu",
   "news.cta.home": "Zpět na úvod",
   "nav.demo": "Demo",
-  "nav.manual": "Příručka"
+  "nav.manual": "Příručka",
+  "prompt.quote1": "Udělej 20 kartiček z mých poznámek z biologie.",
+  "prompt.quote2": "Anglické časy, které si pořád pletu.",
+  "prompt.quote3": "Krebsův cyklus, jeden krok na kartičku.",
+  "prompt.quote4": "Z přepisu přednášky udělej balíček."
 }

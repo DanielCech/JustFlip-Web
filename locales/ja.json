@@ -569,5 +569,9 @@
   "news.cta.download": "App Store でダウンロード",
   "news.cta.home": "ホームに戻る",
   "nav.demo": "デモ",
-  "nav.manual": "マニュアル"
+  "nav.manual": "マニュアル",
+  "prompt.quote1": "生物のノートから20枚のカードを作って。",
+  "prompt.quote2": "いつも混同する英語の時制。",
+  "prompt.quote3": "クエン酸回路を、1枚に1ステップずつ。",
+  "prompt.quote4": "この講義の書き起こしをデッキにして。"
 }

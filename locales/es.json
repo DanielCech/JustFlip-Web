@@ -569,5 +569,9 @@
   "news.cta.download": "Descargar en el App Store",
   "news.cta.home": "Volver al inicio",
   "nav.demo": "Demo",
-  "nav.manual": "Manual"
+  "nav.manual": "Manual",
+  "prompt.quote1": "Haz 20 tarjetas con mis apuntes de biología.",
+  "prompt.quote2": "Los tiempos verbales en inglés que siempre confundo.",
+  "prompt.quote3": "El ciclo de Krebs, un paso por tarjeta.",
+  "prompt.quote4": "Convierte esta transcripción de clase en un mazo."
 }

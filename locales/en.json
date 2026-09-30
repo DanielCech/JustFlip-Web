@@ -524,5 +524,9 @@
   "news.cta.download": "Download on the App Store",
   "news.cta.home": "Back to home",
   "nav.demo": "Demo",
-  "nav.manual": "Manual"
+  "nav.manual": "Manual",
+  "prompt.quote1": "Make 20 cards from my biology notes.",
+  "prompt.quote2": "Spanish verbs I keep mixing up — ser vs estar.",
+  "prompt.quote3": "The Krebs cycle, one step per card.",
+  "prompt.quote4": "Turn this lecture transcript into a deck."
 }
