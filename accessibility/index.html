@@ -76,43 +76,36 @@
         <p class="eyebrow" data-i18n="accessibility.heroEyebrow">Accessibility report · English</p>
         <h1 class="display" data-i18n="accessibility.heroTitle">We take accessibility seriously.<br/><em>Learning should meet you where you are.</em></h1>
         <p class="lede" data-i18n="accessibility.heroLede">
-          JustFlip! is built to make active recall usable with the tools many learners rely on.
-          This is a living report of what is implemented, what is ready for device validation,
-          and what we deliberately do not claim yet.
+          JustFlip! is built to make active recall usable with the tools many learners rely on. This is a living report of what we have published on our App Store label, what is still being validated, and what we deliberately do not claim.
         </p>
         <div class="hero__actions">
           <a class="btn btn--primary" href="#report" data-i18n="accessibility.readCta">Read the report</a>
           <a class="btn btn--ghost" href="mailto:daniel.cech@gmail.com?subject=JustFlip%20accessibility%20feedback" data-i18n="accessibility.issueCta">Report an issue</a>
         </div>
         <div class="accessibility-hero__meta" aria-label="Report metadata" data-i18n-attr="aria-label" data-i18n-aria-label="accessibility.metaAria">
-          <span data-i18n="accessibility.metaUpdated"><strong>Updated</strong> 28 August 2026</span>
+          <span data-i18n="accessibility.metaUpdated"><strong>Updated</strong> 14 October 2026</span>
           <span data-i18n="accessibility.metaPlatforms"><strong>Platforms</strong> iPhone · iPad · Mac</span>
-          <span data-i18n="accessibility.metaMethod"><strong>Method</strong> code audit + common-task matrix</span>
+          <span data-i18n="accessibility.metaMethod"><strong>Method</strong> automated audit + manual device testing</span>
         </div>
       </div>
 
       <aside class="prompt-hero__panel accessibility-status-panel">
         <span class="prompt-hero__panel-kicker" data-i18n="accessibility.statusKicker">The honest headline</span>
         <p data-i18n="accessibility.statusText">
-          The accessibility implementation is substantial and the automated audit now runs
-          across all 12 primary screens, under every system setting the label is claimed
-          against. Contrast is no longer waiting on a person: every colour in the design system
-          is measured automatically, in light, dark and both Increase Contrast appearances.
-          What remains is device work — and of that, only VoiceOver and Voice Control genuinely
-          need a human.
+          Five categories are now declared on our App Store Accessibility Nutrition Label for iPhone, iPad and Mac: Larger Text, Dark Interface, Reduced Motion, Differentiate Without Color and Sufficient Contrast. Each passed the automated audit and a manual walkthrough of all eight common tasks. VoiceOver and Voice Control are not claimed yet; they stay unpublished until a person has driven the whole app with them.
         </p>
         <div class="accessibility-status-panel__rule"></div>
         <div class="accessibility-status-panel__stat">
-          <strong>6</strong>
-          <span data-i18n="accessibility.readyLabel">categories are ready or close to device validation</span>
+          <strong>5</strong>
+          <span data-i18n="accessibility.publishedLabel">categories are published on our App Store label</span>
         </div>
         <div class="accessibility-status-panel__stat">
-          <strong>0</strong>
-          <span data-i18n="accessibility.blockedLabel">categories are blocked on measurement</span>
+          <strong>2</strong>
+          <span data-i18n="accessibility.pendingLabel">categories are still being validated and not yet claimed</span>
         </div>
         <div class="accessibility-status-panel__stat">
-          <strong>0</strong>
-          <span data-i18n="accessibility.publishedLabel">categories are published on our App Store label so far</span>
+          <strong>2</strong>
+          <span data-i18n="accessibility.naLabel">categories do not apply to JustFlip!</span>
         </div>
       </aside>
     </section>
@@ -123,44 +116,47 @@
           <span class="section__number">01</span>
           <h2 class="headline" data-i18n="accessibility.overviewTitle">A useful report, <em>not a marketing checkbox.</em></h2>
           <p class="kicker" data-i18n="accessibility.overviewKicker">
-            Apple’s Accessibility Nutrition Label is a public promise. We are treating it as
-            an evidence boundary: a feature is only claimable after its common tasks work on
-            the device category where we publish it. Our label is therefore empty today — the
-            categories below are published one at a time, per device, as each pass completes.
+            Apple’s Accessibility Nutrition Label is a public promise. We treat it as an evidence boundary: a feature is claimed only after its common tasks work on the device category where we publish it. Five categories now clear that bar on iPhone, iPad and Mac; the others will be published one at a time, as each pass completes.
           </p>
         </div>
       </header>
 
       <div class="a11y-status-grid" aria-label="Accessibility status summary" data-i18n-attr="aria-label" data-i18n-aria-label="accessibility.overviewAria">
+        <article class="a11y-status-card a11y-status-card--ready" data-i18n="accessibility.statusCardType">
+          <span class="a11y-status-card__icon" aria-hidden="true">✓</span>
+          <span class="a11y-status-card__label">Published</span>
+          <h3>Larger Text</h3>
+          <p>Card content, controls and constrained layouts scale with the system text size.</p>
+        </article>
         <article class="a11y-status-card a11y-status-card--ready" data-i18n="accessibility.statusCardDark">
           <span class="a11y-status-card__icon" aria-hidden="true">✓</span>
-          <span class="a11y-status-card__label">Ready to test</span>
+          <span class="a11y-status-card__label">Published</span>
           <h3>Dark Interface</h3>
-          <p>Adaptive light and dark palettes are implemented; device validation remains.</p>
+          <p>Adaptive light and dark palettes follow the system setting; declared for iPhone, iPad and Mac.</p>
         </article>
         <article class="a11y-status-card a11y-status-card--ready" data-i18n="accessibility.statusCardMotion">
           <span class="a11y-status-card__icon" aria-hidden="true">✓</span>
-          <span class="a11y-status-card__label">Ready to test</span>
+          <span class="a11y-status-card__label">Published</span>
           <h3>Reduced Motion</h3>
           <p>Primary animations respect the system setting, including the card flip.</p>
         </article>
         <article class="a11y-status-card a11y-status-card--ready" data-i18n="accessibility.statusCardColor">
           <span class="a11y-status-card__icon" aria-hidden="true">✓</span>
-          <span class="a11y-status-card__label">Ready to test</span>
+          <span class="a11y-status-card__label">Published</span>
           <h3>Differentiate Without Color</h3>
           <p>Status indicators add symbols, dots, outlines or visible values beyond color.</p>
+        </article>
+        <article class="a11y-status-card a11y-status-card--ready" data-i18n="accessibility.statusCardContrast">
+          <span class="a11y-status-card__icon" aria-hidden="true">✓</span>
+          <span class="a11y-status-card__label">Published</span>
+          <h3>Sufficient Contrast</h3>
+          <p>Every design-system pair clears 4.5:1 in light, dark and Increase Contrast.</p>
         </article>
         <article class="a11y-status-card a11y-status-card--close" data-i18n="accessibility.statusCardVoice">
           <span class="a11y-status-card__icon" aria-hidden="true">~</span>
           <span class="a11y-status-card__label">Close</span>
           <h3>VoiceOver + Voice Control</h3>
           <p>Semantic coverage is in place; the custom controls still need human passes.</p>
-        </article>
-        <article class="a11y-status-card a11y-status-card--ready" data-i18n="accessibility.statusCardContrast">
-          <span class="a11y-status-card__icon" aria-hidden="true">✓</span>
-          <span class="a11y-status-card__label">Measured and fixed</span>
-          <h3>Sufficient Contrast</h3>
-          <p>Every design-system pair now clears 4.5:1 in light, dark and Increase Contrast.</p>
         </article>
       </div>
     </section>
@@ -221,7 +217,7 @@
               <th scope="row"><span class="a11y-feature-icon" aria-hidden="true">Aa</span> Larger Text</th>
               <td><strong>Dynamic Type</strong><small>Scalable controls · card body · adaptive layouts</small></td>
               <td>Typography uses scalable system styles and metrics. Card content now scales too, rather than being rendered at a fixed size. Statistics grids and other constrained layouts adapt at accessibility sizes.</td>
-              <td><span class="a11y-badge a11y-badge--ready">Effectively done</span><small>AX5 device validation remains. The audit’s last 9 findings are system-capped controls or unattributed elements.</small></td>
+              <td><span class="a11y-badge a11y-badge--ready">Published</span><small>On our App Store label for iPhone, iPad and Mac. Common tasks CT1–CT8 passed.</small></td>
             </tr>
             <tr data-i18n="accessibility.rowTouchTargets">
               <th scope="row"><span class="a11y-feature-icon" aria-hidden="true">44</span> Touch targets</th>
@@ -235,25 +231,25 @@
               <th scope="row"><span class="a11y-feature-icon" aria-hidden="true">☾</span> Dark Interface</th>
               <td><strong>System appearance</strong><small>Light/dark colorsets · no forced appearance</small></td>
               <td>The app follows the system appearance and uses adaptive light/dark colorsets throughout the design system. It does not force a light or dark interface.</td>
-              <td><span class="a11y-badge a11y-badge--ready">Ready to test</span><small>Walk CT1–CT8 on iPhone, iPad and Mac.</small></td>
+              <td><span class="a11y-badge a11y-badge--ready">Published</span><small>On our App Store label for iPhone, iPad and Mac. Common tasks CT1–CT8 passed.</small></td>
             </tr>
             <tr data-i18n="accessibility.rowReducedMotion">
               <th scope="row"><span class="a11y-feature-icon" aria-hidden="true">≈</span> Reduced Motion</th>
               <td><strong>Calmer transitions</strong><small>Card flip · onboarding · progress · review results</small></td>
               <td>Primary animation sites are gated by the system Reduce Motion setting. This includes card flipping, onboarding illustrations, review-result motion, tracker fills, sync pulses and other transitions. A mirrored answer-side issue was fixed.</td>
-              <td><span class="a11y-badge a11y-badge--ready">Ready to test</span><small>Full device regression remains.</small></td>
+              <td><span class="a11y-badge a11y-badge--ready">Published</span><small>On our App Store label for iPhone, iPad and Mac. Common tasks CT1–CT8 passed.</small></td>
             </tr>
             <tr data-i18n="accessibility.rowWithoutColor">
               <th scope="row"><span class="a11y-feature-icon" aria-hidden="true">●</span> Without color alone</th>
               <td><strong>Differentiate Without Color</strong><small>Symbols · visible values · heatmap dots · outlines</small></td>
               <td>Learning urgency and response indicators add distinct symbols when requested. Statistics use positions, point marks and visible percentages; the consistency heatmap adds dots and a distinct today outline in grayscale-friendly mode.</td>
-              <td><span class="a11y-badge a11y-badge--ready">Ready to test</span><small>Enable Differentiate Without Color plus grayscale, then walk CT1–CT8.</small></td>
+              <td><span class="a11y-badge a11y-badge--ready">Published</span><small>On our App Store label for iPhone, iPad and Mac. Common tasks CT1–CT8 passed.</small></td>
             </tr>
             <tr data-i18n="accessibility.rowContrast">
               <th scope="row"><span class="a11y-feature-icon" aria-hidden="true">◒</span> Sufficient Contrast</th>
               <td><strong>Measured contrast</strong><small>Gilded palette · light/dark pairs · chart tints</small></td>
               <td>Every colour is an asset-catalog entry, so its contrast ratio is computed rather than sampled — in light, dark, and both Increase Contrast appearances at once. Gold that decorates and gold that is read are now separate tokens: glows and gradients keep their values, text does not. The review grade buttons, which had taken the system red/orange/green/blue, now use a palette measured against the app’s own surfaces.</td>
-              <td><span class="a11y-badge a11y-badge--ready">Measured</span><small>The worst finding was a screen title at 1.57:1, and the review buttons at 1.90:1. Every declared pair now clears 4.5:1 in all four appearances.</small></td>
+              <td><span class="a11y-badge a11y-badge--ready">Published</span><small>The worst finding was a screen title at 1.57:1, and the review buttons at 1.90:1. Every declared pair now clears 4.5:1 in all four appearances.</small></td>
             </tr>
 
             <tr class="a11y-table__group" data-i18n="accessibility.groupSpoken"><th colspan="4" scope="rowgroup"><span class="a11y-group-icon" aria-hidden="true">◖</span> Spoken learning &amp; media</th></tr>
@@ -281,7 +277,7 @@
               <th scope="row"><span class="a11y-feature-icon" aria-hidden="true">⌘</span> Device scope</th>
               <td><strong>One core workflow</strong><small>iPhone · iPad · Mac Catalyst · Apple Watch companion</small></td>
               <td>The core study experience spans iPhone, iPad and Mac; Apple Watch provides a focused review companion. Accessibility label decisions are made per device category, not inferred from another platform.</td>
-              <td><span class="a11y-badge a11y-badge--pending">Per-platform</span><small>Each claimed category must pass its common tasks on every platform where it is published.</small></td>
+              <td><span class="a11y-badge a11y-badge--pending">Per-platform</span><small>Each published category passed its common tasks on iPhone, iPad and Mac. VoiceOver and Voice Control remain unclaimed.</small></td>
             </tr>
           </tbody>
         </table>
@@ -321,9 +317,7 @@
         <span class="learning-callout__kicker" data-i18n="accessibility.calloutKicker">Our rule for publishing</span>
         <h3 data-i18n="accessibility.calloutTitle">One blocked task keeps a category unclaimed for that device.</h3>
         <p data-i18n="accessibility.calloutText">
-          Automated audits give us a useful regression gate, but code evidence is not device
-          certification. The remaining validation covers iPhone, iPad and Mac Catalyst, with
-          Larger Text tested on iPhone and iPad. This page will change as those passes are completed.
+          Automated audits give us a regression gate, but code evidence is not device certification. Every published category was walked through all eight tasks on iPhone, iPad and Mac. VoiceOver and Voice Control stay unclaimed until the same is true for them. This page will change as that happens.
         </p>
       </aside>
     </section>
