@@ -53,10 +53,26 @@
 
 % ---------------------------------------------------------------- fonts
 % Fallbacks cover glyphs Plus Jakarta Sans lacks (kana, ♯/♭, arrows).
+% Korean puts Apple SD Gothic Neo first so its Hanja and punctuation match the Hangul.
 \directlua{
   luaotfload.add_fallback("jffallback", {
+$if(korean)$
+    "AppleSDGothicNeo-Regular:mode=harf;",
+    "HiraginoSans-W3:mode=harf;",
+$else$
     "HiraginoSans-W3:mode=harf;",
     "AppleSDGothicNeo-Regular:mode=harf;",
+$endif$
+    "Apple Symbols:mode=harf;",
+  })
+  luaotfload.add_fallback("jffallbackbold", {
+$if(korean)$
+    "AppleSDGothicNeo-Bold:mode=harf;",
+    "HiraginoSans-W6:mode=harf;",
+$else$
+    "HiraginoSans-W6:mode=harf;",
+    "AppleSDGothicNeo-Bold:mode=harf;",
+$endif$
     "Apple Symbols:mode=harf;",
   })
 }
@@ -65,14 +81,21 @@
   UprightFont=*-Regular, BoldFont=*-Bold,
   ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic,
   RawFeature={fallback=jffallback}, WordSpace={1,1.1,0.4},
-  FontFace={sb}{n}{*-SemiBold}, FontFace={sb}{it}{*-SemiBoldItalic},
+  BoldFeatures={RawFeature={fallback=jffallbackbold}},
+  BoldItalicFeatures={RawFeature={fallback=jffallbackbold}},
+  FontFace={sb}{n}{Font=*-SemiBold, Features={RawFeature={fallback=jffallbackbold}}},
+  FontFace={sb}{it}{Font=*-SemiBoldItalic, Features={RawFeature={fallback=jffallbackbold}}},
   FontFace={m}{n}{*-Medium}, FontFace={l}{n}{*-Light},
-  FontFace={eb}{n}{*-ExtraBold}]
+  FontFace={eb}{n}{Font=*-ExtraBold, Features={RawFeature={fallback=jffallbackbold}}}]
 \setmonofont{JetBrainsMono}[
   Path=$fontpath$/, Extension=.otf, Scale=0.86,
   UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic,
   RawFeature={fallback=jffallback;-calt;-liga}]
 \setmathfont{latinmodern-math.otf}
+% Hyphenation patterns for the manual's language; for Japanese, babel also
+% breaks lines between characters (with kinsoku rules).
+\usepackage{babel}
+\babelprovide[import,main]{$babel-lang$}
 \newcommand\semibold{\fontseries{sb}\selectfont}
 \newcommand\medium{\fontseries{m}\selectfont}
 \newcommand\light{\fontseries{l}\selectfont}
@@ -82,7 +105,7 @@
 \linespread{1.22}
 \setlength\parindent{0pt}
 \setlength\parskip{0.62em plus 0.2em minus 0.1em}
-\setlength\emergencystretch{2em}
+\setlength\emergencystretch{4em}
 \raggedbottom
 
 % ---------------------------------------------------------------- pandoc glue
@@ -314,7 +337,7 @@ $highlighting-macros$
       \node[anchor=west,text=jfcream,font=\fontsize{15}{20}\selectfont,text width=7cm,align=left] at (-3.7,0.1)
         {$cover-card$ \jfblank{[…]}.};
       \node[anchor=south east,fill=jfsurfhigh,rounded corners=2.5mm,text=jfprimary,
-        font=\fontsize{8}{9}\selectfont,inner xsep=6pt,inner ysep=3.5pt] at (3.7,-2.25) {\faSync\hspace{4pt}Flip};
+        font=\fontsize{8}{9}\selectfont,inner xsep=6pt,inner ysep=3.5pt] at (3.7,-2.25) {\faSync\hspace{4pt}$labels.flip$};
     \end{scope}
   \end{scope}
   % brand
@@ -325,7 +348,7 @@ $highlighting-macros$
   \node[anchor=south west,inner sep=0pt,text width=16.5cm,align=left]
     at ($$(current page.south west)+(2.4cm,4.6cm)$$) {%
       {\jfeyebrow[jfgold]{$edition$}}\par\vspace{12pt}
-      {\color{jfgold}\fontsize{58}{60}\selectfont\bfseries $manual-title$}\par\vspace{14pt}
+      {\color{jfgold}\fontsize{58}{62}\selectfont\bfseries\raggedright\hyphenpenalty=5000\spaceskip=.28em plus .1em $if(cover-title)$$cover-title$$else$$manual-title$$endif$\par}\vspace{14pt}
       {\color{jfvariant}\fontsize{13}{19}\selectfont\light\begin{minipage}{11.5cm}$manual-subtitle$\end{minipage}}};
   \node[anchor=south west,text=jfoutline,font=\fontsize{8}{10}\selectfont] at ($$(current page.south west)+(2.4cm,2.2cm)$$)
     {just-flip.app};

@@ -94,10 +94,22 @@ Paragraphs beside the picture.
 3. Translate the chapter files. Leave these alone: code blocks, `{#ids}`, class names such as
    `.card` or `.blank`, and `side="question"`. Translate the text inside `[…]{.ui}` so it
    matches the app's own wording for that language.
-4. Run `manual-src/build.sh <lang>` and check both outputs.
+4. Add the language to the `case` in `build.sh` that picks its babel name (hyphenation).
+5. Run `manual-src/build.sh <lang>` and check both outputs.
 
-The PDF can already typeset Japanese and Korean glyphs, through a font fallback to Hiragino Sans and
-Apple SD Gothic Neo. Proper CJK line breaking will need `luatexja` when those translations start.
+All nine app languages are translated. After changing a chapter in English, rebuild every language:
+
+```sh
+for l in en cs de es fr it ja ko pt-br; do manual-src/build.sh $l; done
+```
+
+Each page lists the other languages as `hreflang` alternates, picked up from the folders here.
+`js/i18n.js` routes between them: the English manual forwards to the visitor's language, a
+translated page stays as it is unless `?lang=` asks otherwise, and the language switcher opens the
+same page in the other language.
+
+Japanese and Korean glyphs come from a font fallback to Hiragino Sans and Apple SD Gothic Neo.
+Babel breaks Japanese lines between characters, so `luatexja` isn't needed.
 
 ## TeX requirements
 

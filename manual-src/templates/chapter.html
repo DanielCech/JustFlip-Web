@@ -7,10 +7,14 @@
   <meta name="theme-color" content="#131313" />
   <title>$title$ — JustFlip! $manual-title$</title>
   <meta name="description" content="$description$" />
-  <link rel="canonical" href="https://just-flip.app/manual/$slug$/" />
+  <link rel="canonical" href="https://just-flip.app/manual/$langpath$$slug$/" />
+$for(manual-langs)$
+  <link rel="alternate" hreflang="$manual-langs.hreflang$" href="https://just-flip.app/manual/$manual-langs.path$$slug$/" />
+$endfor$
+  <link rel="alternate" hreflang="x-default" href="https://just-flip.app/manual/$slug$/" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="JustFlip!" />
-  <meta property="og:url" content="https://just-flip.app/manual/$slug$/" />
+  <meta property="og:url" content="https://just-flip.app/manual/$langpath$$slug$/" />
   <meta property="og:title" content="$title$ — JustFlip! $manual-title$" />
   <meta property="og:description" content="$description$" />
   <meta property="og:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
@@ -24,7 +28,7 @@
 $highlighting-css$
   </style>
 </head>
-<body class="manual-page">
+<body class="manual-page" data-manual-lang="$lang$" data-manual-base="${root}manual/" data-manual-page="$slug$/">
 ${nav()}
   <main id="top">
     <section class="m-hero">

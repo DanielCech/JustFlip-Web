@@ -4886,6 +4886,12 @@
   function setLocale(locale) {
     if (locale === current) return;
 
+    if (manual) {
+      try { w.localStorage.setItem(STORAGE, locale); } catch (_) { /* noop */ }
+      w.location.href = manualUrl(locale);
+      return;
+    }
+
     // Switching TO English = restore original HTML
     if (locale === DEFAULT) {
       restoreOriginals();
@@ -5044,8 +5050,42 @@
   /* ---------------------------------------------------
    * Init
    * ------------------------------------------------- */
+  /* ---------------------------------------------------
+   * Manual pages are built once per language
+   * (manual/ = English, manual/<lang>/ = the others), so
+   * changing language there means opening the sibling page.
+   * ------------------------------------------------- */
+  const manual = document.body && document.body.dataset.manualLang
+    ? { lang: document.body.dataset.manualLang, base: document.body.dataset.manualBase, page: document.body.dataset.manualPage || '' }
+    : null;
+
+  function manualUrl(locale) {
+    return manual.base + (locale === DEFAULT ? '' : locale + '/') + manual.page + w.location.hash;
+  }
+
+  // A localized manual page is an explicit choice and wins, so shared links
+  // stay put. The English one is where "Manual" in the nav lands, so it
+  // forwards to the visitor's language; ?lang= forwards from any of them.
+  function manualRedirect() {
+    let param = false;
+    try { param = new URLSearchParams(w.location.search).has('lang'); } catch (_) { /* noop */ }
+    if (!param && manual.lang !== DEFAULT) return manual.lang;
+    const wanted = detect();
+    if (wanted !== manual.lang) {
+      w.location.replace(manualUrl(wanted));
+      return null;
+    }
+    return wanted;
+  }
+
   function init() {
-    current = detect();
+    if (manual) {
+      const lang = manualRedirect();
+      if (!lang) return;
+      current = lang;
+    } else {
+      current = detect();
+    }
     load(current);
 
     // If the detected/requested locale has no bundle, fall back to English

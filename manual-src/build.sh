@@ -20,9 +20,11 @@ BUILD="$HERE/.build/$LANG_CODE"
 if [[ "$LANG_CODE" == "en" ]]; then
   OUT="$SITE/manual"
   UP=""
+  LANGPATH=""
 else
   OUT="$SITE/manual/$LANG_CODE"
   UP="../"
+  LANGPATH="$LANG_CODE/"
 fi
 
 [[ -d "$SRC" ]] || { echo "No sources for '$LANG_CODE' in $SRC" >&2; exit 1; }
@@ -34,11 +36,30 @@ THEME="$HERE/highlight/gilded.theme"
 CHAPTERS=( "$SRC"/[0-9][0-9]-*.md )
 PDF_FILE="$(sed -n 's/^pdf-file: *"\{0,1\}\([^"]*\)"\{0,1\}$/\1/p' "$META")"
 
+# Every translated language, for the hreflang alternates on each page.
+LANGS_META="$BUILD/langs.yaml"
+{
+  echo "langpath: \"$LANGPATH\""
+  echo "manual-langs:"
+  for dir in "$HERE"/*/metadata.yaml; do
+    code="$(basename "$(dirname "$dir")")"
+    path="$code/"; [[ "$code" == "en" ]] && path=""
+    hreflang="$code"; [[ "$code" == *-* ]] && hreflang="${code%%-*}-$(tr '[:lower:]' '[:upper:]' <<< "${code#*-}")"
+    echo "  - { hreflang: \"$hreflang\", path: \"$path\" }"
+  done
+} > "$LANGS_META"
+
+case "$LANG_CODE" in
+  cs) BABEL=czech ;;     de) BABEL=ngerman ;;  es) BABEL=spanish ;;
+  fr) BABEL=french ;;    it) BABEL=italian ;;  pt-br) BABEL=brazilian ;;
+  ja) BABEL=japanese ;;  ko) BABEL=korean ;;   *) BABEL=english ;;
+esac
+
 front() { sed -n "s/^$2: *\"\{0,1\}\([^\"]*\)\"\{0,1\}$/\1/p" "$1" | head -1; }
 
 # ---------------------------------------------------------------- web
 echo "▸ web ($LANG_CODE)"
-pandoc --metadata-file="$META" "$SRC/index.md" \
+pandoc --metadata-file="$META" --metadata-file="$LANGS_META" "$SRC/index.md" \
   --from markdown --to html5 \
   --template "$HERE/templates/index.html" \
   --lua-filter "$FILTER" \
@@ -49,7 +70,7 @@ for chapter in "${CHAPTERS[@]}"; do
   slug="$(front "$chapter" slug)"
   number="$(front "$chapter" number)"
   mkdir -p "$OUT/$slug"
-  pandoc --metadata-file="$META" "$chapter" \
+  pandoc --metadata-file="$META" --metadata-file="$LANGS_META" "$chapter" \
     --from markdown --to html5 \
     --template "$HERE/templates/chapter.html" \
     --lua-filter "$FILTER" \
@@ -70,6 +91,7 @@ pandoc --metadata-file="$META" "${CHAPTERS[@]}" \
   --lua-filter "$FILTER" \
   --syntax-highlighting="$THEME" \
   -M asset-prefix="$SITE/" -M site-root="$SITE" \
+  -V babel-lang="$BABEL" -V korean="$([[ $LANG_CODE == ko ]] && echo 1)" \
   -V fontpath="$HERE/fonts" -V iconpath="$SITE/images/Icon.png" \
   -o "$BUILD/manual.tex"
 
