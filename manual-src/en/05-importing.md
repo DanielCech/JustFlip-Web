@@ -69,11 +69,13 @@ appear in Spotlight (Chapter 8).
 JustFlip! imports Anki's deck packages (`.apkg`) and collection
 packages (`.colpkg`), from old and current versions of Anki. In Anki,
 use **File › Export**, choose *Anki Deck Package*, and include media.
-Then import the file as above.
+To bring your review progress too, also tick *Include scheduling
+information*. Then import the file as above.
 
 The promise is simple: **the learning content comes across; Anki's
 presentation doesn't.** Your words, pictures, sounds, formulas and
-tags arrive. Anki's styling, scripts and scheduling stay behind.
+tags arrive, and so can your review progress. Anki's styling and
+scripts stay behind.
 
 ### What comes across
 
@@ -91,14 +93,24 @@ tags arrive. Anki's styling, scripts and scheduling stay behind.
 - **Formatting**: bold, italic, lists, links, small tables, maths and
   sub- and superscripts.
 - **Tags.**
+- **Your review progress**, if the export included scheduling
+  information. Each card you studied keeps its interval, ease, due
+  date and lapses, and its review log comes along as history, so a
+  deck you have studied for years carries on where it was. Suspended
+  cards arrive retired. Turn off [Keep Anki progress]{.ui} on the import
+  sheet to start every card as new instead.
 - **Deck structure, flattened.** JustFlip! has no sub-decks, so
   `Languages::Spanish::Verbs` becomes one deck called
   **Languages / Spanish / Verbs**.
 
 ### What stays in Anki
 
-- **Your review history.** Every card starts as new. Anki's intervals,
-  ease and FSRS settings are not imported.
+- **Anki's FSRS parameters.** If you used FSRS in Anki, its
+  parameters and each card's memory state are not imported. A card
+  keeps its interval, due date and review log, and takes the default
+  ease.
+- **Progress from shared decks.** A deck you downloaded and never
+  studied has no history to bring, so its cards start as new.
 - **Styling.** Custom CSS, fonts and colours are simplified away.
 - **Code.** JavaScript and add-ons never run, and are not kept.
 - **Anything online.** Remote images, embedded pages and iframes are not
@@ -135,12 +147,19 @@ first — [Checking the package…]{.ui}, [Unpacking…]{.ui},
 [Reading cards…]{.ui} — then shows [Ready to study]{.ui}: how many Anki
 decks, [Cards]{.ui}, [Images]{.ui} and [Audio]{.ui} it found.
 
+If the package contains cards you have studied, the sheet also shows
+[Keep Anki progress]{.ui}, on by default. With it on, those cards keep
+their Anki schedule and review history. Turn it off and every card
+starts fresh.
+
 ![The Import from Anki sheet: the summary, What changed and Options.](images/manual/{lang}/05-anki-report.jpg){.phone}
 
 Under [What changed]{.ui} is the import report: one plain sentence for
 each thing worth knowing before you commit. For example:
 
-- *Cards start fresh here. Your Anki review history stays in Anki.*
+- *240 cards keep their Anki schedule and review history.* (Or, for a
+  shared deck or with [Keep Anki progress]{.ui} off: *Cards start fresh
+  here. Your Anki review history stays in Anki.*)
 - *Answers no longer repeat the question — JustFlip keeps it on screen
   while you flip.*
 - *12 images could not be read and were left out.*

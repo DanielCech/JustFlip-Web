@@ -247,12 +247,13 @@ class="header-section-number">5.2</span> Anki decks</h2>
 <p>JustFlip! imports Anki’s deck packages (<code>.apkg</code>) and
 collection packages (<code>.colpkg</code>), from old and current
 versions of Anki. In Anki, use <strong>File › Export</strong>, choose
-<em>Anki Deck Package</em>, and include media. Then import the file as
-above.</p>
+<em>Anki Deck Package</em>, and include media. To bring your review
+progress too, also tick <em>Include scheduling information</em>. Then
+import the file as above.</p>
 <p>The promise is simple: <strong>the learning content comes across;
 Anki’s presentation doesn’t.</strong> Your words, pictures, sounds,
-formulas and tags arrive. Anki’s styling, scripts and scheduling stay
-behind.</p>
+formulas and tags arrive, and so can your review progress. Anki’s
+styling and scripts stay behind.</p>
 <h3 data-number="5.2.1" id="what-comes-across"><span
 class="header-section-number">5.2.1</span> What comes across</h3>
 <ul>
@@ -275,6 +276,12 @@ cards.</li>
 <li><strong>Formatting</strong>: bold, italic, lists, links, small
 tables, maths and sub- and superscripts.</li>
 <li><strong>Tags.</strong></li>
+<li><strong>Your review progress</strong>, if the export included
+scheduling information. Each card you studied keeps its interval, ease,
+due date and lapses, and its review log comes along as history, so a
+deck you have studied for years carries on where it was. Suspended cards
+arrive retired. Turn off <span class="ui">Keep Anki progress</span> on
+the import sheet to start every card as new instead.</li>
 <li><strong>Deck structure, flattened.</strong> JustFlip! has no
 sub-decks, so <code>Languages::Spanish::Verbs</code> becomes one deck
 called <strong>Languages / Spanish / Verbs</strong>.</li>
@@ -282,8 +289,13 @@ called <strong>Languages / Spanish / Verbs</strong>.</li>
 <h3 data-number="5.2.2" id="what-stays-in-anki"><span
 class="header-section-number">5.2.2</span> What stays in Anki</h3>
 <ul>
-<li><strong>Your review history.</strong> Every card starts as new.
-Anki’s intervals, ease and FSRS settings are not imported.</li>
+<li><strong>Anki’s FSRS parameters.</strong> If you used FSRS in Anki,
+its parameters and each card’s memory state are not imported. A card
+keeps its interval, due date and review log, and takes the default
+ease.</li>
+<li><strong>Progress from shared decks.</strong> A deck you downloaded
+and never studied has no history to bring, so its cards start as
+new.</li>
 <li><strong>Styling.</strong> Custom CSS, fonts and colours are
 simplified away.</li>
 <li><strong>Code.</strong> JavaScript and add-ons never run, and are not
@@ -331,6 +343,10 @@ class="ui">Unpacking…</span>, <span class="ui">Reading cards…</span> —
 then shows <span class="ui">Ready to study</span>: how many Anki decks,
 <span class="ui">Cards</span>, <span class="ui">Images</span> and <span
 class="ui">Audio</span> it found.</p>
+<p>If the package contains cards you have studied, the sheet also shows
+<span class="ui">Keep Anki progress</span>, on by default. With it on,
+those cards keep their Anki schedule and review history. Turn it off and
+every card starts fresh.</p>
 <figure class="m-figure m-figure--phone">
 <img src="../../images/manual/en/05-anki-report.jpg" class="phone"
 alt="The Import from Anki sheet: the summary, What changed and Options." />
@@ -341,8 +357,10 @@ What changed and Options.</figcaption>
 plain sentence for each thing worth knowing before you commit. For
 example:</p>
 <ul>
-<li><em>Cards start fresh here. Your Anki review history stays in
-Anki.</em></li>
+<li><em>240 cards keep their Anki schedule and review history.</em> (Or,
+for a shared deck or with <span class="ui">Keep Anki progress</span>
+off: <em>Cards start fresh here. Your Anki review history stays in
+Anki.</em>)</li>
 <li><em>Answers no longer repeat the question — JustFlip keeps it on
 screen while you flip.</em></li>
 <li><em>12 images could not be read and were left out.</em></li>
