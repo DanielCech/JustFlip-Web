@@ -1,7 +1,7 @@
 JustFlip! Press Kit
 ===================
 
-This bundle contains approved press assets for JustFlip! (August 2026).
+This bundle contains approved press assets for JustFlip! (October 2026).
 
 Contents
 --------
@@ -18,7 +18,8 @@ Contents
 About JustFlip!
 ---------------
 JustFlip! is a native Apple spaced-repetition flashcard app by Daniel Čech.
-It is available for iOS, iPadOS, macOS and watchOS.
+It is available for iPhone, iPad, Mac and Apple Watch.
+App Store: https://apps.apple.com/app/id6770141421?ct=presskit
 
 Press contact
 ------------
