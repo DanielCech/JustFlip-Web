@@ -72,10 +72,11 @@ JustFlip! importa i pacchetti di mazzi (`.apkg`) e di raccolte
 usa **File › Esporta**, scegli *Pacchetto mazzo Anki* e includi i
 contenuti multimediali. Poi importa il file come visto sopra.
 
+Per portare con te i progressi, spunta anche *Include scheduling information* (includi le informazioni di pianificazione) durante l’esportazione.
+
 La promessa è semplice: **il contenuto da imparare arriva; la
 presentazione di Anki no.** Le tue parole, immagini, suoni, formule e
-tag arrivano. Gli stili, gli script e la pianificazione di Anki restano
-indietro.
+tag arrivano. Possono arrivare anche i tuoi progressi di ripasso. Gli stili e gli script di Anki restano indietro.
 
 ### Cosa arriva
 
@@ -101,12 +102,12 @@ indietro.
 - **La struttura dei mazzi, appiattita.** JustFlip! non ha sottomazzi,
   quindi `Languages::Spanish::Verbs` diventa un solo mazzo chiamato
   **Languages / Spanish / Verbs**.
+- **I tuoi progressi di ripasso**, se l’esportazione include le informazioni di pianificazione. Ogni carta studiata mantiene intervallo, facilità, data di scadenza ed errori, e il suo registro dei ripassi arriva come cronologia. Un mazzo che studi da anni riprende quindi da dove era. Le carte sospese arrivano ritirate. Disattiva [Mantieni i progressi di Anki]{.ui} nel foglio di importazione se vuoi che tutte le carte partano come nuove.
 
 ### Cosa resta in Anki
 
-- **La cronologia dei ripassi.** Ogni carta parte come nuova. Gli
-  intervalli, la facilità e le impostazioni FSRS di Anki non vengono
-  importati.
+- **I parametri FSRS di Anki.** Se in Anki usi FSRS, i suoi parametri e lo stato di memoria delle carte non vengono importati. Una carta mantiene intervallo, data di scadenza e registro dei ripassi, e riceve la facilità predefinita.
+- **I progressi dei mazzi condivisi.** Un mazzo scaricato che non hai mai studiato non ha cronologia da portare, quindi le sue carte partono come nuove.
 - **Gli stili.** CSS personalizzati, font e colori vengono semplificati.
 - **Il codice.** JavaScript e componenti aggiuntivi non vengono mai
   eseguiti né conservati.
@@ -146,14 +147,15 @@ pacchetto — [Controllo il pacchetto…]{.ui}, [Estrazione…]{.ui},
 [Leggo le carte…]{.ui} — poi mostra [Pronto da studiare]{.ui}: quanti
 mazzi di Anki, [Carte]{.ui}, [Immagini]{.ui} e [Audio]{.ui} ha trovato.
 
+Se il pacchetto contiene carte che hai già studiato, il foglio mostra anche [Mantieni i progressi di Anki]{.ui}, attivo per impostazione predefinita. Se è attivo, quelle carte mantengono la pianificazione e la cronologia di ripasso di Anki. Se lo disattivi, tutte le carte ripartono da zero.
+
 ![Il pannello Importa da Anki: il riepilogo, Cosa è cambiato e Opzioni.](images/manual/{lang}/05-anki-report.jpg){.phone}
 
 Sotto [Cosa è cambiato]{.ui} c'è il resoconto dell'importazione: una
 frase semplice per ogni cosa che vale la pena sapere prima di
 confermare. Per esempio:
 
-- *Qui le carte ripartono da zero. La cronologia di ripasso resta in
-  Anki.*
+- *240 schede mantengono la pianificazione e la cronologia di ripasso di Anki.* (Con un mazzo condiviso o con [Mantieni i progressi di Anki]{.ui} disattivato: *Qui le carte ripartono da zero. La cronologia di ripasso resta in Anki.*)
 - *Le risposte non ripetono più la domanda: JustFlip la tiene a schermo
   mentre giri la carta.*
 - *12 immagini non sono state lette e sono state escluse.*

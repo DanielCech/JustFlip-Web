@@ -73,10 +73,11 @@ Anki, usa **Archivo › Exportar**, elige *Paquete de mazo de Anki* e
 incluye los archivos multimedia. Luego importa el archivo como se
 explica arriba.
 
+Si quieres traer también tu progreso, marca además *Include scheduling information* (incluir la información de programación) al exportar.
+
 La promesa es sencilla: **se trae el contenido de aprendizaje, no la
 presentación de Anki.** Llegan tus palabras, imágenes, sonidos,
-fórmulas y etiquetas. Los estilos, los scripts y la programación de
-Anki se quedan atrás.
+fórmulas y etiquetas. También puede venir tu progreso de repaso. Los estilos y los scripts de Anki se quedan atrás.
 
 ### Qué se trae
 
@@ -101,12 +102,12 @@ Anki se quedan atrás.
 - **La estructura de mazos, aplanada.** JustFlip! no tiene submazos, así
   que `Idiomas::Inglés::Verbos` se convierte en un único mazo llamado
   **Idiomas / Inglés / Verbos**.
+- **Tu progreso de repaso**, si la exportación incluye la información de programación. Cada tarjeta que hayas estudiado conserva su intervalo, su facilidad, su fecha de repaso y sus fallos, y su registro de repasos llega como historial. Así, un mazo que llevas años estudiando sigue donde estaba. Las tarjetas suspendidas llegan retiradas. Desactiva [Conservar el progreso de Anki]{.ui} en la hoja de importación si prefieres que todas empiecen como nuevas.
 
 ### Qué se queda en Anki
 
-- **Tu historial de repasos.** Todas las tarjetas empiezan como nuevas.
-  No se importan los intervalos, la facilidad ni los ajustes FSRS de
-  Anki.
+- **Los parámetros FSRS de Anki.** Si usas FSRS en Anki, no se importan sus parámetros ni el estado de memoria de cada tarjeta. La tarjeta conserva su intervalo, su fecha de repaso y su registro de repasos, y recibe la facilidad predeterminada.
+- **El progreso de mazos compartidos.** Un mazo descargado que nunca estudiaste no tiene historial que traer, así que sus tarjetas empiezan como nuevas.
 - **Los estilos.** El CSS personalizado, las fuentes y los colores se
   simplifican.
 - **El código.** El JavaScript y los complementos nunca se ejecutan, y
@@ -148,14 +149,15 @@ Al importar un único archivo de Anki desde el menú
 cuántos mazos de Anki, [Tarjetas]{.ui}, [Imágenes]{.ui} y [Audio]{.ui}
 ha encontrado.
 
+Si el paquete contiene tarjetas que ya has estudiado, la hoja muestra también [Conservar el progreso de Anki]{.ui}, activado por defecto. Con él activado, esas tarjetas conservan su programación y su historial de repaso de Anki. Si lo desactivas, todas las tarjetas empiezan de cero.
+
 ![La hoja Importar desde Anki: el resumen, Qué ha cambiado y Opciones.](images/manual/{lang}/05-anki-report.jpg){.phone}
 
 En [Qué ha cambiado]{.ui} está el informe de importación: una frase
 sencilla por cada cosa que conviene saber antes de confirmar. Por
 ejemplo:
 
-- *Las tarjetas empiezan de cero aquí. Tu historial de repaso se queda
-  en Anki.*
+- *240 tarjetas conservan su programación y su historial de repaso de Anki.* (Con un mazo compartido o con [Conservar el progreso de Anki]{.ui} desactivado: *Las tarjetas empiezan de cero aquí. Tu historial de repaso se queda en Anki.*)
 - *Las respuestas ya no repiten la pregunta: JustFlip la mantiene en
   pantalla al girar.*
 - *No se pudieron leer 12 imágenes y se han dejado fuera.*

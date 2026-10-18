@@ -246,9 +246,11 @@ class="header-section-number">5.2</span> Anki 덱</h2>
 가져올 수 있어요. Anki에서 <strong>파일 › 내보내기</strong>를 사용해
 <em>Anki 덱 패키지</em>를 고르고, 미디어를 포함하세요. 그런 다음 위에서
 설명한 대로 파일을 가져오세요.</p>
+<p>복습 진도도 함께 가져오려면 내보낼 때 <em>Include scheduling
+information</em>(일정 정보 포함)도 체크하세요.</p>
 <p>약속은 간단해요. <strong>학습 내용은 넘어오고, Anki의 표현 방식은
-넘어오지 않아요.</strong> 단어, 그림, 소리, 수식, 태그는 들어와요.
-Anki의 스타일, 스크립트, 일정은 남겨 둬요.</p>
+넘어오지 않아요.</strong> 단어, 그림, 소리, 수식, 태그는 들어와요. 복습
+진도도 함께 가져올 수 있어요. Anki의 스타일과 스크립트는 남겨 둬요.</p>
 <h3 data-number="5.2.1" id="넘어오는-것"><span
 class="header-section-number">5.2.1</span> 넘어오는 것</h3>
 <ul>
@@ -272,12 +274,21 @@ Image Occlusion Enhanced 애드온으로 만든 것 모두 JustFlip!의 이미�
 <li><strong>평평하게 펼쳐지는 덱 구조.</strong> JustFlip!에는 하위 덱이
 없기 때문에 <code>Languages::Spanish::Verbs</code>는 <strong>Languages /
 Spanish / Verbs</strong>라는 덱 하나가 돼요.</li>
+<li><strong>복습 진도</strong>(내보내기에 일정 정보가 포함된 경우).
+공부한 카드는 각각 간격, 용이도, 다음 복습일, 망각 횟수를 그대로
+유지하고, 복습 로그도 기록으로 함께 넘어와요. 몇 년 동안 공부한 덱도
+하던 곳에서 이어서 할 수 있어요. 일시 중지된 카드는 졸업된 카드로
+들어와요. 모든 카드를 새 카드로 시작하려면 가져오기 시트에서 <span
+class="ui">Anki 진도 유지</span>를 끄세요.</li>
 </ul>
 <h3 data-number="5.2.2" id="anki에-남는-것"><span
 class="header-section-number">5.2.2</span> Anki에 남는 것</h3>
 <ul>
-<li><strong>복습 기록.</strong> 모든 카드는 새 카드로 시작해요. Anki의
-간격, 용이도, FSRS 설정은 가져오지 않아요.</li>
+<li><strong>Anki의 FSRS 매개변수.</strong> Anki에서 FSRS를 쓰고 있다면
+그 매개변수와 각 카드의 기억 상태는 가져오지 않아요. 카드는 간격,
+복습일, 복습 로그를 유지하고, 용이도는 기본값이 돼요.</li>
+<li><strong>공유 덱의 진도.</strong> 내려받기만 하고 공부한 적 없는 덱은
+넘겨줄 기록이 없어서 카드가 새 카드로 시작해요.</li>
 <li><strong>스타일.</strong> 사용자 정의 CSS, 글꼴, 색은 단순하게
 정리돼요.</li>
 <li><strong>코드.</strong> JavaScript와 애드온은 실행되지 않고,
@@ -324,6 +335,9 @@ class="ui">카드를 읽는 중…</span>) 나서 <span class="ui">학습 준비
 완료</span>를 보여 줘요. 찾아낸 Anki 덱 수와 <span
 class="ui">카드</span>, <span class="ui">이미지</span>, <span
 class="ui">오디오</span> 수가 표시돼요.</p>
+<p>패키지에 이미 공부한 카드가 있으면 시트에 <span class="ui">Anki 진도
+유지</span>도 나타나요. 기본으로 켜져 있어요. 켜 두면 그 카드들은 Anki의
+일정과 복습 기록을 유지해요. 끄면 모든 카드가 처음부터 시작해요.</p>
 <figure class="m-figure m-figure--phone">
 <img src="../../../images/manual/en/05-anki-report.jpg" class="phone"
 alt="Anki에서 가져오기 시트: 요약, 바뀐 점, 옵션." />
@@ -334,8 +348,9 @@ alt="Anki에서 가져오기 시트: 요약, 바뀐 점, 옵션." />
 확정하기 전에 알아 둘 만한 사항마다 쉬운 문장 하나씩이에요. 예를
 들면:</p>
 <ul>
-<li><em>카드는 여기서 처음부터 시작합니다. Anki 복습 기록은 Anki에
-남습니다.</em></li>
+<li><em>카드 240장이 Anki의 일정과 복습 기록을 유지합니다.</em> (공유
+덱이거나 <span class="ui">Anki 진도 유지</span>를 끈 경우: <em>카드는
+여기서 처음부터 시작합니다. Anki 복습 기록은 Anki에 남습니다.</em>)</li>
 <li><em>답면이 더 이상 질문을 반복하지 않습니다. JustFlip이 뒤집는 동안
 질문을 계속 보여 줍니다.</em></li>
 <li><em>이미지 12개를 읽을 수 없어 제외했습니다.</em></li>

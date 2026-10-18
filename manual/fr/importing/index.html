@@ -262,10 +262,13 @@ les paquets de collection (<code>.colpkg</code>), des anciennes comme
 des récentes versions d’Anki. Dans Anki, utilise <strong>Fichier ›
 Exporter</strong>, choisis <em>Paquet de cartes Anki</em> et inclus les
 médias. Importe ensuite le fichier comme ci-dessus.</p>
+<p>Pour emporter aussi ta progression, coche en plus <em>Include
+scheduling information</em> (inclure les informations de planification)
+à l’export.</p>
 <p>La promesse est simple : <strong>le contenu d’apprentissage est
 repris ; la présentation d’Anki ne l’est pas.</strong> Tes mots, images,
-sons, formules et tags arrivent. Les styles, scripts et la planification
-d’Anki restent derrière.</p>
+sons, formules et tags arrivent. Ta progression de révision peut venir
+aussi. Les styles et les scripts d’Anki restent derrière.</p>
 <h3 data-number="5.2.1" id="ce-qui-est-repris"><span
 class="header-section-number">5.2.1</span> Ce qui est repris</h3>
 <ul>
@@ -293,13 +296,25 @@ petits tableaux, maths, indices et exposants.</li>
 pas de sous-paquets : <code>Langues::Espagnol::Verbes</code> devient
 donc un seul paquet appelé <strong>Langues / Espagnol /
 Verbes</strong>.</li>
+<li><strong>Ta progression de révision</strong>, si l’export contient
+les informations de planification. Chaque carte étudiée garde son
+intervalle, sa facilité, sa date d’échéance et ses oublis, et son
+journal de révision arrive comme historique. Un paquet que tu révises
+depuis des années reprend donc là où il en était. Les cartes suspendues
+arrivent retirées. Désactive <span class="ui">Conserver la progression
+Anki</span> dans la feuille d’import pour que toutes les cartes
+repartent de zéro.</li>
 </ul>
 <h3 data-number="5.2.2" id="ce-qui-reste-dans-anki"><span
 class="header-section-number">5.2.2</span> Ce qui reste dans Anki</h3>
 <ul>
-<li><strong>Ton historique de révision.</strong> Chaque carte commence
-comme nouvelle. Les intervalles, la facilité et les réglages FSRS d’Anki
-ne sont pas importés.</li>
+<li><strong>Les paramètres FSRS d’Anki.</strong> Si tu utilises FSRS
+dans Anki, ses paramètres et l’état de mémoire des cartes ne sont pas
+importés. Une carte garde son intervalle, sa date d’échéance et son
+journal de révision, et reçoit la facilité par défaut.</li>
+<li><strong>La progression des paquets partagés.</strong> Un paquet
+téléchargé que tu n’as jamais étudié n’a pas d’historique à apporter :
+ses cartes commencent donc comme nouvelles.</li>
 <li><strong>Les styles.</strong> Le CSS personnalisé, les polices et les
 couleurs sont simplifiés.</li>
 <li><strong>Le code.</strong> Le JavaScript et les modules
@@ -350,6 +365,11 @@ cartes…</span> — puis affiche <span class="ui">Prêt à réviser</span> :
 combien de paquets Anki, de <span class="ui">Cartes</span>, d’<span
 class="ui">Images</span> et d’<span class="ui">Audio</span> elle a
 trouvés.</p>
+<p>Si le paquet contient des cartes que tu as déjà étudiées, la feuille
+affiche aussi <span class="ui">Conserver la progression Anki</span>,
+activé par défaut. Activé, ces cartes conservent leur planning et leur
+historique de révision Anki. Désactivé, toutes les cartes repartent de
+zéro.</p>
 <figure class="m-figure m-figure--phone">
 <img src="../../../images/manual/en/05-anki-report.jpg" class="phone"
 alt="La feuille Importer depuis Anki : le résumé, Ce qui a changé et Options." />
@@ -360,8 +380,11 @@ résumé, Ce qui a changé et Options.</figcaption>
 d’import : une phrase simple pour chaque chose bonne à savoir avant de
 valider. Par exemple :</p>
 <ul>
-<li><em>Les cartes repartent de zéro ici. Votre historique de révision
-reste dans Anki.</em></li>
+<li><em>240 cartes conservent leur planning et leur historique de
+révision Anki.</em> (Pour un paquet partagé, ou avec <span
+class="ui">Conserver la progression Anki</span> désactivé : <em>Les
+cartes repartent de zéro ici. Votre historique de révision reste dans
+Anki.</em>)</li>
 <li><em>Les réponses ne répètent plus la question : JustFlip la garde à
 l’écran pendant le retournement.</em></li>
 <li><em>12 images n’ont pas pu être lues et ont été omises.</em></li>

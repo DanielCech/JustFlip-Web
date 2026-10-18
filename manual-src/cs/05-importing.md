@@ -70,9 +70,10 @@ JustFlip! importuje balíčky Anki (`.apkg`) i balíčky kolekcí
 **File › Export**, zvol *Anki Deck Package* a zahrň média. Pak soubor
 importuj, jak je popsáno výše.
 
+Pokud chceš přenést i svůj pokrok, zaškrtni při exportu také *Include scheduling information* (zahrnout informace o plánování).
+
 Slib je jednoduchý: **učební obsah se přenese, vzhled z Anki ne.** Tvá
-slova, obrázky, zvuky, vzorce a štítky dorazí. Styly, skripty a plánování
-z Anki zůstanou za tebou.
+slova, obrázky, zvuky, vzorce a štítky dorazí. Přenést se může i tvůj pokrok v opakování. Styly a skripty z Anki zůstanou za tebou.
 
 ### Co se přenese
 
@@ -95,11 +96,12 @@ z Anki zůstanou za tebou.
 - **Struktura balíčků, zploštělá.** JustFlip! nemá podbalíčky, takže z
   `Jazyky::Španělština::Slovesa` se stane jeden balíček
   **Jazyky / Španělština / Slovesa**.
+- **Tvůj pokrok v opakování**, pokud export obsahuje informace o plánování. Každá procvičená kartička si ponechá interval, snadnost, datum dalšího opakování a počet chyb a její záznam opakování se přenese jako historie. Balíček, který opakuješ léta, tak pokračuje tam, kde skončil. Pozastavené kartičky dorazí jako vyřazené. Pokud chceš, aby všechny kartičky začaly jako nové, vypni na panelu importu [Zachovat pokrok z Anki]{.ui}.
 
 ### Co zůstane v Anki
 
-- **Tvoje historie opakování.** Každá kartička začíná jako nová.
-  Intervaly, snadnost a nastavení FSRS z Anki se neimportují.
+- **Parametry FSRS z Anki.** Pokud v Anki používáš FSRS, jeho parametry ani paměťový stav kartiček se neimportují. Kartička si ponechá interval, datum opakování a záznam opakování a dostane výchozí snadnost.
+- **Pokrok ze sdílených balíčků.** Stažený balíček bez vlastního procvičování nemá žádnou historii, takže jeho kartičky začnou jako nové.
 - **Styly.** Vlastní CSS, písma a barvy se zjednoduší.
 - **Kód.** JavaScript a doplňky se nikdy nespustí a neuchovají.
 - **Cokoli online.** Vzdálené obrázky, vložené stránky a iframy se
@@ -135,12 +137,14 @@ načte — [Kontroluji balíček…]{.ui}, [Rozbaluji…]{.ui},
 [Načítám kartičky…]{.ui} — a pak ukáže [Připraveno k učení]{.ui}: kolik
 našel balíčků Anki, [Kartičky]{.ui}, [Obrázky]{.ui} a [Audio]{.ui}.
 
+Pokud balíček obsahuje kartičky, které už máš procvičené, panel ukáže i přepínač [Zachovat pokrok z Anki]{.ui}, ve výchozím stavu zapnutý. Se zapnutým přepínačem si tyto kartičky ponechají plán a historii opakování z Anki. Když ho vypneš, všechny kartičky začnou od začátku.
+
 ![Panel Import z Anki: souhrn, Co se změnilo a Možnosti.](images/manual/{lang}/05-anki-report.jpg){.phone}
 
 Pod [Co se změnilo]{.ui} je zpráva o importu: jedna srozumitelná věta ke
 každé věci, kterou stojí za to vědět, než import potvrdíš. Například:
 
-- *Kartičky tu začínají od začátku. Historie opakování zůstává v Anki.*
+- *240 kartiček si ponechá plán a historii opakování z Anki.* (U sdíleného balíčku nebo s vypnutým [Zachovat pokrok z Anki]{.ui}: *Kartičky tu začínají od začátku. Historie opakování zůstává v Anki.*)
 - *Odpovědi už neopakují otázku — JustFlip ji při otočení nechává na
   obrazovce.*
 - *12 obrázků se nepodařilo přečíst a byly vynechány.*

@@ -254,10 +254,13 @@ raccolte (<code>.colpkg</code>) di Anki, dalle versioni vecchie e
 attuali di Anki. In Anki, usa <strong>File › Esporta</strong>, scegli
 <em>Pacchetto mazzo Anki</em> e includi i contenuti multimediali. Poi
 importa il file come visto sopra.</p>
+<p>Per portare con te i progressi, spunta anche <em>Include scheduling
+information</em> (includi le informazioni di pianificazione) durante
+l’esportazione.</p>
 <p>La promessa è semplice: <strong>il contenuto da imparare arriva; la
 presentazione di Anki no.</strong> Le tue parole, immagini, suoni,
-formule e tag arrivano. Gli stili, gli script e la pianificazione di
-Anki restano indietro.</p>
+formule e tag arrivano. Possono arrivare anche i tuoi progressi di
+ripasso. Gli stili e gli script di Anki restano indietro.</p>
 <h3 data-number="5.2.1" id="cosa-arriva"><span
 class="header-section-number">5.2.1</span> Cosa arriva</h3>
 <ul>
@@ -284,13 +287,24 @@ link, piccole tabelle, formule, pedici e apici.</li>
 <li><strong>La struttura dei mazzi, appiattita.</strong> JustFlip! non
 ha sottomazzi, quindi <code>Languages::Spanish::Verbs</code> diventa un
 solo mazzo chiamato <strong>Languages / Spanish / Verbs</strong>.</li>
+<li><strong>I tuoi progressi di ripasso</strong>, se l’esportazione
+include le informazioni di pianificazione. Ogni carta studiata mantiene
+intervallo, facilità, data di scadenza ed errori, e il suo registro dei
+ripassi arriva come cronologia. Un mazzo che studi da anni riprende
+quindi da dove era. Le carte sospese arrivano ritirate. Disattiva <span
+class="ui">Mantieni i progressi di Anki</span> nel foglio di
+importazione se vuoi che tutte le carte partano come nuove.</li>
 </ul>
 <h3 data-number="5.2.2" id="cosa-resta-in-anki"><span
 class="header-section-number">5.2.2</span> Cosa resta in Anki</h3>
 <ul>
-<li><strong>La cronologia dei ripassi.</strong> Ogni carta parte come
-nuova. Gli intervalli, la facilità e le impostazioni FSRS di Anki non
-vengono importati.</li>
+<li><strong>I parametri FSRS di Anki.</strong> Se in Anki usi FSRS, i
+suoi parametri e lo stato di memoria delle carte non vengono importati.
+Una carta mantiene intervallo, data di scadenza e registro dei ripassi,
+e riceve la facilità predefinita.</li>
+<li><strong>I progressi dei mazzi condivisi.</strong> Un mazzo scaricato
+che non hai mai studiato non ha cronologia da portare, quindi le sue
+carte partono come nuove.</li>
 <li><strong>Gli stili.</strong> CSS personalizzati, font e colori
 vengono semplificati.</li>
 <li><strong>Il codice.</strong> JavaScript e componenti aggiuntivi non
@@ -341,6 +355,11 @@ class="ui">Leggo le carte…</span> — poi mostra <span class="ui">Pronto
 da studiare</span>: quanti mazzi di Anki, <span class="ui">Carte</span>,
 <span class="ui">Immagini</span> e <span class="ui">Audio</span> ha
 trovato.</p>
+<p>Se il pacchetto contiene carte che hai già studiato, il foglio mostra
+anche <span class="ui">Mantieni i progressi di Anki</span>, attivo per
+impostazione predefinita. Se è attivo, quelle carte mantengono la
+pianificazione e la cronologia di ripasso di Anki. Se lo disattivi,
+tutte le carte ripartono da zero.</p>
 <figure class="m-figure m-figure--phone">
 <img src="../../../images/manual/en/05-anki-report.jpg" class="phone"
 alt="Il pannello Importa da Anki: il riepilogo, Cosa è cambiato e Opzioni." />
@@ -351,8 +370,11 @@ riepilogo, Cosa è cambiato e Opzioni.</figcaption>
 dell’importazione: una frase semplice per ogni cosa che vale la pena
 sapere prima di confermare. Per esempio:</p>
 <ul>
-<li><em>Qui le carte ripartono da zero. La cronologia di ripasso resta
-in Anki.</em></li>
+<li><em>240 schede mantengono la pianificazione e la cronologia di
+ripasso di Anki.</em> (Con un mazzo condiviso o con <span
+class="ui">Mantieni i progressi di Anki</span> disattivato: <em>Qui le
+carte ripartono da zero. La cronologia di ripasso resta in
+Anki.</em>)</li>
 <li><em>Le risposte non ripetono più la domanda: JustFlip la tiene a
 schermo mentre giri la carta.</em></li>
 <li><em>12 immagini non sono state lette e sono state escluse.</em></li>

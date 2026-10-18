@@ -72,9 +72,11 @@ JustFlip! importiert Ankis Stapelpakete (`.apkg`) und Sammlungspakete
 **Datei › Exportieren**, nimm *Anki-Stapelpaket* und schließe die Medien
 ein. Importiere die Datei dann wie oben beschrieben.
 
+Soll auch dein Lernfortschritt mitkommen, setze beim Export zusätzlich das Häkchen bei *Include scheduling information* (Planungsinformationen einschließen).
+
 Das Versprechen ist einfach: **Der Lerninhalt kommt mit, Ankis
 Darstellung nicht.** Deine Wörter, Bilder, Töne, Formeln und Tags kommen
-an. Ankis Gestaltung, Skripte und Planung bleiben zurück.
+an. Auch dein Lernfortschritt kann mitkommen. Ankis Gestaltung und Skripte bleiben zurück.
 
 ### Was mitkommt
 
@@ -100,12 +102,12 @@ an. Ankis Gestaltung, Skripte und Planung bleiben zurück.
 - **Stapelstruktur, abgeflacht.** Aus `Languages::Spanish::Verbs` wird
   ein einziger Stapel namens **Languages / Spanish / Verbs**, denn
   JustFlip! kennt keine Unterstapel.
+- **Dein Lernfortschritt**, wenn der Export Planungsinformationen enthält. Jede gelernte Karte behält Intervall, Leichtigkeit, Fälligkeitsdatum und Fehler, und ihr Wiederholungsverlauf kommt mit. Ein Stapel, den du seit Jahren lernst, macht also dort weiter, wo er war. Ausgesetzte Karten kommen als abgelegt an. Schalte im Importblatt [Anki-Fortschritt übernehmen]{.ui} aus, wenn alle Karten neu beginnen sollen.
 
 ### Was in Anki bleibt
 
-- **Dein Wiederholungsverlauf.** Jede Karte beginnt als neu. Ankis
-  Intervalle, Leichtigkeit und FSRS-Einstellungen werden nicht
-  importiert.
+- **Ankis FSRS-Parameter.** Wenn du in Anki FSRS nutzt, werden seine Parameter und der Gedächtniszustand der Karten nicht importiert. Eine Karte behält Intervall, Fälligkeitsdatum und Wiederholungsverlauf und bekommt die Standard-Leichtigkeit.
+- **Fortschritt aus geteilten Stapeln.** Ein heruntergeladener Stapel, mit dem du nie gelernt hast, bringt keinen Verlauf mit, seine Karten beginnen also als neu.
 - **Gestaltung.** Eigenes CSS, Schriften und Farben werden
   weggelassen.
 - **Code.** JavaScript und Add-ons laufen nie und werden nicht
@@ -147,14 +149,15 @@ importieren]{.ui}, aus Dateien oder per Ziehen, öffnet sich
 wie viele Anki-Stapel, [Karten]{.ui}, [Bilder]{.ui} und [Audio]{.ui} es
 gefunden hat.
 
+Enthält das Paket Karten, die du schon gelernt hast, zeigt das Blatt außerdem [Anki-Fortschritt übernehmen]{.ui}, standardmäßig eingeschaltet. Dann behalten diese Karten ihren Anki-Zeitplan und Lernverlauf. Schaltest du es aus, beginnen alle Karten von vorn.
+
 ![Das Blatt „Aus Anki importieren“: die Zusammenfassung, „Was sich geändert hat“ und „Optionen“.](images/manual/{lang}/05-anki-report.jpg){.phone}
 
 Unter [Was sich geändert hat]{.ui} steht der Importbericht: ein
 schlichter Satz für alles, was du wissen solltest, bevor du loslegst.
 Zum Beispiel:
 
-- *Die Karten starten hier von vorn. Dein Anki-Lernverlauf bleibt in
-  Anki.*
+- *240 Karten behalten ihren Anki-Zeitplan und Lernverlauf.* (Bei einem geteilten Stapel oder mit ausgeschaltetem [Anki-Fortschritt übernehmen]{.ui}: *Die Karten starten hier von vorn. Dein Anki-Lernverlauf bleibt in Anki.*)
 - *Antworten wiederholen die Frage nicht mehr — JustFlip zeigt sie beim
   Umdrehen weiter an.*
 - *12 Bilder konnten nicht gelesen werden und wurden weggelassen.*

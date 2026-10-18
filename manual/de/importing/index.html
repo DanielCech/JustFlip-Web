@@ -256,9 +256,13 @@ Sammlungspakete (<code>.colpkg</code>), aus alten wie aktuellen
 Anki-Versionen. Wähle in Anki <strong>Datei › Exportieren</strong>, nimm
 <em>Anki-Stapelpaket</em> und schließe die Medien ein. Importiere die
 Datei dann wie oben beschrieben.</p>
+<p>Soll auch dein Lernfortschritt mitkommen, setze beim Export
+zusätzlich das Häkchen bei <em>Include scheduling information</em>
+(Planungsinformationen einschließen).</p>
 <p>Das Versprechen ist einfach: <strong>Der Lerninhalt kommt mit, Ankis
 Darstellung nicht.</strong> Deine Wörter, Bilder, Töne, Formeln und Tags
-kommen an. Ankis Gestaltung, Skripte und Planung bleiben zurück.</p>
+kommen an. Auch dein Lernfortschritt kann mitkommen. Ankis Gestaltung
+und Skripte bleiben zurück.</p>
 <h3 data-number="5.2.1" id="was-mitkommt"><span
 class="header-section-number">5.2.1</span> Was mitkommt</h3>
 <ul>
@@ -286,13 +290,24 @@ Tabellen, Mathematik sowie tief- und hochgestellter Text.</li>
 <code>Languages::Spanish::Verbs</code> wird ein einziger Stapel namens
 <strong>Languages / Spanish / Verbs</strong>, denn JustFlip! kennt keine
 Unterstapel.</li>
+<li><strong>Dein Lernfortschritt</strong>, wenn der Export
+Planungsinformationen enthält. Jede gelernte Karte behält Intervall,
+Leichtigkeit, Fälligkeitsdatum und Fehler, und ihr Wiederholungsverlauf
+kommt mit. Ein Stapel, den du seit Jahren lernst, macht also dort
+weiter, wo er war. Ausgesetzte Karten kommen als abgelegt an. Schalte im
+Importblatt <span class="ui">Anki-Fortschritt übernehmen</span> aus,
+wenn alle Karten neu beginnen sollen.</li>
 </ul>
 <h3 data-number="5.2.2" id="was-in-anki-bleibt"><span
 class="header-section-number">5.2.2</span> Was in Anki bleibt</h3>
 <ul>
-<li><strong>Dein Wiederholungsverlauf.</strong> Jede Karte beginnt als
-neu. Ankis Intervalle, Leichtigkeit und FSRS-Einstellungen werden nicht
-importiert.</li>
+<li><strong>Ankis FSRS-Parameter.</strong> Wenn du in Anki FSRS nutzt,
+werden seine Parameter und der Gedächtniszustand der Karten nicht
+importiert. Eine Karte behält Intervall, Fälligkeitsdatum und
+Wiederholungsverlauf und bekommt die Standard-Leichtigkeit.</li>
+<li><strong>Fortschritt aus geteilten Stapeln.</strong> Ein
+heruntergeladener Stapel, mit dem du nie gelernt hast, bringt keinen
+Verlauf mit, seine Karten beginnen also als neu.</li>
 <li><strong>Gestaltung.</strong> Eigenes CSS, Schriften und Farben
 werden weggelassen.</li>
 <li><strong>Code.</strong> JavaScript und Add-ons laufen nie und werden
@@ -343,6 +358,11 @@ gelesen…</span> — und zeigt dann <span class="ui">Bereit zum
 Lernen</span>: wie viele Anki-Stapel, <span class="ui">Karten</span>,
 <span class="ui">Bilder</span> und <span class="ui">Audio</span> es
 gefunden hat.</p>
+<p>Enthält das Paket Karten, die du schon gelernt hast, zeigt das Blatt
+außerdem <span class="ui">Anki-Fortschritt übernehmen</span>,
+standardmäßig eingeschaltet. Dann behalten diese Karten ihren
+Anki-Zeitplan und Lernverlauf. Schaltest du es aus, beginnen alle Karten
+von vorn.</p>
 <figure class="m-figure m-figure--phone">
 <img src="../../../images/manual/en/05-anki-report.jpg" class="phone"
 alt="Das Blatt „Aus Anki importieren“: die Zusammenfassung, „Was sich geändert hat“ und „Optionen“." />
@@ -353,8 +373,10 @@ Zusammenfassung, „Was sich geändert hat“ und „Optionen“.</figcaption>
 Importbericht: ein schlichter Satz für alles, was du wissen solltest,
 bevor du loslegst. Zum Beispiel:</p>
 <ul>
-<li><em>Die Karten starten hier von vorn. Dein Anki-Lernverlauf bleibt
-in Anki.</em></li>
+<li><em>240 Karten behalten ihren Anki-Zeitplan und Lernverlauf.</em>
+(Bei einem geteilten Stapel oder mit ausgeschaltetem <span
+class="ui">Anki-Fortschritt übernehmen</span>: <em>Die Karten starten
+hier von vorn. Dein Anki-Lernverlauf bleibt in Anki.</em>)</li>
 <li><em>Antworten wiederholen die Frage nicht mehr — JustFlip zeigt sie
 beim Umdrehen weiter an.</em></li>
 <li><em>12 Bilder konnten nicht gelesen werden und wurden

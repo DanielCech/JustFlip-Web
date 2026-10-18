@@ -71,9 +71,10 @@ coleção (`.colpkg`) do Anki, tanto de versões antigas quanto atuais. No
 Anki, use **Arquivo › Exportar**, escolha *Pacote de Baralho do Anki* e
 inclua a mídia. Depois importe o arquivo como descrito acima.
 
+Para trazer também o seu progresso, marque ainda *Include scheduling information* (incluir as informações de programação) ao exportar.
+
 A promessa é simples: **o conteúdo de estudo vem junto; a apresentação
-do Anki não.** Suas palavras, imagens, sons, fórmulas e tags chegam. Os
-estilos, scripts e a programação do Anki ficam para trás.
+do Anki não.** Suas palavras, imagens, sons, fórmulas e tags chegam. Seu progresso de revisão também pode vir junto. Os estilos e scripts do Anki ficam para trás.
 
 ### O que vem junto
 
@@ -96,12 +97,12 @@ estilos, scripts e a programação do Anki ficam para trás.
 - **Estrutura de baralhos, achatada.** `Idiomas::Espanhol::Verbos` vira
   um único baralho chamado **Idiomas / Espanhol / Verbos**, porque o
   JustFlip! não tem sub-baralhos.
+- **Seu progresso de revisão**, se a exportação incluir as informações de programação. Cada cartão estudado mantém o intervalo, a facilidade, a data de revisão e as recaídas, e o registro de revisões chega como histórico. Assim, um baralho que você estuda há anos continua de onde parou. Cartões suspensos chegam aposentados. Desligue [Manter o progresso do Anki]{.ui} na folha de importação se quiser que todos os cartões comecem como novos.
 
 ### O que fica no Anki
 
-- **Seu histórico de revisão.** Todo cartão começa como novo. Os
-  intervalos, a facilidade e os ajustes do FSRS do Anki não são
-  importados.
+- **Os parâmetros do FSRS do Anki.** Se você usa o FSRS no Anki, os parâmetros dele e o estado de memória de cada cartão não são importados. O cartão mantém o intervalo, a data de revisão e o registro de revisões, e recebe a facilidade padrão.
+- **O progresso de baralhos compartilhados.** Um baralho baixado que você nunca estudou não tem histórico para trazer, então os cartões começam como novos.
 - **Estilos.** CSS personalizado, fontes e cores são simplificados.
 - **Código.** JavaScript e complementos nunca rodam e não são mantidos.
 - **Qualquer coisa online.** Imagens remotas, páginas incorporadas e
@@ -139,13 +140,14 @@ pacote primeiro — [Verificando o pacote…]{.ui},
 [Pronto para estudar]{.ui}: quantos baralhos do Anki, [Cartões]{.ui},
 [Imagens]{.ui} e [Áudio]{.ui} ela encontrou.
 
+Se o pacote tiver cartões que você já estudou, a folha também mostra [Manter o progresso do Anki]{.ui}, ligado por padrão. Ligado, esses cartões mantêm a programação e o histórico de revisão do Anki. Desligado, todos os cartões começam do zero.
+
 ![A folha Importar do Anki: o resumo, O que mudou e Opções.](images/manual/{lang}/05-anki-report.jpg){.phone}
 
 Em [O que mudou]{.ui} fica o relatório de importação: uma frase simples
 para cada coisa que vale saber antes de confirmar. Por exemplo:
 
-- *Os cartões começam do zero aqui. Seu histórico de revisão fica no
-  Anki.*
+- *240 cartões mantêm a programação e o histórico de revisão do Anki.* (Com um baralho compartilhado ou com [Manter o progresso do Anki]{.ui} desligado: *Os cartões começam do zero aqui. Seu histórico de revisão fica no Anki.*)
 - *As respostas não repetem mais a pergunta — o JustFlip a mantém na
   tela enquanto você vira.*
 - *12 imagens não puderam ser lidas e foram omitidas.*

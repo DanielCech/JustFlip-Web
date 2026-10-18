@@ -74,10 +74,11 @@ d’Anki. Dans Anki, utilise **Fichier › Exporter**, choisis *Paquet de
 cartes Anki* et inclus les médias. Importe ensuite le fichier comme
 ci-dessus.
 
+Pour emporter aussi ta progression, coche en plus *Include scheduling information* (inclure les informations de planification) à l’export.
+
 La promesse est simple : **le contenu d’apprentissage est repris ; la
 présentation d’Anki ne l’est pas.** Tes mots, images, sons, formules et
-tags arrivent. Les styles, scripts et la planification d’Anki restent
-derrière.
+tags arrivent. Ta progression de révision peut venir aussi. Les styles et les scripts d’Anki restent derrière.
 
 ### Ce qui est repris
 
@@ -103,12 +104,12 @@ derrière.
 - **La structure des paquets, aplatie.** JustFlip! n’a pas de
   sous-paquets : `Langues::Espagnol::Verbes` devient donc un seul paquet
   appelé **Langues / Espagnol / Verbes**.
+- **Ta progression de révision**, si l’export contient les informations de planification. Chaque carte étudiée garde son intervalle, sa facilité, sa date d’échéance et ses oublis, et son journal de révision arrive comme historique. Un paquet que tu révises depuis des années reprend donc là où il en était. Les cartes suspendues arrivent retirées. Désactive [Conserver la progression Anki]{.ui} dans la feuille d’import pour que toutes les cartes repartent de zéro.
 
 ### Ce qui reste dans Anki
 
-- **Ton historique de révision.** Chaque carte commence comme nouvelle.
-  Les intervalles, la facilité et les réglages FSRS d’Anki ne sont pas
-  importés.
+- **Les paramètres FSRS d’Anki.** Si tu utilises FSRS dans Anki, ses paramètres et l’état de mémoire des cartes ne sont pas importés. Une carte garde son intervalle, sa date d’échéance et son journal de révision, et reçoit la facilité par défaut.
+- **La progression des paquets partagés.** Un paquet téléchargé que tu n’as jamais étudié n’a pas d’historique à apporter : ses cartes commencent donc comme nouvelles.
 - **Les styles.** Le CSS personnalisé, les polices et les couleurs sont
   simplifiés.
 - **Le code.** Le JavaScript et les modules complémentaires ne
@@ -149,13 +150,14 @@ paquet…]{.ui}, [Décompression…]{.ui}, [Lecture des cartes…]{.ui} — puis
 affiche [Prêt à réviser]{.ui} : combien de paquets Anki, de
 [Cartes]{.ui}, d’[Images]{.ui} et d’[Audio]{.ui} elle a trouvés.
 
+Si le paquet contient des cartes que tu as déjà étudiées, la feuille affiche aussi [Conserver la progression Anki]{.ui}, activé par défaut. Activé, ces cartes conservent leur planning et leur historique de révision Anki. Désactivé, toutes les cartes repartent de zéro.
+
 ![La feuille Importer depuis Anki : le résumé, Ce qui a changé et Options.](images/manual/{lang}/05-anki-report.jpg){.phone}
 
 Sous [Ce qui a changé]{.ui} se trouve le rapport d’import : une phrase
 simple pour chaque chose bonne à savoir avant de valider. Par exemple :
 
-- *Les cartes repartent de zéro ici. Votre historique de révision reste
-  dans Anki.*
+- *240 cartes conservent leur planning et leur historique de révision Anki.* (Pour un paquet partagé, ou avec [Conserver la progression Anki]{.ui} désactivé : *Les cartes repartent de zéro ici. Votre historique de révision reste dans Anki.*)
 - *Les réponses ne répètent plus la question : JustFlip la garde à
   l’écran pendant le retournement.*
 - *12 images n’ont pas pu être lues et ont été omises.*

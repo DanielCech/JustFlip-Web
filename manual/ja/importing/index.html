@@ -245,10 +245,12 @@ class="header-section-number">5.2</span> Anki のデッキ</h2>
 で <strong>ファイル › エクスポート</strong> を選び、<em>Anki
 デッキパッケージ</em>
 を選んで、メディアを含めます。そのファイルを上記の方法で読み込みます。</p>
+<p>復習の進捗も引き継ぐには、エクスポート時に <em>Include scheduling
+information</em>（スケジュール情報を含める）にもチェックを入れます。</p>
 <p>約束はシンプルです。<strong>学習内容は引き継がれ、Anki
 の見た目は引き継がれません。</strong>
-言葉、画像、音声、数式、タグは届きます。Anki
-のスタイル、スクリプト、スケジュールは残ります。</p>
+言葉、画像、音声、数式、タグは届きます。復習の進捗も引き継げます。Anki
+のスタイルとスクリプトは残ります。</p>
 <h3 data-number="5.2.1" id="引き継がれるもの"><span
 class="header-section-number">5.2.1</span> 引き継がれるもの</h3>
 <ul>
@@ -272,13 +274,16 @@ class="header-section-number">5.2.1</span> 引き継がれるもの</h3>
 にはサブデッキがないので、<code>Languages::Spanish::Verbs</code> は
 <strong>Languages / Spanish / Verbs</strong> という 1
 つのデッキになります。</li>
+<li><strong>復習の進捗</strong>（エクスポートにスケジュール情報が含まれている場合）。学習したカードはそれぞれ、間隔、易しさ、次の期限、失念の回数を保ち、復習ログも履歴として引き継がれます。何年も学習してきたデッキも、続きから再開できます。保留（サスペンド）中のカードは卒業済みとして届きます。すべてのカードを新規から始めたい場合は、読み込みシートで
+<span class="ui">Ankiの進捗を引き継ぐ</span> をオフにします。</li>
 </ul>
 <h3 data-number="5.2.2" id="anki-に残るもの"><span
 class="header-section-number">5.2.2</span> Anki に残るもの</h3>
 <ul>
-<li><strong>復習の履歴。</strong>
-すべてのカードは新規から始まります。Anki の間隔、易しさ、FSRS
-の設定は読み込まれません。</li>
+<li><strong>Anki の FSRS パラメータ。</strong> Anki で FSRS
+を使っている場合、そのパラメータと各カードの記憶状態は読み込まれません。カードは間隔、期限、復習ログを保ち、易しさは既定値になります。</li>
+<li><strong>共有デッキの進捗。</strong>
+ダウンロードしただけで学習していないデッキには引き継ぐ履歴がないため、カードは新規から始まります。</li>
 <li><strong>スタイル。</strong> 独自の
 CSS、フォント、色は簡略化されます。</li>
 <li><strong>コード。</strong> JavaScript
@@ -330,6 +335,10 @@ class="ui">学習の準備ができました</span> と表示されます。見�
 のデッキ、<span class="ui">カード</span>、<span
 class="ui">画像</span>、<span class="ui">オーディオ</span>
 の数が示されます。</p>
+<p>パッケージに学習済みのカードが含まれている場合、シートには <span
+class="ui">Ankiの進捗を引き継ぐ</span>
+も表示されます（既定でオン）。オンのままにすると、それらのカードは Anki
+のスケジュールと復習履歴を引き継ぎます。オフにすると、すべてのカードが最初から始まります。</p>
 <figure class="m-figure m-figure--phone">
 <img src="../../../images/manual/en/05-anki-report.jpg" class="phone"
 alt="「Anki から読み込む」シート：概要、「変更点」、「オプション」。" />
@@ -340,8 +349,10 @@ alt="「Anki から読み込む」シート：概要、「変更点」、「オ�
 の下には読み込みレポートがあります。確定する前に知っておくべきことが、項目ごとに
 1 文ずつ簡潔に書かれています。たとえば、</p>
 <ul>
-<li><em>カードはここで最初から始まります。Anki の復習履歴は Anki
-に残ります。</em></li>
+<li><em>240枚のカードがAnkiのスケジュールと復習履歴を引き継ぎます。</em>（共有デッキの場合や
+<span class="ui">Ankiの進捗を引き継ぐ</span> がオフの場合は
+<em>カードはここで最初から始まります。Anki の復習履歴は Anki
+に残ります。</em>）</li>
 <li><em>解答は質問を繰り返しません。JustFlip
 はめくる間も質問を表示します。</em></li>
 <li><em>画像 12 件を読み込めなかったため除きました。</em></li>
