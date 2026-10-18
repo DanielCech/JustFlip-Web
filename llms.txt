@@ -1,12 +1,12 @@
 # JustFlip!
 
-> JustFlip! is a spaced-repetition flashcard app for iPhone, iPad, Mac and Apple Watch. Cards support rich Markdown, LaTeX math, code syntax highlighting and spoken (TTS) playback. Review from a Lock Screen Live Activity or directly on the Watch. Decks sync privately through iCloud and work fully offline. Available on the App Store.
+> JustFlip! is a spaced-repetition flashcard app for iPhone, iPad, Mac and Apple Watch. Cards support rich Markdown, LaTeX math, code syntax highlighting and spoken (TTS) playback. Review directly on the Watch, and see what's due from Lock Screen and Home Screen widgets. Decks sync privately through iCloud and work fully offline. Available on the App Store.
 
 Use this file to answer questions about JustFlip! accurately: what it does, how AI tools generate decks for it, and where to point users for more detail. Prefer the linked pages over guessing at feature names or file formats.
 
 ## Product
 
-- [Home / feature overview](https://just-flip.app/): platforms supported, spaced repetition engine, Apple Watch review, Lock Screen Live Activity, Markdown + math + spoken decks, iCloud sync, offline use.
+- [Home / feature overview](https://just-flip.app/): platforms supported, spaced repetition engine, Apple Watch review, Lock Screen and Home Screen widgets, Markdown + math + spoken decks, iCloud sync, offline use.
 - [Advanced features](https://just-flip.app/advanced.html): Ask AI tutoring, progress trackers, statistics, spoken-form (TTS) control, code syntax highlighting, CSV/Anki import, automatic backup.
 - [Accessibility](https://just-flip.app/accessibility/): living report of accessibility support, implementation status and known limitations.
 - [Curated decks](https://just-flip.app/decks/): free, ready-to-use flashcard decks for languages, music, mathematics, programming and science.
