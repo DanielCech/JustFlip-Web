@@ -7,7 +7,7 @@
   <!-- Embed mode (?embed=1, used by the in-app "What's new" sheet): set the class before first paint so the nav never flashes. js/main.js does the same as a fallback. -->
   <script>try{if(new URLSearchParams(location.search).get('embed')==='1'){document.documentElement.classList.add('is-embedded');}}catch(e){}</script>
   <title data-i18n="news.metaTitle">What's new — JustFlip</title>
-  <meta name="description" content="What's new in JustFlip: Mermaid diagrams on cards, tags and colour flags, and TeX maths — the latest features, release by release." data-i18n-attr="content" data-i18n-content="news.metaDescription" />
+  <meta name="description" content="What's new in JustFlip: a Today screen that flips like a card, faithful Anki imports, card text at your size and a roomier Mac — plus Mermaid diagrams, tags and TeX maths, release by release." data-i18n-attr="content" data-i18n-content="news.metaDescription" />
 
   <link rel="canonical" href="https://just-flip.app/news/" />
 
@@ -15,12 +15,12 @@
   <meta property="og:site_name" content="JustFlip!" />
   <meta property="og:url" content="https://just-flip.app/news/" />
   <meta property="og:title" content="What's new — JustFlip" />
-  <meta property="og:description" content="What's new in JustFlip: Mermaid diagrams on cards, tags and colour flags, and TeX maths — the latest features, release by release." />
+  <meta property="og:description" content="What's new in JustFlip: a Today screen that flips like a card, faithful Anki imports, card text at your size and a roomier Mac — plus Mermaid diagrams, tags and TeX maths, release by release." />
   <meta property="og:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="What's new — JustFlip" />
-  <meta name="twitter:description" content="What's new in JustFlip: Mermaid diagrams on cards, tags and colour flags, and TeX maths — the latest features, release by release." />
+  <meta name="twitter:description" content="What's new in JustFlip: a Today screen that flips like a card, faithful Anki imports, card text at your size and a roomier Mac — plus Mermaid diagrams, tags and TeX maths, release by release." />
   <meta name="twitter:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,18 +64,64 @@
       <div class="news-hero__inner">
         <p class="eyebrow" data-i18n="news.eyebrow">What's new</p>
         <h1 class="display display--sm" data-i18n="news.title">Fresh in <em>JustFlip</em></h1>
-        <p class="lede" data-i18n="news.lede">The newest features, release by release — from diagrams on your cards to tags, colour flags and beautifully typeset maths.</p>
+        <p class="lede" data-i18n="news.lede">The newest features, release by release — from a Today screen that flips like a card to diagrams, tags and beautifully typeset maths.</p>
       </div>
     </section>
 
     <section class="news-timeline" aria-label="Release history" data-i18n-attr="aria-label" data-i18n-aria-label="news.timelineLabel" data-section>
       <ol class="news-timeline__list">
 
-        <!-- ─── Release: 1.2.0 ─────────────────────────────────── -->
+        <!-- ─── Release: 1.3.0 ─────────────────────────────────── -->
         <li class="news-timeline__item">
-          <article class="news-release news-release--latest" id="v1-2-0" data-version="1.2.0">
+          <article class="news-release news-release--latest" id="v1-3-0" data-version="1.3.0">
             <header class="news-release__head">
               <p class="news-release__kicker kicker"><span class="news-chip" data-i18n="news.latest">Latest</span></p>
+              <h2 class="news-release__version"><span data-i18n="news.version">Version</span> <span class="news-release__number">1.3.0</span></h2>
+            </header>
+
+            <div class="news-grid">
+              <section class="news-feature" aria-labelledby="feature-today-flips">
+                <h3 class="news-feature__title" id="feature-today-flips" data-i18n="news.v130.today.title">Today flips like a flashcard</h3>
+                <p data-i18n="news.v130.today.body">The Today panel now has two sides. The front takes you straight into your review. Flip it to see today's progress, your best streak and a two-week timeline of past and upcoming reviews.</p>
+                <ul class="news-feature__points">
+                  <li data-i18n="news.v130.today.point1">One tap to start reviewing</li>
+                  <li data-i18n="news.v130.today.point2"><strong>Keep going</strong> when today's goal is done but cards are still due</li>
+                </ul>
+              </section>
+              <section class="news-feature" aria-labelledby="feature-anki-import">
+                <h3 class="news-feature__title" id="feature-anki-import" data-i18n="news.v130.anki.title">Your Anki decks, all of them</h3>
+                <p data-i18n="news.v130.anki.body">Decks from current versions of Anki now come across faithfully — image occlusion, cloze cards, type-in answers, maths, chemistry, furigana and code included.</p>
+                <ul class="news-feature__points">
+                  <li data-i18n="news.v130.anki.point1">Importing a course? JustFlip suggests an interest for it and keeps deck names short</li>
+                  <li data-i18n="news.v130.anki.point2">Import a deck again to update it, or skip it</li>
+                </ul>
+              </section>
+              <section class="news-feature" aria-labelledby="feature-card-text-size">
+                <h3 class="news-feature__title" id="feature-card-text-size" data-i18n="news.v130.cardText.title">Card text at your size</h3>
+                <p data-i18n="news.v130.cardText.body">Give your cards their own text size, separate from the rest of the app. In Settings, turn off <strong>Card text follows app text size</strong> and pick the size that reads best.</p>
+                <ul class="news-feature__points">
+                  <li data-i18n="news.v130.cardText.point1">Pictures sit neatly under the text</li>
+                  <li data-i18n="news.v130.cardText.point2">Tap a picture to zoom in</li>
+                </ul>
+              </section>
+              <section class="news-feature" aria-labelledby="feature-mac-layout">
+                <h3 class="news-feature__title" id="feature-mac-layout" data-i18n="news.v130.mac.title">A roomier Mac</h3>
+                <p data-i18n="news.v130.mac.body">On Mac, JustFlip now has the same two-column layout as iPad: interests and decks in the sidebar, your cards right beside them.</p>
+                <ul class="news-feature__points">
+                  <li data-i18n="news.v130.mac.point1">The sidebar stays put however you size the window</li>
+                  <li data-i18n="news.v130.mac.point2">Welcome screens fit the window</li>
+                </ul>
+              </section>
+            </div>
+            <p class="news-release__more" data-i18n="news.v130.more">Also new: headings in a fresh typeface, smoother image occlusion and plenty of small fixes.</p>
+          </article>
+        </li>
+
+        <!-- ─── Release: 1.2.0 ─────────────────────────────────── -->
+        <li class="news-timeline__item">
+          <article class="news-release" id="v1-2-0" data-version="1.2.0">
+            <header class="news-release__head">
+              <p class="news-release__kicker kicker" data-i18n="news.earlier">Earlier release</p>
               <h2 class="news-release__version"><span data-i18n="news.version">Version</span> <span class="news-release__number">1.2.0</span></h2>
             </header>
 
