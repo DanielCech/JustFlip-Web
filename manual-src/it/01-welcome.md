@@ -255,9 +255,9 @@ nulla, JustFlip! mostra [Nessun acquisto precedente trovato.]{.ui}
 ::: note
 #### Quando contatti l'assistenza
 
-**Impostazioni › Account** mostra il tuo [ID utente dell'app]{.ui} con
-un pulsante [Copia ID]{.ui}. L'assistenza potrebbe chiedertelo quando
-scrivi per un acquisto.
+In fondo alle **Impostazioni**, sotto [Account]{.ui}, trovi il tuo
+[ID utente dell'app]{.ui} con un pulsante [Copia ID]{.ui}. L'assistenza
+potrebbe chiedertelo quando scrivi per un acquisto.
 :::
 
 ## Eliminare, e recuperare {#deleting}

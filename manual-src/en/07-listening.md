@@ -161,9 +161,10 @@ in an update. Listening in the background works without it.
 
 ## Choosing voices {#voices}
 
-Go to **Settings › Speech › Voices**. JustFlip! picks a voice **for each
-language separately**. The row's subtitle summarises your choices, for
-example "English: Automatic · German: Anna".
+Go to **Settings › Speech**, which opens the Voices screen. JustFlip!
+picks a voice **for each language separately**. The [Speech]{.ui} row in
+Settings summarises your choices, for example "English: Automatic ·
+German: Anna".
 
 ![The Voices screen: your card languages on top, each with the voice that will read it.](images/manual/{lang}/07-voices.jpg){.phone}
 
@@ -239,7 +240,7 @@ and iPad, download them in the system Settings app:
 
 Choose a language, then a voice, and tap to download it. Premium voices
 are larger files, so use Wi-Fi. When the download finishes, go back to
-JustFlip!. The new voice appears under **Settings › Speech › Voices**
+JustFlip!. The new voice appears under **Settings › Speech**
 and Automatic takes it at once. JustFlip! can't open that settings page
 for you, which is why the Voices screen spells out the path under
 [Get better voices]{.ui}.
@@ -300,6 +301,6 @@ Cards and the voice previews.
 | No Play button, language is set | no voice installed for it | download one in iOS Settings › Accessibility › Read & Speak › Voices |
 | Speak Cards skips a card | one side can't be spoken | give both sides text and a language |
 | Speak Cards is locked | it's a Pro feature | the Play button on each card stays free |
-| The wrong accent | Automatic picked another variant | choose a voice under **Settings › Speech › Voices** |
+| The wrong accent | Automatic picked another variant | choose a voice under **Settings › Speech** |
 | Listening stopped by itself | a call or another app took the audio | restart with [Speak from Here]{.ui} |
 | A cloze reads "blank" | that's by design | add a hint, `{{c1::…::hint}}`, to hear the hint instead |

@@ -38,7 +38,7 @@ full.
 | A postponed deck is still missing | Decks screen › [Deck options]{.ui} › [Review Priority]{.ui} › Resume | 6 |
 | A single postponed card can't be resumed | It runs out on its date; or postpone it again to Tomorrow from [All Cards]{.ui} | 6 |
 | Keys 1–4 or Space do nothing | You're typing an answer, Stricter grading is on, or an occlusion answer isn't revealed yet | 8 |
-| Long cards always open in a sheet | At larger text sizes cards don't shrink to fit; split them, or lower JustFlip!'s text size | 11 |
+| Long cards always open in a sheet | At larger text sizes cards don't shrink to fit; split them, or lower the card text size under **Settings › Appearance** | 11 |
 | No reminder arrives | Turn on **Settings › Reminders › Daily review reminder**, and allow notifications in iOS Settings | 2 |
 | The guides no longer appear | **Settings › Help › Guides** shows them again | 1 |
 

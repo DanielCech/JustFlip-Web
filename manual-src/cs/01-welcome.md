@@ -244,9 +244,9 @@ JustFlip! napíše [Žádné dřívější nákupy nebyly nalezeny.]{.ui}
 ::: note
 #### Když píšeš podpoře
 
-**Nastavení › Účet** ukazuje tvé [ID uživatele aplikace]{.ui} s
-tlačítkem [Kopírovat ID]{.ui}. Podpora tě o něj může požádat, když
-píšeš kvůli nákupu.
+Úplně dole v **Nastavení**, pod [Účet]{.ui}, najdeš své
+[ID uživatele aplikace]{.ui} s tlačítkem [Kopírovat ID]{.ui}. Podpora
+tě o něj může požádat, když píšeš kvůli nákupu.
 :::
 
 ## Mazání a jak věci vrátit {#deleting}

@@ -419,7 +419,7 @@ romanised syllables — things text-to-speech stumbles over. There is no
 need to repeat what is already written. And for better voices overall,
 download an Enhanced or Premium voice in the system settings, under
 **Accessibility › Read & Speak › Voices**, then pick it in JustFlip!
-under **Settings › Speech › Voices**.
+under **Settings › Speech**.
 :::
 
 ## When a card is too long {#fitting}

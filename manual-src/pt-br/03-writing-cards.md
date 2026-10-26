@@ -433,7 +433,7 @@ romanizadas — coisas em que a síntese de voz tropeça. Não precisa repetir
 o que já está escrito. E, para vozes melhores no geral, baixe uma voz
 Aprimorada ou Premium nos ajustes do sistema, em **Acessibilidade ›
 Leitura e Fala › Vozes**, e depois escolha-a no JustFlip! em **Ajustes ›
-Fala › Vozes**.
+Fala**.
 :::
 
 ## Quando um cartão é longo demais {#fitting}

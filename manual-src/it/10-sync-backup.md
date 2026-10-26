@@ -35,9 +35,17 @@ livello, dove trovarlo e cosa fare quando qualcosa non sembra a posto.
 
 Tutti e tre si trovano in **Impostazioni › Sicurezza dei dati**. Apri le
 Impostazioni dall'icona dell'ingranaggio in cima all'elenco degli
-interessi e scorri fino alla sezione [Sicurezza dei dati]{.ui}.
+interessi e tocca [Sicurezza dei dati]{.ui}, sotto [Supporto e dati]{.ui}.
+La riga mostra già lo stato della sincronizzazione e, quando serve, dice
+[Un backup è in ritardo]{.ui} (vedi
+[Backup automatici](#automatic-backups)).
 
-![Impostazioni › Sicurezza dei dati: Stato sincronizzazione, l'ultimo backup completo e l'ultima istantanea dei progressi, Posizione del backup, Eliminati di recente e i pulsanti Esporta backup e Ripristina backup.](images/manual/{lang}/10-data-safety.jpg){.phone}
+La schermata Sicurezza dei dati si apre con due valori: quanti elementi
+attendono in [Eliminati di recente]{.ui}, e se i tuoi backup vanno su
+[iCloud]{.ui} o restano in [Locale]{.ui}. Sotto trovi le righe che
+questo capitolo descrive una per una.
+
+![Impostazioni › Sicurezza dei dati: i valori Eliminati di recente e Modalità di backup, poi Stato sincronizzazione, l'ultimo backup completo e l'ultima istantanea dei progressi, Posizione del backup ed Eliminati di recente. Più sotto seguono i pulsanti Esporta backup e Ripristina backup.](images/manual/{lang}/10-data-safety.jpg){.phone}
 
 ::: gotcha
 #### La sincronizzazione non è un backup
@@ -166,7 +174,9 @@ eliminato automaticamente.
 
 Le date diventano rosse quando un backup è in ritardo: un backup completo
 più vecchio di quattro settimane o un'istantanea dei progressi più
-vecchia di quattro giorni.
+vecchia di quattro giorni. La riga [Sicurezza dei dati]{.ui} nelle
+Impostazioni dice allora [Un backup è in ritardo]{.ui}, così te ne
+accorgi senza aprire la schermata.
 
 ### Esporta backup: un backup completo subito
 
@@ -350,9 +360,11 @@ o 4.
 8. **Riavvia e aggiorna.** Chiudi e riapri JustFlip!, riavvia il
    dispositivo e installa eventuali aggiornamenti di JustFlip!. Come
    ultimo passo, esci da iCloud e accedi di nuovo.
-9. **Ancora bloccato?** Usa [Invia feedback]{.ui} nelle Impostazioni e
-   indica cosa mostra il registro
-   [Attività di sincronizzazione recente]{.ui}.
+9. **Ancora bloccato?** Vai in **Impostazioni › Feedback** e usa
+   [Invia feedback]{.ui}, indicando cosa mostra il registro
+   [Attività di sincronizzazione recente]{.ui}. [Condividi diagnostica]{.ui},
+   nella stessa schermata, invia allo sviluppatore un registro cifrato
+   dell'attività dell'app.
 
 ::: tip
 #### Prima di tentare qualcosa di drastico

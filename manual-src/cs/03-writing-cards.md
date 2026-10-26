@@ -422,7 +422,7 @@ romanizované slabiky — věci, nad kterými převod textu na řeč klopýtá.
 Nemusíš opakovat to, co už je napsané. A pro celkově lepší hlasy si v
 nastavení systému, v části **Zpřístupnění › Čtení a mluvení › Hlasy**,
 stáhni vylepšený nebo prémiový hlas a pak ho v JustFlip! vyber v
-**Nastavení › Řeč › Hlasy**.
+**Nastavení › Řeč**.
 :::
 
 ## Když je kartička moc dlouhá {#fitting}

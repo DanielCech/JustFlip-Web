@@ -35,10 +35,17 @@ couche, où la trouver, et que faire quand quelque chose semble clocher.
 
 Les trois se trouvent dans **Réglages › Sécurité des données**. Ouvre les
 Réglages depuis l’icône en forme de roue dentée en haut de la liste des
-centres d’intérêt et fais défiler jusqu’à la section [Sécurité des
-données]{.ui}.
+centres d’intérêt et touche [Sécurité des données]{.ui}, sous
+[Assistance et données]{.ui}. La ligne affiche déjà l’état de la
+synchronisation, et indique [Une sauvegarde est en retard]{.ui} quand
+c’est le cas (voir [Sauvegardes automatiques](#automatic-backups)).
 
-![Réglages › Sécurité des données : État de synchronisation, la dernière sauvegarde complète et le dernier instantané de progression, Emplacement de sauvegarde, Récemment supprimés, et les boutons Exporter la sauvegarde et Restaurer la sauvegarde.](images/manual/{lang}/10-data-safety.jpg){.phone}
+L’écran Sécurité des données s’ouvre sur deux chiffres : le nombre
+d’éléments qui attendent dans [Récemment supprimés]{.ui}, et si tes
+sauvegardes vont dans [iCloud]{.ui} ou restent en [Local]{.ui}. En
+dessous viennent les lignes que ce chapitre passe en revue.
+
+![Réglages › Sécurité des données : les chiffres Récemment supprimés et Mode de sauvegarde, puis État de synchronisation, la dernière sauvegarde complète et le dernier instantané de progression, Emplacement de sauvegarde et Récemment supprimés. Les boutons Exporter la sauvegarde et Restaurer la sauvegarde suivent plus bas.](images/manual/{lang}/10-data-safety.jpg){.phone}
 
 ::: gotcha
 #### La synchronisation n’est pas une sauvegarde
@@ -174,7 +181,9 @@ supprimée automatiquement.
 
 Les dates passent au rouge quand une sauvegarde est en retard : une
 sauvegarde complète de plus de quatre semaines ou un instantané de
-progression de plus de quatre jours.
+progression de plus de quatre jours. La ligne [Sécurité des
+données]{.ui} des Réglages indique alors [Une sauvegarde est en
+retard]{.ui}, pour que tu le remarques sans ouvrir l’écran.
 
 ### Exporter la sauvegarde : une sauvegarde complète tout de suite
 
@@ -360,9 +369,11 @@ cette liste dans l’ordre. La plupart des problèmes se règlent à l’étape
 8. **Redémarre et mets à jour.** Ferme et rouvre JustFlip!, redémarre
    l’appareil, et installe toute mise à jour de JustFlip!. En dernier
    recours, déconnecte-toi d’iCloud puis reconnecte-toi.
-9. **Toujours bloqué ?** Utilise [Envoyer un commentaire]{.ui} dans les
-   Réglages et mentionne ce qu’affiche le journal [Activité de
-   synchronisation récente]{.ui}.
+9. **Toujours bloqué ?** Va dans **Réglages › Commentaires** et utilise
+   [Envoyer un commentaire]{.ui} en mentionnant ce qu’affiche le journal
+   [Activité de synchronisation récente]{.ui}. [Partager le
+   diagnostic]{.ui}, sur le même écran, envoie au développeur un journal
+   chiffré de l’activité de l’app.
 
 ::: tip
 #### Avant de tenter quoi que ce soit de radical

@@ -176,6 +176,24 @@ nuovo di zecca, usa Oggi, [Carte nuove]{.ui} nella schermata Mazzi,
 oppure [Tutte le carte]{.ui}.
 :::
 
+### Al contrario {#swap}
+
+Studi un mazzo in entrambe le direzioni, per esempio dalla tua lingua
+all'altra e ritorno? Apri il mazzo, apri il menu ••• e scegli
+[Domanda ↔ Risposta]{.ui}. Ogni carta dell'elenco ora mostra prima la
+risposta, e lo stesso vale per un ripasso o per [Leggi carte]{.ui}
+avviati dall'elenco delle carte di questo mazzo. Finché è attiva, la
+voce del menu diventa [Risposta ↔ Domanda]{.ui}; sceglila di nuovo per
+tornare indietro. In entrambi i casi, ogni carta torna a faccia in su.
+
+- La scelta vale per questo mazzo su questo dispositivo. Resta anche
+  quando chiudi l'app, ma non si sincronizza, e il widget e
+  l'Apple Watch mostrano sempre prima la domanda.
+- Le carte con occlusione immagine e i monitoraggi dei progressi non
+  vengono mai invertiti.
+- Se modifichi una carta mentre i lati sono invertiti, la modifichi
+  così come l'hai scritta: la domanda resta la domanda.
+
 ## Oggi {#today}
 
 Il pannello **Oggi**, in cima alla schermata Interessi, risponde a una
@@ -302,7 +320,7 @@ notifiche: consentilo. Scegli l'orario con [Ora del promemoria]{.ui};
 parte dalle 19:00. La notifica dice, per esempio, [È ora di
 ripassare]{.ui} con [12 carte pronte · circa 3 min]{.ui}.
 
-Nella stessa sezione, [Salvataggio serie]{.ui} aggiunge un gentile
+Nella stessa schermata, [Salvataggio serie]{.ui} aggiunge un gentile
 promemoria serale nei giorni in cui non hai ancora ripassato e la tua
 serie è a rischio.
 

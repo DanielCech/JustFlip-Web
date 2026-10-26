@@ -38,7 +38,7 @@ l’explique en détail.
 | Un paquet reporté manque toujours | Écran Paquets › [Options du paquet]{.ui} › [Priorité de révision]{.ui} › Reprendre | 6 |
 | Une carte reportée seule ne peut pas être reprise | Elle expire à sa date ; ou reporte-la de nouveau à Demain depuis [Toutes les cartes]{.ui} | 6 |
 | Les touches 1 à 4 ou Espace ne font rien | Tu saisis une réponse, Évaluation plus stricte est activé, ou la réponse d’une occlusion n’est pas encore révélée | 8 |
-| Les longues cartes s’ouvrent toujours dans une feuille | Aux grandes tailles de texte, les cartes ne rétrécissent pas ; découpe-les, ou baisse la taille de texte de JustFlip! | 11 |
+| Les longues cartes s’ouvrent toujours dans une feuille | Aux grandes tailles de texte, les cartes ne rétrécissent pas ; découpe-les, ou baisse la taille du texte des cartes dans **Réglages › Apparence** | 11 |
 | Aucun rappel n’arrive | Active **Réglages › Rappels › Rappel de révision quotidien**, et autorise les notifications dans les Réglages d’iOS | 2 |
 | Les guides n’apparaissent plus | **Réglages › Aide › Guides** les réaffiche | 1 |
 

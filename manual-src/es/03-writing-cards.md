@@ -438,7 +438,7 @@ sílabas romanizadas: cosas con las que tropieza la síntesis de voz. No
 hace falta repetir lo que ya está escrito. Y para tener mejores voces en
 general, descarga una voz mejorada o premium en los ajustes del sistema,
 en **Accesibilidad › Lectura y voz › Voces**, y luego elígela en
-JustFlip! en **Ajustes › Voz › Voces**.
+JustFlip! en **Ajustes › Voz**.
 :::
 
 ## Cuando una tarjeta es demasiado larga {#fitting}

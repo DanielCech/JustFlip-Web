@@ -256,9 +256,9 @@ JustFlip! dice [No se encontraron compras anteriores.]{.ui}
 ::: note
 #### Cuando contactes con soporte
 
-**Ajustes › Cuenta** muestra tu [ID de usuario de la app]{.ui} con un
-botón [Copiar ID]{.ui}. Puede que soporte te lo pida cuando escribas
-por una compra.
+Al final de todo de **Ajustes**, debajo de [Cuenta]{.ui}, aparece tu
+[ID de usuario de la app]{.ui} con un botón [Copiar ID]{.ui}. Puede que
+soporte te lo pida cuando escribas por una compra.
 :::
 
 ## Eliminar, y recuperar cosas {#deleting}

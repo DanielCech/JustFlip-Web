@@ -36,9 +36,17 @@ nicht stimmt.
 
 Alle drei findest du unter **Einstellungen › Datensicherheit**. Öffne
 die Einstellungen über das Zahnradsymbol oben in der Liste „Interessen“
-und scrolle zum Abschnitt [Datensicherheit]{.ui}.
+und tippe unter [Support & Daten]{.ui} auf [Datensicherheit]{.ui}. Die
+Zeile zeigt schon den Synchronisierungsstatus und meldet
+[Ein Backup ist überfällig]{.ui}, wenn das der Fall ist (siehe
+[Automatische Sicherungen](#automatic-backups)).
 
-![Einstellungen › Datensicherheit: Synchronisierungsstatus, die letzte vollständige Sicherung und der letzte Fortschritts-Schnappschuss, Sicherungsspeicherort, Zuletzt gelöscht sowie die Tasten „Sicherung exportieren“ und „Sicherung wiederherstellen“.](images/manual/{lang}/10-data-safety.jpg){.phone}
+Der Bildschirm „Datensicherheit“ beginnt mit zwei Kennzahlen: wie viele
+Elemente in [Zuletzt gelöscht]{.ui} warten und ob deine Sicherungen in
+[iCloud]{.ui} landen oder [Lokal]{.ui} bleiben. Darunter folgen die
+Zeilen, die dieses Kapitel durchgeht.
+
+![Einstellungen › Datensicherheit: die Kennzahlen „Zuletzt gelöscht“ und „Sicherungsmodus“, dann Synchronisierungsstatus, die letzte vollständige Sicherung und der letzte Fortschritts-Schnappschuss, Sicherungsspeicherort und Zuletzt gelöscht. Darunter folgen die Tasten „Sicherung exportieren“ und „Sicherung wiederherstellen“.](images/manual/{lang}/10-data-safety.jpg){.phone}
 
 ::: gotcha
 #### Synchronisierung ist keine Sicherung
@@ -170,7 +178,10 @@ sie automatisch gelöscht.
 
 Die Daten werden rot, wenn eine Sicherung überfällig ist: eine
 vollständige Sicherung, die älter als vier Wochen ist, oder ein
-Fortschritts-Schnappschuss, der älter als vier Tage ist.
+Fortschritts-Schnappschuss, der älter als vier Tage ist. Die Zeile
+[Datensicherheit]{.ui} in den Einstellungen meldet dann
+[Ein Backup ist überfällig]{.ui}, sodass du es bemerkst, ohne den
+Bildschirm zu öffnen.
 
 ### Sicherung exportieren: eine vollständige Sicherung, sofort
 
@@ -363,9 +374,11 @@ oder 4 gelöst.
    wieder, starte das Gerät neu und installiere alle Updates für
    JustFlip!. Als letzten Schritt meldest du dich von iCloud ab und
    wieder an.
-9. **Hängt es immer noch?** Nutze [Feedback senden]{.ui} in den
-   Einstellungen und erwähne, was das Protokoll [Letzte
-   Synchronisierungsaktivität]{.ui} zeigt.
+9. **Hängt es immer noch?** Geh zu **Einstellungen › Feedback**, nutze
+   [Feedback senden]{.ui} und erwähne, was das Protokoll [Letzte
+   Synchronisierungsaktivität]{.ui} zeigt. [Diagnose teilen]{.ui} auf
+   demselben Bildschirm schickt dem Entwickler ein verschlüsseltes
+   Protokoll der App-Aktivität.
 
 ::: tip
 #### Bevor du zu drastischen Mitteln greifst

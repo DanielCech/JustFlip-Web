@@ -253,9 +253,9 @@ mostra [Nenhuma compra anterior foi encontrada.]{.ui}
 ::: note
 #### Quando falar com o suporte
 
-**Ajustes › Conta** mostra seu [ID de usuário do app]{.ui} com um botão
-[Copiar ID]{.ui}. O suporte pode pedi-lo quando você escrever sobre uma
-compra.
+Bem no fim dos **Ajustes**, abaixo de [Conta]{.ui}, aparece o seu
+[ID de usuário do app]{.ui} com um botão [Copiar ID]{.ui}. O suporte pode
+pedi-lo quando você escrever sobre uma compra.
 :::
 
 ## Apagar e recuperar {#deleting}

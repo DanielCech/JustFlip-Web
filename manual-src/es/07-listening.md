@@ -169,9 +169,9 @@ segundo plano funciona sin ella.
 
 ## Elegir voces {#voices}
 
-Ve a **Ajustes › Voz › Voces**. JustFlip! elige una voz **para cada
-idioma por separado**. El subtítulo de la fila resume tus elecciones,
-por ejemplo «Inglés: Automática · Alemán: Anna».
+Ve a **Ajustes › Voz**, que abre la pantalla Voces. JustFlip! elige
+una voz **para cada idioma por separado**. La fila [Voz]{.ui} de Ajustes
+resume tus elecciones, por ejemplo «Inglés: Automática · Alemán: Anna».
 
 ![La pantalla Voces: los idiomas de tus tarjetas arriba, cada uno con la voz que lo leerá.](images/manual/{lang}/07-voices.jpg){.phone}
 
@@ -251,7 +251,7 @@ iPad, descárgalas en la app Ajustes del sistema:
 Elige un idioma, luego una voz, y tócala para descargarla. Las voces
 premium son archivos más grandes, así que usa la wifi. Cuando termine la
 descarga, vuelve a JustFlip!. La nueva voz aparece en
-**Ajustes › Voz › Voces** y Automática la adopta al instante. JustFlip!
+**Ajustes › Voz** y Automática la adopta al instante. JustFlip!
 no puede abrirte esa página de ajustes, por eso la pantalla Voces
 detalla la ruta en [Consigue mejores voces]{.ui}.
 <!-- VERIFY: the equivalent download path on Mac (System Settings › Accessibility › Spoken Content › System voice › Manage Voices) is not documented in the app; add it once confirmed. -->
@@ -311,6 +311,6 @@ tarjetas y las muestras de voz.
 | No hay botón Reproducir, pero el idioma está configurado | no hay ninguna voz instalada para él | descarga una en Ajustes de iOS › Accesibilidad › Lectura y voz › Voces |
 | Leer tarjetas se salta una tarjeta | una de las caras no se puede leer | dale texto e idioma a las dos caras |
 | Leer tarjetas está bloqueado | es una función Pro | el botón Reproducir de cada tarjeta sigue siendo gratis |
-| El acento no es el que quieres | Automática eligió otra variante | elige una voz en **Ajustes › Voz › Voces** |
+| El acento no es el que quieres | Automática eligió otra variante | elige una voz en **Ajustes › Voz** |
 | La escucha se paró sola | una llamada u otra app se hizo con el audio | vuelve a empezar con [Leer desde aquí]{.ui} |
 | Un hueco se lee como «espacio en blanco» | es así a propósito | añade una pista, `{{c1::…::hint}}`, para oír la pista en su lugar |

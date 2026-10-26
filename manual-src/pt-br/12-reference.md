@@ -38,7 +38,7 @@ o explica por completo.
 | Um baralho adiado continua sumido | Tela Baralhos › [Opções do baralho]{.ui} › [Prioridade de revisão]{.ui} › Retomar | 6 |
 | Um único cartão adiado não pode ser retomado | A espera acaba na data marcada; ou adie-o de novo para Amanhã a partir de [Todos os cartões]{.ui} | 6 |
 | As teclas 1–4 ou Espaço não fazem nada | Você está digitando uma resposta, a Avaliação mais rigorosa está ativada, ou uma resposta de oclusão ainda não foi revelada | 8 |
-| Cartões longos sempre abrem numa folha | Em tamanhos de texto maiores, os cartões não encolhem para caber; divida-os ou diminua o tamanho de texto do JustFlip! | 11 |
+| Cartões longos sempre abrem numa folha | Em tamanhos de texto maiores, os cartões não encolhem para caber; divida-os ou diminua o tamanho de texto dos cartões em **Ajustes › Aparência** | 11 |
 | Nenhum lembrete chega | Ative **Ajustes › Lembretes › Lembrete diário de revisão** e permita as notificações nos Ajustes do iOS | 2 |
 | Os guias não aparecem mais | **Ajustes › Ajuda › Guias** os mostra de novo | 1 |
 

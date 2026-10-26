@@ -34,10 +34,16 @@ wrong.
 | **3. Manual export** | Archive files you save wherever you like | Everything else, including leaving iCloud |
 
 All three live in **Settings › Data Safety**. Open Settings from the
-gear icon at the top of the Interests list and scroll to the
-[Data Safety]{.ui} section.
+gear icon at the top of the Interests list and tap [Data Safety]{.ui},
+under [Support & Data]{.ui}. The row already shows the sync state, and
+says [A backup is overdue]{.ui} when one is (see
+[Automatic backups](#automatic-backups)).
 
-![Settings › Data Safety: Sync status, the last full backup and progress snapshot, Backup Location, Recently Deleted, and the Export Backup and Restore Backup buttons.](images/manual/{lang}/10-data-safety.jpg){.phone}
+The Data Safety screen opens with two figures: how many items wait in
+[Recently Deleted]{.ui}, and whether your backups go to [iCloud]{.ui} or
+stay [Local]{.ui}. Below them are the rows this chapter walks through.
+
+![Settings › Data Safety: the Recently Deleted and Backup Mode figures, then Sync status, the last full backup and progress snapshot, Backup Location and Recently Deleted. The Export Backup and Restore Backup buttons follow below.](images/manual/{lang}/10-data-safety.jpg){.phone}
 
 ::: gotcha
 #### Sync is not a backup
@@ -157,7 +163,9 @@ When the oldest backup falls out of the "kept" count, it is deleted
 automatically.
 
 The dates turn red when a backup is overdue: a full backup older than
-four weeks or a progress snapshot older than four days.
+four weeks or a progress snapshot older than four days. The
+[Data Safety]{.ui} row in Settings then says [A backup is overdue]{.ui},
+so you notice without opening the screen.
 
 ### Export Backup: a full backup right now
 
@@ -326,8 +334,10 @@ in order. Most problems end at step 3 or 4.
 8. **Restart and update.** Close and reopen JustFlip!, restart the
    device, and install any JustFlip! update. As a last step, sign out
    of iCloud and back in.
-9. **Still stuck?** Use [Send Feedback]{.ui} in Settings and mention
-   what the [Recent Sync Activity]{.ui} log shows.
+9. **Still stuck?** Go to **Settings › Feedback** and use
+   [Send Feedback]{.ui}, mentioning what the [Recent Sync Activity]{.ui}
+   log shows. [Share Diagnostics]{.ui}, on the same screen, sends the
+   developer an encrypted log of the app's activity.
 
 ::: tip
 #### Before you try anything drastic

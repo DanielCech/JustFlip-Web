@@ -143,7 +143,7 @@ tvých kartičkách rostou s ní.
 JustFlip! můžeš dát také vlastní velikost, oddělenou od zbytku
 zařízení. Přejdi do **Nastavení › Vzhled**:
 
-![Sekce Vzhled v Nastavení: nabídka motivu, přepínač Převzít velikost textu ze systému a jezdec Velikost textu s náhledem.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
+![Obrazovka Vzhled v Nastavení: nabídka motivu, přepínač Převzít velikost textu ze systému a jezdec Velikost textu, pod nimi přepínač Text kartiček podle velikosti textu aplikace a jezdec Velikost textu kartiček, každý s náhledem.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
 
 - [Převzít velikost textu ze systému]{.ui} je ve výchozím stavu zapnuté.
   JustFlip! pak používá velikost zařízení.
@@ -152,11 +152,27 @@ zařízení. Přejdi do **Nastavení › Vzhled**:
   pod ním, „Takto vypadají seznamy a tlačítka.“, ukazuje velikost,
   kterou volíš.
 
-Jezdec má deset kroků, od nejmenší systémové velikosti po třetí velikost
-pro zpřístupnění. Dvě největší velikosti, které jde nastavit v iOS,
-fungují v JustFlip! i nadále, když pocházejí z nastavení zařízení. Jezdec
-je jen nenabízí. V těchto velikostech se většina kartiček na kartičku
-nevejde a skoro každou bys otevíral v samostatném panelu.
+Kartičky se touto velikostí řídí, dokud jim nedáš vlastní:
+
+- [Text kartiček podle velikosti textu aplikace]{.ui} je ve výchozím
+  stavu zapnuté, takže se kartičky zvětšují a zmenšují spolu se zbytkem
+  aplikace.
+- Jezdec [Velikost textu kartiček]{.ui} nastavuje velikost textu jen na
+  tvých kartičkách: při opakování, v seznamu kartiček i všude jinde, kde
+  se kartička objeví. Jeho posunutím se přepínač nad ním vypne. Řádek
+  pod ním, „Takto vypadá otázka na kartičce.“, je vysázený písmem
+  kartiček.
+
+Můžeš si tak třeba nechat pohodlně velká tlačítka a seznamy, zatímco
+dlouhé kartičky zůstanou ve velikosti, ve které se ještě vejdou. Jakmile
+mají kartičky vlastní velikost, ponechají si ji, i když změníš velikost
+textu aplikace.
+
+Oba jezdce mají deset kroků, od nejmenší systémové velikosti po třetí
+velikost pro zpřístupnění. Dvě největší velikosti, které jde nastavit v
+iOS, fungují v JustFlip! i nadále, když pocházejí z nastavení zařízení.
+Jezdec je jen nenabízí. V těchto velikostech se většina kartiček na
+kartičku nevejde a skoro každou bys otevíral v samostatném panelu.
 
 Poslední krok uvítací prohlídky nabízí stejný jezdec, takže si pohodlnou
 velikost můžeš nastavit ještě před prvním opakováním.
@@ -169,7 +185,8 @@ vešla (kapitola 3). S větší velikostí textu to nedělá. Tvoje kartička se
 vykreslí přesně ve velikosti, o kterou sis řekl. Co se nevejde, dole
 vybledne, a tlačítko **•••** (nebo akce VoiceOveru [Zobrazit celý
 obsah]{.ui}) otevře zbytek. Pokud se to děje u většiny tvých kartiček,
-rozděl je na kratší. Tvé paměti to stejně prospěje.
+rozděl je na kratší, což tvé paměti stejně prospěje, nebo sniž jen
+[Velikost textu kartiček]{.ui}.
 :::
 
 ::: note

@@ -37,7 +37,7 @@ archivo. Cada entrada te remite al capítulo que lo explica a fondo.
 | Un mazo pospuesto sigue sin aparecer | Pantalla Mazos › [Opciones del mazo]{.ui} › [Prioridad de repaso]{.ui} › Reanudar | 6 |
 | Una tarjeta pospuesta suelta no se puede reanudar | Se acaba en su fecha; o vuelve a posponerla hasta Mañana desde [Todas las tarjetas]{.ui} | 6 |
 | Las teclas 1–4 o la barra espaciadora no hacen nada | Estás escribiendo una respuesta, la evaluación más estricta está activada o aún no has revelado una respuesta de oclusión | 8 |
-| Las tarjetas largas siempre se abren en una hoja | Con tamaños de texto grandes las tarjetas no se encogen para caber; divídelas, o baja el tamaño de texto de JustFlip! | 11 |
+| Las tarjetas largas siempre se abren en una hoja | Con tamaños de texto grandes las tarjetas no se encogen para caber; divídelas, o baja el tamaño de texto de las tarjetas en **Ajustes › Apariencia** | 11 |
 | No llega ningún recordatorio | Activa **Ajustes › Recordatorios › Recordatorio diario de repaso** y permite las notificaciones en los Ajustes de iOS | 2 |
 | Las guías ya no aparecen | **Ajustes › Ayuda › Guías** las vuelve a mostrar | 1 |
 

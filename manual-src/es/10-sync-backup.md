@@ -34,10 +34,18 @@ qué hacer cuando algo no cuadra.
 | **3. Exportación manual** | Archivos que guardas donde quieras | Todo lo demás, incluido dejar iCloud |
 
 Las tres están en **Ajustes › Seguridad de datos**. Abre Ajustes desde
-el icono del engranaje de arriba de la lista de intereses y desplázate
-hasta la sección [Seguridad de datos]{.ui}.
+el icono del engranaje de arriba de la lista de intereses y toca
+[Seguridad de datos]{.ui}, en [Soporte y datos]{.ui}. La fila ya muestra
+el estado de la sincronización y, cuando toca, dice
+[Hay una copia de seguridad pendiente]{.ui} (consulta
+[Copias de seguridad automáticas](#automatic-backups)).
 
-![Ajustes › Seguridad de datos: el estado de sincronización, la última copia de seguridad completa y la última instantánea de progreso, la ubicación de copia de seguridad, Eliminados recientemente y los botones Exportar copia de seguridad y Restaurar copia de seguridad.](images/manual/{lang}/10-data-safety.jpg){.phone}
+La pantalla Seguridad de datos empieza con dos cifras: cuántos elementos
+esperan en [Eliminados recientemente]{.ui} y si tus copias de seguridad
+van a [iCloud]{.ui} o se quedan en [Local]{.ui}. Debajo están las filas
+que recorre este capítulo.
+
+![Ajustes › Seguridad de datos: las cifras de Eliminados recientemente y Modo de copia de seguridad, seguidas del estado de sincronización, la última copia de seguridad completa y la última instantánea de progreso, la ubicación de copia de seguridad y Eliminados recientemente. Debajo siguen los botones Exportar copia de seguridad y Restaurar copia de seguridad.](images/manual/{lang}/10-data-safety.jpg){.phone}
 
 ::: gotcha
 #### Sincronizar no es hacer copia de seguridad
@@ -168,7 +176,9 @@ conservan, se elimina automáticamente.
 
 Las fechas se ponen en rojo cuando una copia está atrasada: una copia
 completa de hace más de cuatro semanas o una instantánea de progreso de
-hace más de cuatro días.
+hace más de cuatro días. La fila [Seguridad de datos]{.ui} de Ajustes
+dice entonces [Hay una copia de seguridad pendiente]{.ui}, así que te
+das cuenta sin abrir la pantalla.
 
 ### Exportar copia de seguridad: una copia completa ahora mismo
 
@@ -351,9 +361,11 @@ orden. La mayoría de los problemas se resuelven en el paso 3 o 4.
 8. **Reinicia y actualiza.** Cierra y vuelve a abrir JustFlip!, reinicia
    el dispositivo e instala cualquier actualización de JustFlip!. Como
    último paso, cierra la sesión de iCloud y vuelve a iniciarla.
-9. **¿Sigue sin funcionar?** Usa [Enviar comentarios]{.ui} en Ajustes y
-   menciona lo que muestra el registro
+9. **¿Sigue sin funcionar?** Ve a **Ajustes › Comentarios** y usa
+   [Enviar comentarios]{.ui}; menciona lo que muestra el registro
    [Actividad de sincronización reciente]{.ui}.
+   [Compartir diagnóstico]{.ui}, en la misma pantalla, envía al
+   desarrollador un registro cifrado de la actividad de la app.
 
 ::: tip
 #### Antes de probar nada drástico

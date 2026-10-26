@@ -34,10 +34,17 @@ encontrá-la e o que fazer quando algo parece errado.
 | **3. Exportação manual** | Arquivos que você salva onde quiser | Todo o resto, inclusive deixar o iCloud |
 
 As três ficam em **Ajustes › Segurança dos dados**. Abra os Ajustes pelo
-ícone de engrenagem no alto da lista Interesses e role até a seção
-[Segurança dos dados]{.ui}.
+ícone de engrenagem no alto da lista Interesses e toque em
+[Segurança dos dados]{.ui}, em [Suporte e dados]{.ui}. A linha já mostra
+o status da sincronização e diz [Um backup está atrasado]{.ui} quando
+for o caso (veja [Backups automáticos](#automatic-backups)).
 
-![Ajustes › Segurança dos dados: Status da sincronização, o último backup completo e o último instantâneo de progresso, Local do backup, Apagados Recentemente e os botões Exportar backup e Restaurar backup.](images/manual/{lang}/10-data-safety.jpg){.phone}
+A tela Segurança dos dados abre com dois números: quantos itens esperam
+em [Apagados Recentemente]{.ui} e se os seus backups vão para o
+[iCloud]{.ui} ou ficam no modo [Local]{.ui}. Abaixo deles estão as linhas
+que este capítulo percorre.
+
+![Ajustes › Segurança dos dados: os números de Apagados Recentemente e Modo de backup, depois Status da sincronização, o último backup completo e o último instantâneo de progresso, Local do backup e Apagados Recentemente. Os botões Exportar backup e Restaurar backup vêm logo abaixo.](images/manual/{lang}/10-data-safety.jpg){.phone}
 
 ::: gotcha
 #### Sincronização não é backup
@@ -165,7 +172,9 @@ automaticamente.
 
 As datas ficam vermelhas quando um backup está atrasado: um backup
 completo com mais de quatro semanas ou um instantâneo de progresso com
-mais de quatro dias.
+mais de quatro dias. A linha [Segurança dos dados]{.ui} nos Ajustes
+passa então a dizer [Um backup está atrasado]{.ui}, para você perceber
+sem abrir a tela.
 
 ### Exportar backup: um backup completo agora
 
@@ -343,8 +352,11 @@ em ordem. A maioria dos problemas se resolve no passo 3 ou 4.
 8. **Reinicie e atualize.** Feche e reabra o JustFlip!, reinicie o
    dispositivo e instale qualquer atualização do JustFlip!. Como último
    passo, encerre a sessão do iCloud e inicie de novo.
-9. **Ainda travado?** Use [Enviar feedback]{.ui} nos Ajustes e conte o
-   que o registro [Atividade de sincronização recente]{.ui} mostra.
+9. **Ainda travado?** Vá a **Ajustes › Feedback** e use
+   [Enviar feedback]{.ui}, contando o que o registro
+   [Atividade de sincronização recente]{.ui} mostra.
+   [Compartilhar diagnóstico]{.ui}, na mesma tela, envia ao desenvolvedor
+   um registro criptografado da atividade do app.
 
 ::: tip
 #### Antes de tentar algo drástico

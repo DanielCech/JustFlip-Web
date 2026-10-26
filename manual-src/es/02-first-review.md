@@ -174,6 +174,25 @@ Para empezar un mazo recién estrenado, usa Hoy, [Tarjetas nuevas]{.ui}
 en la pantalla Mazos o [Todas las tarjetas]{.ui}.
 :::
 
+### Al revés {#swap}
+
+¿Aprendes un mazo en los dos sentidos, por ejemplo de tu idioma al otro
+y de vuelta? Abre el mazo, abre el menú ••• y elige
+[Pregunta ↔ Respuesta]{.ui}. Cada tarjeta de la lista muestra ahora
+primero la respuesta, y un repaso o [Leer tarjetas]{.ui} que empieces
+desde la lista de tarjetas de este mazo hace lo mismo. Mientras está
+activo, la opción del menú dice [Respuesta ↔ Pregunta]{.ui}; elígela de
+nuevo para volver atrás. En ambos casos, todas las tarjetas vuelven a
+quedar boca arriba.
+
+- La elección es de este mazo en este dispositivo. Se mantiene al
+  cerrar la app, pero no se sincroniza, y el widget y el Apple Watch
+  siempre muestran primero la pregunta.
+- Las tarjetas de oclusión de imagen y los seguimientos de progreso
+  nunca se invierten.
+- Si editas una tarjeta mientras las caras están invertidas, la editas
+  tal como la escribiste: la pregunta sigue siendo la pregunta.
+
 ## Hoy {#today}
 
 El panel **Hoy**, arriba en la pantalla Intereses, responde a una sola
@@ -302,7 +321,7 @@ notificaciones; permíteselo. Elige la hora con
 dice, por ejemplo, [Hora de repasar]{.ui} con [12 tarjetas listas · unos
 3 min]{.ui}.
 
-En la misma sección, [Rescate de racha]{.ui} añade un recordatorio suave
+En la misma pantalla, [Rescate de racha]{.ui} añade un recordatorio suave
 por la tarde los días en que aún no has repasado y tu racha está en
 peligro.
 

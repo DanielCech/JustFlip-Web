@@ -38,7 +38,7 @@ das ihn ausführlich erklärt.
 | Ein zurückgestellter Stapel fehlt immer noch | Bildschirm „Stapel“ › [Stapeloptionen]{.ui} › [Wiederholungspriorität]{.ui} › Fortsetzen | 6 |
 | Eine einzelne zurückgestellte Karte lässt sich nicht fortsetzen | Sie läuft an ihrem Datum ab; oder stell sie über [Alle Karten]{.ui} erneut auf Morgen zurück | 6 |
 | Die Tasten 1–4 oder die Leertaste tun nichts | Du tippst gerade eine Antwort, Strengere Bewertung ist eingeschaltet, oder eine Abdeckungsantwort ist noch nicht aufgedeckt | 8 |
-| Lange Karten öffnen sich immer in einem Blatt | Bei größeren Textgrößen schrumpfen Karten nicht passend; teile sie auf oder verkleinere die Textgröße in JustFlip! | 11 |
+| Lange Karten öffnen sich immer in einem Blatt | Bei größeren Textgrößen schrumpfen Karten nicht passend; teile sie auf oder verkleinere die Textgröße der Karten unter **Einstellungen › Darstellung** | 11 |
 | Es kommt keine Erinnerung | Schalte **Einstellungen › Erinnerungen › Tägliche Wiederholungserinnerung** ein und erlaube Mitteilungen in den iOS-Einstellungen | 2 |
 | Die Anleitungen erscheinen nicht mehr | **Einstellungen › Hilfe › Anleitungen** zeigt sie wieder | 1 |
 

@@ -180,6 +180,25 @@ nimm Heute, [Neue Karten]{.ui} auf dem Bildschirm „Stapel“ oder
 [Alle Karten]{.ui}.
 :::
 
+### Andersherum {#swap}
+
+Du lernst einen Stapel in beide Richtungen, etwa aus deiner Sprache in
+die andere und zurück? Öffne den Stapel, dann das Menü ••• und wähle
+[Frage ↔ Antwort]{.ui}. Jede Karte in der Liste zeigt jetzt zuerst ihre
+Antwort, und eine Wiederholung oder [Karten vorlesen]{.ui}, gestartet
+aus der Kartenliste dieses Stapels, macht es genauso. Solange das
+eingeschaltet ist, heißt der Menüpunkt [Antwort ↔ Frage]{.ui}; wähle ihn
+erneut, um zurückzuwechseln. In beiden Fällen dreht sich jede Karte
+wieder auf die Vorderseite.
+
+- Die Wahl gilt für diesen Stapel auf diesem Gerät. Sie bleibt erhalten,
+  wenn du die App schließt, wird aber nicht synchronisiert, und das
+  Widget und die Apple Watch zeigen immer zuerst die Frage.
+- Bildabdeckungskarten und Fortschritts-Tracker werden nie vertauscht.
+- Bearbeitest du eine Karte, während die Seiten vertauscht sind,
+  bearbeitest du sie so, wie du sie geschrieben hast: Die Frage bleibt
+  die Frage.
+
 ## Heute {#today}
 
 Das Feld **Heute** oben auf dem Bildschirm „Interessen“ beantwortet eine
@@ -312,7 +331,7 @@ darf; erlaube es. Die Uhrzeit wählst du mit [Erinnerungszeit]{.ui};
 voreingestellt ist 19 Uhr. Die Mitteilung lautet zum Beispiel
 [Zeit zum Wiederholen]{.ui} mit [12 Karten bereit · etwa 3 Min.]{.ui}.
 
-Im selben Bereich ergänzt [Serien-Rettung]{.ui} eine sanfte
+Auf demselben Bildschirm ergänzt [Serien-Rettung]{.ui} eine sanfte
 Abenderinnerung an Tagen, an denen du noch nicht wiederholt hast und
 deine Serie in Gefahr ist.
 

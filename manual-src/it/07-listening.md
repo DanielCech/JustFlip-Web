@@ -171,9 +171,10 @@ senza.
 
 ## Scegliere le voci {#voices}
 
-Vai in **Impostazioni › Voce › Voci**. JustFlip! sceglie una voce **per
-ogni lingua separatamente**. Il sottotitolo della riga riassume le tue
-scelte, per esempio "Inglese: Automatica · Tedesco: Anna".
+Vai in **Impostazioni › Voce**, che apre la schermata Voci. JustFlip!
+sceglie una voce **per ogni lingua separatamente**. La riga [Voce]{.ui}
+nelle Impostazioni riassume le tue scelte, per esempio "Inglese:
+Automatica · Tedesco: Anna".
 
 ![La schermata Voci: in alto le lingue delle tue carte, ognuna con la voce che la leggerà.](images/manual/{lang}/07-voices.jpg){.phone}
 
@@ -251,7 +252,7 @@ iPad, scaricale nell'app Impostazioni di sistema:
 
 Scegli una lingua, poi una voce, e tocca per scaricarla. Le voci premium
 sono file più grandi, quindi usa il Wi-Fi. Al termine del download, torna
-in JustFlip!. La nuova voce compare in **Impostazioni › Voce › Voci** e
+in JustFlip!. La nuova voce compare in **Impostazioni › Voce** e
 Automatica la usa subito. JustFlip! non può aprire per te quella pagina
 delle impostazioni, ed è per questo che la schermata Voci indica il
 percorso sotto [Ottieni voci migliori]{.ui}.
@@ -313,6 +314,6 @@ pulsante Riproduci, Leggi carte e le anteprime delle voci.
 | Nessun pulsante Riproduci, ma la lingua è impostata | nessuna voce installata per quella lingua | scaricane una in Impostazioni di iOS › Accessibilità › Lettura e voce › Voci |
 | Leggi carte salta una carta | uno dei lati non può essere pronunciato | dai a entrambi i lati testo e lingua |
 | Leggi carte è bloccato | è una funzione Pro | il pulsante Riproduci su ogni carta resta gratuito |
-| L'accento sbagliato | Automatica ha scelto un'altra variante | scegli una voce in **Impostazioni › Voce › Voci** |
+| L'accento sbagliato | Automatica ha scelto un'altra variante | scegli una voce in **Impostazioni › Voce** |
 | L'ascolto si è fermato da solo | una chiamata o un'altra app si è presa l'audio | riparti con [Leggi da qui]{.ui} |
 | Una lacuna viene letta "spazio vuoto" | è voluto | aggiungi un indizio, `{{c1::…::indizio}}`, per sentire l'indizio |

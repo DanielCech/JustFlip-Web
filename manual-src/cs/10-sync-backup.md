@@ -34,10 +34,18 @@ nevypadá správně.
 | **3. Ruční export** | Soubory archivů, které si uložíš, kam chceš | Všechno ostatní, včetně odchodu z iCloudu |
 
 Všechny tři najdeš v **Nastavení › Bezpečnost dat**. Nastavení otevřeš
-ikonou ozubeného kola nahoře nad seznamem Zájmy; pak sjeď na sekci
-[Bezpečnost dat]{.ui}.
+ikonou ozubeného kola nahoře nad seznamem Zájmy; pak klepni na
+[Bezpečnost dat]{.ui} pod [Podpora a data]{.ui}. Řádek už ukazuje stav
+synchronizace, a když je záloha po termínu, hlásí
+[Záloha je po termínu]{.ui} (viz
+[Automatické zálohy](#automatic-backups)).
 
-![Nastavení › Bezpečnost dat: Stav synchronizace, poslední úplná záloha a snímek pokroku, Umístění zálohy, Nedávno smazané a tlačítka Exportovat zálohu a Obnovit zálohu.](images/manual/{lang}/10-data-safety.jpg){.phone}
+Obrazovka Bezpečnost dat začíná dvěma údaji: kolik položek čeká v
+[Nedávno smazané]{.ui} a jestli se tvé zálohy ukládají na
+[iCloud]{.ui}, nebo zůstávají [Lokálně]{.ui}. Pod nimi jsou řádky,
+kterými tě provede tato kapitola.
+
+![Nastavení › Bezpečnost dat: údaje Nedávno smazané a Režim zálohy, pod nimi Stav synchronizace, poslední úplná záloha a snímek pokroku, Umístění zálohy a Nedávno smazané. Tlačítka Exportovat zálohu a Obnovit zálohu následují níže.](images/manual/{lang}/10-data-safety.jpg){.phone}
 
 ::: gotcha
 #### Synchronizace není záloha
@@ -158,7 +166,9 @@ Když nejstarší záloha vypadne z počtu uchovávaných, automaticky se
 smaže.
 
 Data zčervenají, když je záloha po termínu: úplná záloha starší než
-čtyři týdny nebo snímek pokroku starší než čtyři dny.
+čtyři týdny nebo snímek pokroku starší než čtyři dny. Řádek
+[Bezpečnost dat]{.ui} v Nastavení pak hlásí [Záloha je po termínu]{.ui},
+takže si toho všimneš, i aniž bys obrazovku otevřel.
 
 ### Exportovat zálohu: úplná záloha hned teď
 
@@ -328,8 +338,10 @@ Většina problémů skončí u kroku 3 nebo 4.
 8. **Restartuj a aktualizuj.** Zavři a znovu otevři JustFlip!, restartuj
    zařízení a nainstaluj případnou aktualizaci JustFlip!. Jako poslední
    krok se z iCloudu odhlas a znovu přihlas.
-9. **Pořád nic?** Použij v Nastavení [Poslat zpětnou vazbu]{.ui} a uveď,
-   co ukazuje záznam [Nedávná aktivita synchronizace]{.ui}.
+9. **Pořád nic?** Přejdi do **Nastavení › Zpětná vazba**, použij
+   [Poslat zpětnou vazbu]{.ui} a uveď, co ukazuje záznam
+   [Nedávná aktivita synchronizace]{.ui}. [Sdílet diagnostiku]{.ui} na
+   stejné obrazovce pošle vývojáři zašifrovaný záznam činnosti aplikace.
 
 ::: tip
 #### Než zkusíš něco drastického

@@ -176,6 +176,25 @@ neuf, utilise Aujourd’hui, [Nouvelles cartes]{.ui} sur l’écran Paquets,
 ou [Toutes les cartes]{.ui}.
 :::
 
+### Dans l’autre sens {#swap}
+
+Tu apprends un paquet dans les deux sens, par exemple de ta langue vers
+l’autre et retour ? Ouvre le paquet, ouvre le menu ••• et choisis
+[Question ↔ Réponse]{.ui}. Chaque carte de la liste montre alors d’abord
+sa réponse, et une révision ou [Lire les cartes]{.ui} lancée depuis la
+liste de cartes de ce paquet fait de même. Tant que c’est activé,
+l’élément du menu s’intitule [Réponse ↔ Question]{.ui} ; choisis-le de
+nouveau pour revenir en arrière. Dans les deux cas, toutes les cartes se
+retournent côté question.
+
+- Ce choix vaut pour ce paquet sur cet appareil. Il est conservé quand
+  tu fermes l’app, mais il ne se synchronise pas, et le widget et
+  l’Apple Watch montrent toujours la question en premier.
+- Les cartes à occlusion d’image et les suivis de progression ne sont
+  jamais inversés.
+- Modifier une carte pendant que les côtés sont inversés la modifie
+  telle que tu l’as écrite : la question reste la question.
+
 ## Aujourd’hui {#today}
 
 Le panneau **Aujourd’hui**, en haut de l’écran Centres d’intérêt, répond
@@ -310,7 +329,7 @@ rappel]{.ui} ; elle est réglée au départ sur 19 h. La notification
 affiche par exemple [C'est l'heure de réviser]{.ui} avec [12 cartes
 prêtes · environ 3 min]{.ui}.
 
-Dans la même section, [Sauvetage de série]{.ui} ajoute un petit rappel en
+Sur le même écran, [Sauvetage de série]{.ui} ajoute un petit rappel en
 soirée les jours où tu n’as pas encore révisé et où ta série est en
 danger.
 

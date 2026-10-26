@@ -136,15 +136,28 @@ lists, statistics and the text on your cards all grow with it.
 You can also give JustFlip! a size of its own, separate from the rest of the
 device. Go to **Settings › Appearance**:
 
-![The Appearance section in Settings: the theme menu, the Follow system text size switch and the Text size slider with its preview.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
+![The Appearance screen in Settings: the theme menu, the Follow system text size switch and the Text size slider, then the Card text follows app text size switch and the Card text size slider, each with its preview.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
 
 - [Follow system text size]{.ui} is on by default. JustFlip! then uses the
   device's size.
 - The [Text size]{.ui} slider picks the size for JustFlip! alone. Moving it
   turns [Follow system text size]{.ui} off for you. The line underneath it,
-  "Cards and lists look like this.", shows the size you're choosing.
+  "Lists and buttons look like this.", shows the size you're choosing.
 
-The slider has ten steps, from the smallest system size up to the third
+Your cards follow that size, unless you give them one of their own:
+
+- [Card text follows app text size]{.ui} is on by default, so cards grow
+  and shrink with the rest of the app.
+- The [Card text size]{.ui} slider sizes the text on your cards alone, in a
+  review, in the card list and everywhere else a card appears. Moving it
+  turns the switch above it off. The line underneath, "A card's question
+  looks like this.", is drawn in the cards' own type.
+
+This lets you keep, say, comfortable large buttons and lists while long
+cards stay at a size where they still fit. Once cards have a size of
+their own, they keep it when you change the app's text size.
+
+Both sliders have ten steps, from the smallest system size up to the third
 accessibility size. The largest two sizes, which you can set in iOS, still
 work in JustFlip! when they come from your device setting. The slider just
 doesn't offer them. At those sizes, most cards no longer fit on the card,
@@ -161,7 +174,8 @@ At the default size, JustFlip! shrinks a long card slightly so it fits
 exactly the size you asked for. Whatever doesn't fit fades out at the
 bottom, and the **•••** button (or VoiceOver's [Show full content]{.ui}
 action) opens the rest. If that happens on most of your cards, split them
-into shorter ones. That's good for your memory anyway.
+into shorter ones, which is good for your memory anyway, or lower just the
+[Card text size]{.ui}.
 :::
 
 ::: note

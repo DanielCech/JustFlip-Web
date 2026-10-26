@@ -150,21 +150,37 @@ el texto de tus tarjetas crecen con él.
 También puedes darle a JustFlip! un tamaño propio, independiente del
 resto del dispositivo. Ve a **Ajustes › Apariencia**:
 
-![La sección Apariencia de Ajustes: el menú de tema, el interruptor Usar el tamaño de texto del sistema y el control Tamaño del texto con su vista previa.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
+![La pantalla Apariencia de Ajustes: el menú de tema, el interruptor Usar el tamaño de texto del sistema y el control Tamaño del texto, y después el interruptor El texto de las tarjetas sigue al de la app y el control Tamaño del texto de las tarjetas, cada uno con su vista previa.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
 
 - [Usar el tamaño de texto del sistema]{.ui} está activado por defecto.
   Así, JustFlip! usa el tamaño del dispositivo.
 - El control [Tamaño del texto]{.ui} elige el tamaño solo para
   JustFlip!. Al moverlo, se desactiva [Usar el tamaño de texto del
-  sistema]{.ui} por ti. La línea de debajo, «Así se ven las tarjetas y
-  las listas.», muestra el tamaño que estás eligiendo.
+  sistema]{.ui} por ti. La línea de debajo, «Así se ven las listas y los
+  botones.», muestra el tamaño que estás eligiendo.
 
-El control tiene diez pasos, desde el tamaño más pequeño del sistema
-hasta el tercer tamaño de accesibilidad. Los dos tamaños más grandes,
-que puedes fijar en iOS, siguen funcionando en JustFlip! cuando vienen
-del ajuste de tu dispositivo. Simplemente, el control no los ofrece. A
-esos tamaños, la mayoría de las tarjetas ya no caben en la tarjeta, y
-acabarías abriendo casi todas en una hoja aparte.
+Tus tarjetas siguen ese tamaño, salvo que les des uno propio:
+
+- [El texto de las tarjetas sigue al de la app]{.ui} está activado por
+  defecto, así que las tarjetas crecen y se encogen con el resto de la
+  app.
+- El control [Tamaño del texto de las tarjetas]{.ui} ajusta solo el texto
+  de tus tarjetas: en un repaso, en la lista de tarjetas y en cualquier
+  otro sitio donde aparezca una tarjeta. Al moverlo, se desactiva el
+  interruptor de encima. La línea de debajo, «Así se ve la pregunta de
+  una tarjeta.», se dibuja con la letra de las propias tarjetas.
+
+Así puedes mantener, por ejemplo, botones y listas grandes y cómodos
+mientras las tarjetas largas se quedan a un tamaño en el que aún caben.
+Cuando las tarjetas tienen un tamaño propio, lo conservan aunque cambies
+el tamaño de texto de la app.
+
+Los dos controles tienen diez pasos, desde el tamaño más pequeño del
+sistema hasta el tercer tamaño de accesibilidad. Los dos tamaños más
+grandes, que puedes fijar en iOS, siguen funcionando en JustFlip! cuando
+vienen del ajuste de tu dispositivo. Simplemente, el control no los
+ofrece. A esos tamaños, la mayoría de las tarjetas ya no caben en la
+tarjeta, y acabarías abriendo casi todas en una hoja aparte.
 
 El último paso del recorrido de bienvenida ofrece el mismo control, para
 que puedas fijar un tamaño cómodo antes de tu primer repaso.
@@ -177,8 +193,9 @@ para que quepa (capítulo 3). Con un tamaño de texto mayor, no lo hace.
 Tu tarjeta se dibuja exactamente al tamaño que pediste. Lo que no cabe
 se difumina abajo, y el botón **•••** (o la acción de VoiceOver
 [Mostrar contenido completo]{.ui}) abre el resto. Si eso te pasa en la
-mayoría de tus tarjetas, divídelas en otras más cortas. De todos modos,
-es bueno para tu memoria.
+mayoría de tus tarjetas, divídelas en otras más cortas, lo que de todos
+modos es bueno para tu memoria, o baja solo el [Tamaño del texto de las
+tarjetas]{.ui}.
 :::
 
 ::: note

@@ -441,7 +441,7 @@ Was schon dasteht, musst du nicht wiederholen. Und für insgesamt bessere
 Stimmen lade in den Systemeinstellungen unter **Bedienungshilfen ›
 Vorlesen & Sprechen › Stimmen** eine erweiterte oder Premium-Stimme
 herunter und wähle sie dann in JustFlip! unter **Einstellungen ›
-Sprachausgabe › Stimmen**.
+Sprachausgabe**.
 :::
 
 ## Wenn eine Karte zu lang ist {#fitting}

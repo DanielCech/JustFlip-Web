@@ -437,7 +437,7 @@ sillabe traslitterate — cose su cui la sintesi vocale inciampa. Non
 c'è bisogno di ripetere ciò che è già scritto. E per avere voci migliori
 in generale, scarica una voce migliorata o premium nelle impostazioni di
 sistema, in **Accessibilità › Lettura e voce › Voci**, poi selezionala in
-JustFlip! in **Impostazioni › Voce › Voci**.
+JustFlip! in **Impostazioni › Voce**.
 :::
 
 ## Quando una carta è troppo lunga {#fitting}

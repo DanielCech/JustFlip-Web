@@ -38,7 +38,7 @@ podrobně vysvětluje.
 | Odložený balíček pořád chybí | Obrazovka Balíčky › [Možnosti balíčků]{.ui} › [Priorita opakování]{.ui} › Obnovit | 6 |
 | Jednotlivou odloženou kartičku nejde obnovit | Vyprší ve svůj den; nebo ji z [Všechny karty]{.ui} znovu odlož na Zítra | 6 |
 | Klávesy 1–4 nebo mezerník nic nedělají | Píšeš odpověď, je zapnuté Přísnější hodnocení, nebo odpověď kartičky se zakrytím ještě není odkrytá | 8 |
-| Dlouhé kartičky se vždy otevírají v panelu | Při větším textu se kartičky nezmenšují; rozděl je, nebo sniž velikost textu v JustFlip! | 11 |
+| Dlouhé kartičky se vždy otevírají v panelu | Při větším textu se kartičky nezmenšují; rozděl je, nebo sniž velikost textu kartiček v **Nastavení › Vzhled** | 11 |
 | Žádné připomenutí nepřichází | Zapni **Nastavení › Připomenutí › Denní připomenutí opakování** a povol oznámení v Nastavení iOS | 2 |
 | Průvodci se už neobjevují | **Nastavení › Nápověda › Průvodci** je ukáže znovu | 1 |
 

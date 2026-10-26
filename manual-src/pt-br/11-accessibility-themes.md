@@ -147,7 +147,7 @@ cartões crescem junto.
 Você também pode dar ao JustFlip! um tamanho só dele, separado do resto
 do dispositivo. Vá a **Ajustes › Aparência**:
 
-![A seção Aparência nos Ajustes: o menu de tema, a chave Usar o tamanho de texto do sistema e o controle Tamanho do texto com a prévia.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
+![A tela Aparência nos Ajustes: o menu de tema, a chave Usar o tamanho de texto do sistema e o controle Tamanho do texto, depois a chave Texto dos cartões segue o do app e o controle Tamanho do texto dos cartões, cada um com a sua prévia.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
 
 - [Usar o tamanho de texto do sistema]{.ui} vem ativado. O JustFlip!
   usa então o tamanho do dispositivo.
@@ -156,10 +156,26 @@ do dispositivo. Vá a **Ajustes › Aparência**:
   para você. A linha abaixo dele, "É assim que listas e botões
   aparecem.", mostra o tamanho que você está escolhendo.
 
-O controle tem dez passos, do menor tamanho do sistema até o terceiro
-tamanho de acessibilidade. Os dois maiores tamanhos, que você pode
-definir no iOS, continuam funcionando no JustFlip! quando vêm do ajuste
-do dispositivo. O controle só não os oferece. Nesses tamanhos, a maioria
+Seus cartões seguem esse tamanho, a não ser que você dê a eles um
+tamanho próprio:
+
+- [Texto dos cartões segue o do app]{.ui} vem ativado, então os cartões
+  crescem e diminuem junto com o resto do app.
+- O controle [Tamanho do texto dos cartões]{.ui} define o tamanho só do
+  texto dos seus cartões, na revisão, na lista de cartões e em qualquer
+  outro lugar onde um cartão aparece. Movê-lo desativa a chave acima
+  dele. A linha abaixo, "É assim que a pergunta de um cartão aparece.",
+  é desenhada com a letra dos próprios cartões.
+
+Assim você pode manter, por exemplo, botões e listas grandes e
+confortáveis, enquanto os cartões longos ficam num tamanho em que ainda
+cabem. Depois que os cartões têm um tamanho próprio, eles o mantêm
+quando você muda o tamanho de texto do app.
+
+Os dois controles têm dez passos, do menor tamanho do sistema até o
+terceiro tamanho de acessibilidade. Os dois maiores tamanhos, que você
+pode definir no iOS, continuam funcionando no JustFlip! quando vêm do
+ajuste do dispositivo. O controle só não os oferece. Nesses tamanhos, a maioria
 dos cartões não cabe mais no cartão, e você abriria quase todos numa
 folha separada.
 
@@ -174,8 +190,9 @@ ele caber (Capítulo 3). Com um tamanho de texto maior, isso não
 acontece. O cartão é desenhado exatamente no tamanho que você pediu. O
 que não couber vai sumindo embaixo, e o botão **•••** (ou a ação
 [Mostrar conteúdo completo]{.ui} do VoiceOver) abre o resto. Se isso
-acontecer na maioria dos seus cartões, divida-os em cartões mais curtos.
-É bom para a sua memória de qualquer jeito.
+acontecer na maioria dos seus cartões, divida-os em cartões mais curtos,
+o que é bom para a sua memória de qualquer jeito, ou diminua só o
+[Tamanho do texto dos cartões]{.ui}.
 :::
 
 ::: note

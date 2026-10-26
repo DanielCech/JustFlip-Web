@@ -270,9 +270,9 @@ keine früheren Käufe gefunden.]{.ui}
 ::: note
 #### Wenn du dich an den Support wendest
 
-**Einstellungen › Konto** zeigt deine [App-Benutzer-ID]{.ui} mit der
-Taste [ID kopieren]{.ui}. Der Support fragt eventuell danach, wenn du
-wegen eines Kaufs schreibst.
+Ganz unten in den **Einstellungen**, unter [Konto]{.ui}, steht deine
+[App-Benutzer-ID]{.ui} mit der Taste [ID kopieren]{.ui}. Der Support
+fragt eventuell danach, wenn du wegen eines Kaufs schreibst.
 :::
 
 ## Löschen und Dinge zurückholen {#deleting}

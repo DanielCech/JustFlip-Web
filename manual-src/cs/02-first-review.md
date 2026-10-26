@@ -166,6 +166,23 @@ nový balíček začni přes Dnes, [Nové karty]{.ui} na obrazovce Balíčky,
 nebo [Všechny karty]{.ui}.
 :::
 
+### Obráceně {#swap}
+
+Učíš se balíček oběma směry, třeba ze svého jazyka do cizího a zpátky?
+Otevři balíček, pak nabídku ••• a zvol [Otázka ↔ Odpověď]{.ui}. Každá
+kartička v seznamu teď ukazuje nejdřív odpověď a stejně tak opakování
+nebo [Mluvit karty]{.ui} spuštěné ze seznamu kartiček tohoto balíčku.
+Dokud je to zapnuté, položka nabídky zní [Odpověď ↔ Otázka]{.ui};
+zvol ji znovu a vrátíš se zpět. V obou případech se každá kartička
+otočí zpátky lícem nahoru.
+
+- Volba patří tomuto balíčku na tomto zařízení. Zůstane, i když
+  aplikaci zavřeš, ale nesynchronizuje se a widget i Apple Watch vždy
+  ukazují nejdřív otázku.
+- Kartičky se zakrytím obrázku a ukazatele pokroku se nikdy neprohazují.
+- Když upravuješ kartičku s prohozenými stranami, upravuješ ji tak, jak
+  jsi ji napsal: otázka zůstává otázkou.
+
 ## Dnes {#today}
 
 Panel **Dnes** nahoře na obrazovce Zájmy odpovídá na jedinou otázku: co
@@ -286,7 +303,7 @@ oznámení; povol to. Čas vyber v [Čas připomenutí]{.ui}; výchozí je 19:00
 Oznámení zní například [Čas na opakování]{.ui} s textem [12 karet
 připraveno · asi 3 min]{.ui}.
 
-Ve stejné sekci přidá [Záchrana série]{.ui} jemné večerní připomenutí ve
+Na stejné obrazovce přidá [Záchrana série]{.ui} jemné večerní připomenutí ve
 dnech, kdy jsi ještě neopakoval a tvoje série je v ohrožení.
 
 ::: gotcha

@@ -265,9 +265,10 @@ trouvé, JustFlip! affiche [Aucun achat précédent n’a été trouvé.]{.ui}
 ::: note
 #### Si tu contactes l’assistance
 
-**Réglages › Compte** affiche ton [Identifiant utilisateur de
-l'app]{.ui} avec un bouton [Copier l'identifiant]{.ui}. L’assistance peut
-te le demander quand tu écris au sujet d’un achat.
+Tout en bas des **Réglages**, sous [Compte]{.ui}, s’affiche ton
+[Identifiant utilisateur de l'app]{.ui} avec un bouton [Copier
+l'identifiant]{.ui}. L’assistance peut te le demander quand tu écris au
+sujet d’un achat.
 :::
 
 ## Supprimer, et récupérer {#deleting}

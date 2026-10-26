@@ -152,20 +152,37 @@ Text auf deinen Karten wachsen alle mit.
 Du kannst JustFlip! aber auch eine eigene Größe geben, unabhängig vom
 Rest des Geräts. Geh zu **Einstellungen › Darstellung**:
 
-![Der Abschnitt „Darstellung“ in den Einstellungen: das Designmenü, der Schalter „Systemtextgröße übernehmen“ und der Schieberegler „Textgröße“ mit seiner Vorschau.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
+![Der Bildschirm „Darstellung“ in den Einstellungen: das Designmenü, der Schalter „Systemtextgröße übernehmen“ und der Schieberegler „Textgröße“, darunter der Schalter „Kartentext folgt der App-Textgröße“ und der Schieberegler „Textgröße der Karten“, jeweils mit Vorschau.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
 
 - [Systemtextgröße übernehmen]{.ui} ist standardmäßig eingeschaltet.
   JustFlip! verwendet dann die Größe des Geräts.
 - Der Schieberegler [Textgröße]{.ui} wählt die Größe nur für JustFlip!.
   Sobald du ihn bewegst, wird [Systemtextgröße übernehmen]{.ui} für dich
-  ausgeschaltet. Die Zeile darunter, „Karten und Listen sehen so aus.“,
+  ausgeschaltet. Die Zeile darunter, „So sehen Listen und Tasten aus.“,
   zeigt die Größe, die du gerade wählst.
 
-Der Schieberegler hat zehn Stufen, von der kleinsten Systemgröße bis zur
-dritten Bedienungshilfen-Größe. Die beiden größten Stufen, die du in iOS
-einstellen kannst, funktionieren in JustFlip! weiterhin, wenn sie aus
-deiner Geräteeinstellung kommen. Der Schieberegler bietet sie nur nicht
-an. Bei diesen Größen passen die meisten Karten nicht mehr auf die
+Deine Karten folgen dieser Größe, solange du ihnen keine eigene gibst:
+
+- [Kartentext folgt der App-Textgröße]{.ui} ist standardmäßig
+  eingeschaltet, sodass Karten mit dem Rest der App wachsen und
+  schrumpfen.
+- Der Schieberegler [Textgröße der Karten]{.ui} legt die Größe nur für
+  den Text auf deinen Karten fest: in einer Wiederholung, in der
+  Kartenliste und überall sonst, wo eine Karte erscheint. Sobald du ihn
+  bewegst, wird der Schalter darüber ausgeschaltet. Die Zeile darunter,
+  „So sieht die Frage einer Karte aus.“, steht in der Schrift der Karten
+  selbst.
+
+So kannst du zum Beispiel angenehm große Tasten und Listen behalten,
+während lange Karten in einer Größe bleiben, in der sie noch passen.
+Sobald Karten eine eigene Größe haben, behalten sie diese, auch wenn du
+die Textgröße der App änderst.
+
+Beide Schieberegler haben zehn Stufen, von der kleinsten Systemgröße bis
+zur dritten Bedienungshilfen-Größe. Die beiden größten Stufen, die du in
+iOS einstellen kannst, funktionieren in JustFlip! weiterhin, wenn sie
+aus deiner Geräteeinstellung kommen. Der Schieberegler bietet sie nur
+nicht an. Bei diesen Größen passen die meisten Karten nicht mehr auf die
 Karte, und du müsstest fast jede in einem eigenen Fenster öffnen.
 
 Der letzte Schritt der Willkommenstour bietet denselben Schieberegler,
@@ -181,7 +198,8 @@ Deine Karte wird genau in der Größe dargestellt, die du eingestellt
 hast. Was nicht passt, blendet unten aus, und die Taste **•••** (oder
 die VoiceOver-Aktion [Vollständigen Inhalt anzeigen]{.ui}) öffnet den
 Rest. Passiert das bei den meisten deiner Karten, teil sie in kürzere
-auf. Das tut deinem Gedächtnis sowieso gut.
+auf, was deinem Gedächtnis sowieso guttut, oder verkleinere nur die
+[Textgröße der Karten]{.ui}.
 :::
 
 ::: note

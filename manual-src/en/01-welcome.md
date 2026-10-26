@@ -245,8 +245,8 @@ previous purchases were found.]{.ui}
 ::: note
 #### When you contact support
 
-**Settings › Account** shows your [App User ID]{.ui} with a [Copy ID]{.ui}
-button. Support may ask you for it when you write about a purchase.
+The very bottom of **Settings**, below [Account]{.ui}, shows your
+[App User ID]{.ui} with a [Copy ID]{.ui} button. Support may ask you for it when you write about a purchase.
 :::
 
 ## Deleting, and getting things back {#deleting}

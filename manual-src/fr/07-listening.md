@@ -171,9 +171,10 @@ arrière-plan fonctionne sans elle.
 
 ## Choisir les voix {#voices}
 
-Va dans **Réglages › Parole › Voix**. JustFlip! choisit une voix **pour
-chaque langue séparément**. Le sous-titre de la ligne résume tes choix,
-par exemple « Anglais : Automatique · Allemand : Anna ».
+Va dans **Réglages › Parole**, qui ouvre l’écran Voix. JustFlip!
+choisit une voix **pour chaque langue séparément**. La ligne
+[Parole]{.ui} des Réglages résume tes choix, par exemple « Anglais :
+Automatique · Allemand : Anna ».
 
 ![L’écran Voix : les langues de tes cartes en haut, chacune avec la voix qui la lira.](images/manual/{lang}/07-voices.jpg){.phone}
 
@@ -254,7 +255,7 @@ iPad, télécharge-les dans l’app Réglages du système :
 Choisis une langue, puis une voix, et touche-la pour la télécharger. Les
 voix premium sont des fichiers plus gros : utilise le Wi-Fi. Une fois le
 téléchargement terminé, reviens dans JustFlip!. La nouvelle voix apparaît
-sous **Réglages › Parole › Voix** et Automatique l’adopte aussitôt.
+sous **Réglages › Parole** et Automatique l’adopte aussitôt.
 JustFlip! ne peut pas ouvrir cette page de réglages pour toi, c’est
 pourquoi l’écran Voix détaille le chemin sous [Obtenir de meilleures
 voix]{.ui}.
@@ -317,6 +318,6 @@ Lire, Lire les cartes et les extraits de voix.
 | Pas de bouton Lire, alors que la langue est réglée | aucune voix n’est installée pour elle | télécharges-en une dans Réglages d’iOS › Accessibilité › Lire et énoncer › Voix |
 | Lire les cartes saute une carte | un des côtés ne peut pas être prononcé | donne aux deux côtés du texte et une langue |
 | Lire les cartes est verrouillé | c’est une fonction Pro | le bouton Lire de chaque carte reste gratuit |
-| Le mauvais accent | Automatique a choisi une autre variante | choisis une voix sous **Réglages › Parole › Voix** |
+| Le mauvais accent | Automatique a choisi une autre variante | choisis une voix sous **Réglages › Parole** |
 | L’écoute s’est arrêtée toute seule | un appel ou une autre app a pris l’audio | relance avec [Lire à partir d'ici]{.ui} |
 | Un trou est lu « espace vide » | c’est voulu | ajoute un indice, `{{c1::…::indice}}`, pour entendre l’indice à la place |

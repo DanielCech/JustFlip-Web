@@ -166,9 +166,10 @@ voltar numa atualização. A escuta em segundo plano funciona sem ela.
 
 ## Escolher vozes {#voices}
 
-Vá a **Ajustes › Fala › Vozes**. O JustFlip! escolhe uma voz **para cada
-idioma separadamente**. O subtítulo da linha resume as suas escolhas, por
-exemplo "Inglês: Automática · Alemão: Anna".
+Vá a **Ajustes › Fala**, que abre a tela Vozes. O JustFlip! escolhe uma
+voz **para cada idioma separadamente**. A linha [Fala]{.ui} nos Ajustes
+resume as suas escolhas, por exemplo "Inglês: Automática · Alemão:
+Anna".
 
 ![A tela Vozes: os idiomas dos seus cartões no alto, cada um com a voz que vai lê-lo.](images/manual/{lang}/07-voices.jpg){.phone}
 
@@ -247,8 +248,8 @@ iPhone e no iPad, baixe-as no app Ajustes do sistema:
 
 Escolha um idioma, depois uma voz, e toque para baixá-la. As vozes
 Premium são arquivos maiores, então use Wi-Fi. Quando o download
-terminar, volte ao JustFlip!. A nova voz aparece em **Ajustes › Fala ›
-Vozes** e a Automática passa a usá-la na hora. O JustFlip! não consegue
+terminar, volte ao JustFlip!. A nova voz aparece em **Ajustes › Fala**
+e a Automática passa a usá-la na hora. O JustFlip! não consegue
 abrir essa página de ajustes para você, e é por isso que a tela Vozes
 explica o caminho em [Obtenha vozes melhores]{.ui}.
 <!-- VERIFY: the equivalent download path on Mac (System Settings › Accessibility › Spoken Content › System voice › Manage Voices) is not documented in the app; add it once confirmed. -->
@@ -307,6 +308,6 @@ as prévias de voz.
 | Nenhum botão Reproduzir, e o idioma está definido | não há voz instalada para ele | baixe uma em Ajustes do iOS › Acessibilidade › Leitura e Fala › Vozes |
 | Ler cartões pula um cartão | um dos lados não pode ser falado | dê texto e idioma aos dois lados |
 | Ler cartões está bloqueado | é um recurso Pro | o botão Reproduzir de cada cartão continua grátis |
-| O sotaque errado | a Automática escolheu outra variante | escolha uma voz em **Ajustes › Fala › Vozes** |
+| O sotaque errado | a Automática escolheu outra variante | escolha uma voz em **Ajustes › Fala** |
 | A escuta parou sozinha | uma ligação ou outro app assumiu o áudio | recomece com [Ler a partir daqui]{.ui} |
 | Um cloze lê "lacuna" | é assim de propósito | adicione uma dica, `{{c1::…::dica}}`, para ouvir a dica no lugar |

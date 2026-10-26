@@ -147,7 +147,7 @@ il testo delle carte crescono tutti di conseguenza.
 Puoi anche dare a JustFlip! una dimensione tutta sua, separata dal resto
 del dispositivo. Vai in **Impostazioni › Aspetto**:
 
-![La sezione Aspetto nelle Impostazioni: il menu del tema, l'interruttore Usa la dimensione del testo di sistema e il cursore Dimensione del testo con la sua anteprima.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
+![La schermata Aspetto nelle Impostazioni: il menu del tema, l'interruttore Usa la dimensione del testo di sistema e il cursore Dimensione del testo, poi l'interruttore Il testo delle schede segue quello dell’app e il cursore Dimensione del testo delle schede, ciascuno con la sua anteprima.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
 
 - [Usa la dimensione del testo di sistema]{.ui} è attivo per
   impostazione predefinita. JustFlip! usa allora la dimensione del
@@ -158,11 +158,28 @@ del dispositivo. Vai in **Impostazioni › Aspetto**:
   "Ecco come appaiono elenchi e pulsanti.", mostra la dimensione che stai
   scegliendo.
 
-Il cursore ha dieci passi, dalla dimensione di sistema più piccola fino
-alla terza dimensione di accessibilità. Le due dimensioni più grandi,
-che puoi impostare in iOS, funzionano comunque in JustFlip! quando
-arrivano dall'impostazione del dispositivo. Il cursore semplicemente non
-le offre. A quelle dimensioni, la maggior parte delle carte non sta più
+Le tue carte seguono quella dimensione, a meno che tu non ne dia loro una
+tutta loro:
+
+- [Il testo delle schede segue quello dell’app]{.ui} è attivo per
+  impostazione predefinita, quindi le carte si ingrandiscono e si
+  rimpiccioliscono insieme al resto dell'app.
+- Il cursore [Dimensione del testo delle schede]{.ui} regola solo il testo
+  delle tue carte, nel ripasso, nell'elenco delle carte e ovunque appaia
+  una carta. Spostarlo disattiva l'interruttore sopra. La riga
+  sottostante, "Ecco come appare la domanda di una scheda.", è disegnata
+  con il carattere delle carte stesse.
+
+Così puoi tenere, per esempio, pulsanti ed elenchi grandi e comodi,
+mentre le carte lunghe restano a una dimensione in cui ci stanno ancora.
+Una volta che le carte hanno una dimensione tutta loro, la mantengono
+quando cambi la dimensione del testo dell'app.
+
+Entrambi i cursori hanno dieci passi, dalla dimensione di sistema più
+piccola fino alla terza dimensione di accessibilità. Le due dimensioni
+più grandi, che puoi impostare in iOS, funzionano comunque in JustFlip!
+quando arrivano dall'impostazione del dispositivo. Il cursore
+semplicemente non le offre. A quelle dimensioni, la maggior parte delle carte non sta più
 sulla carta, e finiresti per aprirne quasi ognuna in un pannello a parte.
 
 L'ultimo passo del tour di benvenuto offre lo stesso cursore, così puoi
@@ -176,8 +193,9 @@ carta lunga perché ci stia (Capitolo 3). Con una dimensione del testo più
 grande, non lo fa. La carta viene disegnata esattamente alla dimensione
 che hai chiesto. Ciò che non ci sta sfuma in basso, e il pulsante **•••**
 (o l'azione VoiceOver [Mostra contenuto completo]{.ui}) apre il resto. Se
-succede con la maggior parte delle carte, dividile in carte più brevi.
-Fa comunque bene alla tua memoria.
+succede con la maggior parte delle carte, dividile in carte più brevi
+(fa comunque bene alla tua memoria), oppure abbassa solo la
+[Dimensione del testo delle schede]{.ui}.
 :::
 
 ::: note

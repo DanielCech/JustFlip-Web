@@ -173,10 +173,10 @@ im Hintergrund funktioniert auch ohne sie.
 
 ## Stimmen auswählen {#voices}
 
-Geh zu **Einstellungen › Sprachausgabe › Stimmen**. JustFlip! wählt eine
-Stimme **für jede Sprache einzeln**. Der Untertitel der Zeile fasst
-deine Auswahl zusammen, zum Beispiel „Englisch: Automatisch · Deutsch:
-Anna“.
+Geh zu **Einstellungen › Sprachausgabe**; das öffnet den Bildschirm
+„Stimmen“. JustFlip! wählt eine Stimme **für jede Sprache einzeln**. Die
+Zeile [Sprachausgabe]{.ui} in den Einstellungen fasst deine Auswahl
+zusammen, zum Beispiel „Englisch: Automatisch · Deutsch: Anna“.
 
 ![Der Bildschirm „Stimmen“: oben deine Kartensprachen, jeweils mit der Stimme, die sie vorliest.](images/manual/{lang}/07-voices.jpg){.phone}
 
@@ -258,7 +258,7 @@ kostenlos. Auf iPhone und iPad lädst du sie in der System-App
 Wähle eine Sprache, dann eine Stimme, und tippe darauf, um sie zu laden.
 Premium-Stimmen sind größere Dateien, nutze also WLAN. Ist der Download
 fertig, wechsle zurück zu JustFlip!. Die neue Stimme erscheint unter
-**Einstellungen › Sprachausgabe › Stimmen**, und „Automatisch“ übernimmt
+**Einstellungen › Sprachausgabe**, und „Automatisch“ übernimmt
 sie sofort. JustFlip! kann diese Einstellungsseite nicht für dich
 öffnen, deshalb nennt der Bildschirm „Stimmen“ den Pfad unter
 [Bessere Stimmen laden]{.ui}.
@@ -321,6 +321,6 @@ vorlesen“ und die Stimmproben.
 | Keine Abspieltaste, obwohl die Sprache eingestellt ist | keine Stimme dafür installiert | lade eine in den iOS-Einstellungen › Bedienungshilfen › Vorlesen & Sprechen › Stimmen |
 | „Karten vorlesen“ überspringt eine Karte | eine Seite kann nicht gesprochen werden | gib beiden Seiten Text und eine Sprache |
 | „Karten vorlesen“ ist gesperrt | es ist eine Pro-Funktion | die Abspieltaste auf jeder Karte bleibt kostenlos |
-| Der falsche Akzent | „Automatisch“ hat eine andere Variante gewählt | wähle eine Stimme unter **Einstellungen › Sprachausgabe › Stimmen** |
+| Der falsche Akzent | „Automatisch“ hat eine andere Variante gewählt | wähle eine Stimme unter **Einstellungen › Sprachausgabe** |
 | Die Wiedergabe hat von selbst aufgehört | ein Anruf oder eine andere App hat das Audio übernommen | starte neu mit [Ab hier vorlesen]{.ui} |
 | Eine Lücke wird als „Lücke“ gelesen | das ist so gewollt | füge einen Hinweis hinzu, `{{c1::…::hint}}`, um stattdessen den Hinweis zu hören |

@@ -163,9 +163,10 @@ příštích verzí. Poslech na pozadí funguje i bez ní.
 
 ## Výběr hlasů {#voices}
 
-Přejdi do **Nastavení › Řeč › Hlasy**. JustFlip! vybírá hlas **pro každý
-jazyk zvlášť**. Podtitul řádku tvé volby shrnuje, například
-„Angličtina: Automaticky · Němčina: Anna“.
+Přejdi do **Nastavení › Řeč**, kde se otevře obrazovka Hlasy. JustFlip!
+vybírá hlas **pro každý jazyk zvlášť**. Řádek [Řeč]{.ui} v Nastavení
+tvé volby shrnuje, například „Angličtina: Automaticky · Němčina:
+Anna“.
 
 ![Obrazovka Hlasy: nahoře jazyky tvých kartiček, každý s hlasem, který ho bude číst.](images/manual/{lang}/07-voices.jpg){.phone}
 
@@ -241,7 +242,7 @@ iPadu si je stáhneš v systémové aplikaci Nastavení:
 
 Vyber jazyk, pak hlas a klepnutím ho stáhni. Prémiové hlasy jsou větší
 soubory, takže použij Wi-Fi. Až stahování skončí, vrať se do JustFlip!.
-Nový hlas se objeví v **Nastavení › Řeč › Hlasy** a Automaticky ho hned
+Nový hlas se objeví v **Nastavení › Řeč** a Automaticky ho hned
 převezme. JustFlip! ti tuto stránku nastavení otevřít neumí, a proto
 obrazovka Hlasy vypisuje cestu v části [Získejte lepší hlasy]{.ui}.
 <!-- VERIFY: the equivalent download path on Mac (System Settings › Accessibility › Spoken Content › System voice › Manage Voices) is not documented in the app; add it once confirmed. -->
@@ -300,6 +301,6 @@ karty i ukázky hlasů.
 | Tlačítko Přehrát chybí, ač je jazyk nastaven | není pro něj nainstalovaný hlas | stáhni si ho v Nastavení iOS › Zpřístupnění › Čtení a mluvení › Hlasy |
 | Mluvit karty přeskočí kartičku | jedna strana nejde přečíst | dej oběma stranám text a jazyk |
 | Mluvit karty je zamčené | je to funkce Pro | tlačítko Přehrát na každé kartičce zůstává zdarma |
-| Špatný přízvuk | Automaticky vybralo jinou variantu | vyber hlas v **Nastavení › Řeč › Hlasy** |
+| Špatný přízvuk | Automaticky vybralo jinou variantu | vyber hlas v **Nastavení › Řeč** |
 | Poslech se sám zastavil | zvuk převzal hovor nebo jiná aplikace | spusť znovu přes [Mluvit odsud]{.ui} |
 | Doplňovačka říká „prázdné místo“ | tak je to navrženo | přidej nápovědu, `{{c1::…::nápověda}}`, a uslyšíš ji místo toho |

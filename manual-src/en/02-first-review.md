@@ -162,6 +162,23 @@ date yet. To start a brand-new deck, use Today, [New Cards]{.ui} on the
 Decks screen, or [All Cards]{.ui}.
 :::
 
+### The other way round {#swap}
+
+Learning a deck in both directions, say from your language into the
+other one and back? Open the deck, open the ••• menu and choose
+[Question ↔ Answer]{.ui}. Every card in the list now shows its answer
+first, and a review or [Speak Cards]{.ui} started from this deck's card
+list does the same. While it is on, the menu item reads
+[Answer ↔ Question]{.ui}; choose it again to switch back. Either way,
+every card turns back face up.
+
+- The choice belongs to this deck on this device. It stays when you
+  close the app, but it doesn't sync, and the widget and Apple Watch
+  always show the question first.
+- Image occlusion cards and progress trackers are never swapped.
+- Editing a card while the sides are swapped edits it as you wrote it:
+  the question stays the question.
+
 ## Today {#today}
 
 The **Today** panel at the top of the Interests screen answers one
@@ -280,7 +297,7 @@ notifications; allow it. Pick the time with [Reminder time]{.ui}; it
 starts at 7 pm. The notification reads, for example, [Time to review]{.ui}
 with [12 cards ready · about 3 min]{.ui}.
 
-In the same section, [Streak rescue]{.ui} adds a gentle evening reminder
+On the same screen, [Streak rescue]{.ui} adds a gentle evening reminder
 on days when you haven't reviewed yet and your streak is at risk.
 
 ::: gotcha

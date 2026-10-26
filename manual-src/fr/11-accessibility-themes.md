@@ -149,7 +149,7 @@ texte de tes cartes grandissent tous avec elle.
 Tu peux aussi donner à JustFlip! sa propre taille, indépendante du reste
 de l’appareil. Va dans **Réglages › Apparence** :
 
-![La section Apparence des Réglages : le menu des thèmes, l’interrupteur Suivre la taille du texte du système et le curseur Taille du texte avec son aperçu.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
+![L’écran Apparence des Réglages : le menu des thèmes, l’interrupteur Suivre la taille du texte du système et le curseur Taille du texte, puis l’interrupteur Le texte des cartes suit celui de l’app et le curseur Taille du texte des cartes, chacun avec son aperçu.](images/manual/{lang}/11-appearance-settings.jpg){.phone}
 
 - [Suivre la taille du texte du système]{.ui} est activé par défaut.
   JustFlip! utilise alors la taille de l’appareil.
@@ -158,12 +158,30 @@ de l’appareil. Va dans **Réglages › Apparence** :
   système]{.ui} pour toi. La ligne en dessous, « Voici à quoi ressemblent
   les listes et les boutons. », montre la taille que tu choisis.
 
-Le curseur compte dix crans, de la plus petite taille système jusqu’à la
-troisième taille d’accessibilité. Les deux plus grandes tailles, que tu
-peux régler dans iOS, fonctionnent toujours dans JustFlip! quand elles
-viennent du réglage de ton appareil. Le curseur ne les propose
-simplement pas. À ces tailles, la plupart des cartes ne tiennent plus sur
-la carte, et tu ouvrirais presque chacune dans une feuille à part.
+Tes cartes suivent cette taille, sauf si tu leur en donnes une à elles :
+
+- [Le texte des cartes suit celui de l’app]{.ui} est activé par défaut,
+  si bien que les cartes grandissent et rétrécissent avec le reste de
+  l’app.
+- Le curseur [Taille du texte des cartes]{.ui} règle la taille du texte
+  de tes cartes seulement, en révision, dans la liste des cartes et
+  partout ailleurs où une carte apparaît. Le déplacer désactive
+  l’interrupteur au-dessus. La ligne en dessous, « Voici à quoi
+  ressemble la question d’une carte. », s’affiche dans la police des
+  cartes elles-mêmes.
+
+Tu peux ainsi garder, par exemple, des boutons et des listes bien grands
+tout en laissant les longues cartes à une taille où elles tiennent
+encore. Une fois que les cartes ont leur propre taille, elles la gardent
+quand tu changes la taille du texte de l’app.
+
+Les deux curseurs comptent dix crans, de la plus petite taille système
+jusqu’à la troisième taille d’accessibilité. Les deux plus grandes
+tailles, que tu peux régler dans iOS, fonctionnent toujours dans
+JustFlip! quand elles viennent du réglage de ton appareil. Le curseur ne
+les propose simplement pas. À ces tailles, la plupart des cartes ne
+tiennent plus sur la carte, et tu ouvrirais presque chacune dans une
+feuille à part.
 
 La dernière étape de la visite de bienvenue propose le même curseur, pour
 que tu puisses choisir une taille confortable avant ta première
@@ -177,8 +195,9 @@ pour qu’elle tienne (chapitre 3). Avec une taille de texte plus grande,
 il ne le fait pas. Ta carte s’affiche exactement à la taille demandée. Ce
 qui ne tient pas s’estompe en bas, et le bouton **•••** (ou l’action
 VoiceOver [Afficher tout le contenu]{.ui}) ouvre le reste. Si cela arrive
-sur la plupart de tes cartes, découpe-les en cartes plus courtes. C’est
-de toute façon bon pour ta mémoire.
+sur la plupart de tes cartes, découpe-les en cartes plus courtes, ce qui
+est de toute façon bon pour ta mémoire, ou baisse seulement la [Taille du
+texte des cartes]{.ui}.
 :::
 
 ::: note

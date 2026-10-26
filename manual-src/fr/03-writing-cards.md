@@ -444,8 +444,8 @@ abréviations et les syllabes romanisées — tout ce sur quoi la synthèse
 vocale trébuche. Inutile de répéter ce qui est déjà écrit. Et pour de
 meilleures voix en général, télécharge une voix améliorée ou premium dans
 les réglages du système, sous **Accessibilité › Lire et énoncer ›
-Voix**, puis choisis-la dans JustFlip! sous **Réglages › Parole ›
-Voix**.
+Voix**, puis choisis-la dans JustFlip! sous **Réglages ›
+Parole**.
 :::
 
 ## Quand une carte est trop longue {#fitting}

@@ -169,6 +169,25 @@ Para começar um baralho novinho, use Hoje, [Cartões novos]{.ui} na tela
 Baralhos ou [Todos os cartões]{.ui}.
 :::
 
+### Do outro jeito {#swap}
+
+Está aprendendo um baralho nos dois sentidos, por exemplo do seu idioma
+para o outro e de volta? Abra o baralho, abra o menu ••• e escolha
+[Pergunta ↔ Resposta]{.ui}. Todos os cartões da lista passam a mostrar a
+resposta primeiro, e uma revisão ou [Ler cartões]{.ui} iniciados na lista
+de cartões desse baralho fazem o mesmo. Enquanto isso estiver ativado, o
+item do menu diz [Resposta ↔ Pergunta]{.ui}; escolha-o de novo para
+voltar. Nos dois casos, todos os cartões voltam a ficar com a frente para
+cima.
+
+- A escolha vale para este baralho neste dispositivo. Ela continua quando
+  você fecha o app, mas não é sincronizada, e o widget e o Apple Watch
+  sempre mostram a pergunta primeiro.
+- Cartões de oclusão de imagem e rastreadores de progresso nunca são
+  invertidos.
+- Editar um cartão com os lados invertidos edita o cartão como você o
+  escreveu: a pergunta continua sendo a pergunta.
+
 ## Hoje {#today}
 
 O painel **Hoje**, no alto da tela Interesses, responde a uma pergunta: o
@@ -294,7 +313,7 @@ enviar notificações; permita. Escolha o horário em
 exemplo, [Hora de revisar]{.ui} com [12 cartões prontos · cerca de 3
 min]{.ui}.
 
-Na mesma seção, [Resgate de sequência]{.ui} acrescenta um lembrete
+Na mesma tela, [Resgate de sequência]{.ui} acrescenta um lembrete
 suave à noite nos dias em que você ainda não revisou e sua sequência
 está em risco.
 

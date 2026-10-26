@@ -38,7 +38,7 @@ intero.
 | Un mazzo rinviato manca ancora | Schermata Mazzi › [Opzioni mazzo]{.ui} › [Priorità di ripasso]{.ui} › Riprendi | 6 |
 | Una singola carta rinviata non si può riprendere | Scade alla sua data; oppure rinviala di nuovo a Domani da [Tutte le carte]{.ui} | 6 |
 | I tasti 1–4 o la barra spaziatrice non fanno nulla | Stai digitando una risposta, la valutazione più rigorosa è attiva, o la risposta di un'occlusione non è ancora svelata | 8 |
-| Le carte lunghe si aprono sempre in un pannello | Con testo più grande le carte non si rimpiccioliscono; dividile, o abbassa la dimensione del testo di JustFlip! | 11 |
+| Le carte lunghe si aprono sempre in un pannello | Con testo più grande le carte non si rimpiccioliscono; dividile, o abbassa la dimensione del testo delle carte in **Impostazioni › Aspetto** | 11 |
 | Non arriva nessun promemoria | Attiva **Impostazioni › Promemoria › Promemoria di ripasso giornaliero**, e consenti le notifiche nelle Impostazioni di iOS | 2 |
 | Le guide non compaiono più | **Impostazioni › Aiuto › Guide** le mostra di nuovo | 1 |
 
