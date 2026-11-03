@@ -591,5 +591,12 @@
   "prompt.quote4": "この講義の書き起こしをデッキにして。",
   "accessibility.pendingLabel": "カテゴリは検証中で、まだ申告していません",
   "accessibility.naLabel": "カテゴリは JustFlip! には該当しません",
-  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">公開済み</span><h3>大きな文字</h3><p>カードの内容、コントロール、制約のあるレイアウトがシステムの文字サイズに合わせて拡大縮小します。</p>"
+  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">公開済み</span><h3>大きな文字</h3><p>カードの内容、コントロール、制約のあるレイアウトがシステムの文字サイズに合わせて拡大縮小します。</p>",
+  "bf.soon": "11月27日（金）スタート",
+  "bf.live": "セール中・12月1日（火）まで",
+  "bf.kicker": "ブラックフライデー · 2026年11月27日〜12月1日",
+  "bf.title": "JustFlip Pro 買い切りプランが<em>半額</em>",
+  "bf.body": "日本では <s>¥4,000</s> → <strong>¥2,000</strong>。一度の購入でPro機能をずっと使えます。サブスクなし。",
+  "bf.note": "コード不要：アプリ内で自動的にセール価格になります。",
+  "bf.cta": "App StoreでJustFlipを入手"
 }

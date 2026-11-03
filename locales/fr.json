@@ -591,5 +591,12 @@
   "prompt.quote4": "Transforme cette transcription de cours en paquet.",
   "accessibility.pendingLabel": "catégories sont encore en validation et pas encore déclarées",
   "accessibility.naLabel": "catégories ne s’appliquent pas à JustFlip!",
-  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">Publié</span><h3>Texte agrandi</h3><p>Le contenu des cartes, les commandes et les mises en page contraintes s’adaptent à la taille de texte du système.</p>"
+  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">Publié</span><h3>Texte agrandi</h3><p>Le contenu des cartes, les commandes et les mises en page contraintes s’adaptent à la taille de texte du système.</p>",
+  "bf.soon": "À partir du vendredi 27 novembre",
+  "bf.live": "En ce moment · jusqu'au mardi 1er décembre",
+  "bf.kicker": "Black Friday · 27 nov. – 1er déc. 2026",
+  "bf.title": "JustFlip Pro À vie <em>à moitié prix</em>",
+  "bf.body": "En France <s>29,99 €</s> → <strong>14,99 €</strong>. Un seul paiement, toutes les fonctions Pro pour toujours, sans abonnement.",
+  "bf.note": "Aucun code : le prix s'applique automatiquement dans l'app.",
+  "bf.cta": "Télécharger JustFlip sur l'App Store"
 }

@@ -591,5 +591,12 @@
   "prompt.quote4": "이 강의 녹취록을 덱으로 만들어 줘.",
   "accessibility.pendingLabel": "개 카테고리는 아직 검증 중이며 표시하지 않았습니다",
   "accessibility.naLabel": "개 카테고리는 JustFlip!에 해당하지 않습니다",
-  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">게시됨</span><h3>큰 텍스트</h3><p>카드 내용, 컨트롤, 제한된 레이아웃이 시스템 텍스트 크기에 맞춰 조절됩니다.</p>"
+  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">게시됨</span><h3>큰 텍스트</h3><p>카드 내용, 컨트롤, 제한된 레이아웃이 시스템 텍스트 크기에 맞춰 조절됩니다.</p>",
+  "bf.soon": "11월 27일(금) 시작",
+  "bf.live": "진행 중 · 12월 1일(화)까지",
+  "bf.kicker": "블랙 프라이데이 · 2026년 11월 27일 – 12월 1일",
+  "bf.title": "JustFlip Pro 평생 소장 <em>반값</em>",
+  "bf.body": "한국 <s>₩44,000</s> → <strong>₩22,000</strong>. 한 번 결제로 모든 Pro 기능을 계속 사용하세요. 구독 없음.",
+  "bf.note": "코드 필요 없음: 앱에서 할인 가격이 자동으로 적용됩니다.",
+  "bf.cta": "App Store에서 JustFlip 받기"
 }

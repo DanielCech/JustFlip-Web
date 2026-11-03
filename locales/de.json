@@ -591,5 +591,12 @@
   "prompt.quote4": "Mach aus dieser Vorlesungsmitschrift ein Deck.",
   "accessibility.pendingLabel": "Kategorien werden noch validiert und sind noch nicht angegeben",
   "accessibility.naLabel": "Kategorien treffen auf JustFlip! nicht zu",
-  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">Veröffentlicht</span><h3>Größerer Text</h3><p>Karteninhalt, Bedienelemente und begrenzte Layouts skalieren mit der Systemtextgröße.</p>"
+  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">Veröffentlicht</span><h3>Größerer Text</h3><p>Karteninhalt, Bedienelemente und begrenzte Layouts skalieren mit der Systemtextgröße.</p>",
+  "bf.soon": "Ab Freitag, 27. November",
+  "bf.live": "Jetzt · bis Dienstag, 1. Dezember",
+  "bf.kicker": "Black Friday · 27. Nov. – 1. Dez. 2026",
+  "bf.title": "JustFlip Pro Auf Lebenszeit <em>zum halben Preis</em>",
+  "bf.body": "In Deutschland und Österreich <s>29,99 €</s> → <strong>14,99 €</strong>. Einmal zahlen, alle Pro-Funktionen für immer, kein Abo.",
+  "bf.note": "Kein Code nötig: Der Preis gilt automatisch in der App.",
+  "bf.cta": "JustFlip im App Store laden"
 }

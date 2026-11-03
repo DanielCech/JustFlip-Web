@@ -546,5 +546,12 @@
   "prompt.quote4": "Turn this lecture transcript into a deck.",
   "accessibility.pendingLabel": "categories are still being validated and not yet claimed",
   "accessibility.naLabel": "categories do not apply to JustFlip!",
-  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">Published</span><h3>Larger Text</h3><p>Card content, controls and constrained layouts scale with the system text size.</p>"
+  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">Published</span><h3>Larger Text</h3><p>Card content, controls and constrained layouts scale with the system text size.</p>",
+  "bf.soon": "Starts Friday 27 November",
+  "bf.live": "On now · ends Tuesday 1 December",
+  "bf.kicker": "Black Friday · 27 Nov – 1 Dec 2026",
+  "bf.title": "JustFlip Pro Lifetime, <em>about half price</em>",
+  "bf.body": "In the US <s>$24.99</s> → <strong>$12.99</strong>; prices in other countries drop by about half too. One payment, every Pro feature for good, no subscription.",
+  "bf.note": "No code needed: the price applies automatically in the app.",
+  "bf.cta": "Get JustFlip on the App Store"
 }

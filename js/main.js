@@ -12,6 +12,30 @@
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------------------------------------------------
+   * Black Friday deal (#black-friday): visible until data-end,
+   * "starts" chip before data-start, "on now" chip during the sale,
+   * removed afterwards. Merging early is safe. Preview with ?bf=soon|live|over
+   * --------------------------------------------------- */
+  (() => {
+    const deal = document.getElementById('black-friday');
+    if (!deal) return;
+    let state;
+    try { state = new URLSearchParams(location.search).get('bf'); } catch (_) { /* ignore */ }
+    if (!['soon', 'live', 'over'].includes(state)) {
+      const now = Date.now();
+      const start = Date.parse(deal.dataset.start);
+      const end = Date.parse(deal.dataset.end);
+      if (!(now < end)) state = 'over';
+      else state = now >= start ? 'live' : 'soon';
+    }
+    if (state === 'over') { deal.remove(); return; }
+    deal.querySelectorAll('[data-bf-state]').forEach((el) => {
+      el.hidden = el.dataset.bfState !== state;
+    });
+    deal.hidden = false;
+  })();
+
   // Year in footer
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
