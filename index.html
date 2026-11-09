@@ -227,6 +227,23 @@
       </div>
     </section>
 
+    <!-- Black Friday 2026 — shown until the sale ends, then hidden by js/main.js.
+         Dates: data-start / data-end (ISO, UTC). Preview: ?bf=soon | live | over -->
+    <section class="bf-deal" id="black-friday" data-section aria-labelledby="bf-title"
+             data-start="2026-11-27T08:00:00Z" data-end="2026-12-02T08:00:00Z" hidden>
+      <div class="bf-deal__card">
+        <p class="bf-deal__kicker">
+          <span class="bf-deal__chip" data-bf-state="soon" data-i18n="bf.soon">Starts Friday 27 November</span>
+          <span class="bf-deal__chip bf-deal__chip--live" data-bf-state="live" data-i18n="bf.live" hidden>On now · ends Tuesday 1 December</span>
+          <span data-i18n="bf.kicker">Black Friday · 27 Nov – 1 Dec 2026</span>
+        </p>
+        <h2 class="bf-deal__title" id="bf-title" data-i18n="bf.title">JustFlip Pro Lifetime, <em>about half price</em></h2>
+        <p class="bf-deal__body" data-i18n="bf.body">In the US <s>$24.99</s> → <strong>$12.99</strong>; prices in other countries drop by about half too. One payment, every Pro feature for good, no subscription.</p>
+        <p class="bf-deal__note" data-i18n="bf.note">No code needed: the price applies automatically in the app.</p>
+        <a class="btn btn--primary bf-deal__cta" href="https://apps.apple.com/app/id6770141421?ct=bf26-web" data-i18n="bf.cta">Get JustFlip on the App Store</a>
+      </div>
+    </section>
+
     <!-- Trust — only claims a visitor can check for themselves -->
     <section class="trust" id="trust" data-section aria-labelledby="trust-title">
       <h2 class="trust__title" id="trust-title" data-i18n="trust.title">What you can check for yourself</h2>

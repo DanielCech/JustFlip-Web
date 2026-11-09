@@ -5342,3 +5342,71 @@ html.is-embedded .lang-s { display: none !important; }
 html.is-embedded .news-hero { padding-top: clamp(1.5rem, 4vw, 2.5rem); }
 html.is-embedded .news-cta { display: none; }
 html.is-embedded .news-timeline { padding-bottom: clamp(2rem, 5vw, 3rem); }
+
+/* =====================================================================
+   Black Friday 2026 deal (index.html #black-friday; shown by js/main.js)
+   ===================================================================== */
+
+.bf-deal {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter) clamp(2rem, 5vw, 3.5rem);
+  scroll-margin-top: 6rem;
+}
+.bf-deal__card {
+  position: relative;
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(255,205,87,0.14) 0%, rgba(255,205,87,0) 55%),
+    var(--surface-low);
+  border: 1px solid rgba(255,205,87,0.35);
+  box-shadow: 0 24px 60px -30px rgba(240,192,75,0.45);
+}
+.bf-deal__kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.9rem;
+  margin: 0 0 0.8rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+}
+.bf-deal__chip {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,205,87,0.45);
+  color: var(--primary-container);
+  letter-spacing: 0.08em;
+}
+.bf-deal__chip--live {
+  background: var(--primary-container);
+  color: var(--ink);
+  border-color: transparent;
+  font-weight: 600;
+}
+.bf-deal__chip[hidden] { display: none; }
+.bf-deal__title {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.5rem, 3.6vw, 2.3rem);
+  line-height: 1.15;
+  font-weight: 600;
+  color: var(--primary);
+}
+.bf-deal__title em { color: var(--primary-container); font-style: italic; }
+.bf-deal__body {
+  margin: 0 0 0.35rem;
+  max-width: 62ch;
+  font-size: 1.05rem;
+  color: var(--on-surface);
+}
+.bf-deal__body s { color: var(--on-surface-variant); }
+.bf-deal__body strong { color: var(--primary-container); }
+.bf-deal__note {
+  margin: 0 0 1.3rem;
+  font-size: 0.92rem;
+  color: var(--on-surface-variant);
+}

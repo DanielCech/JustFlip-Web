@@ -662,5 +662,12 @@
   "prompt.quote4": "Z přepisu přednášky udělej balíček.",
   "accessibility.pendingLabel": "kategorií se ještě ověřuje a zatím je neuvádíme",
   "accessibility.naLabel": "kategorie se na JustFlip! nevztahují",
-  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">Zveřejněno</span><h3>Větší text</h3><p>Obsah karet, ovládací prvky i omezená rozvržení se škálují podle systémové velikosti textu.</p>"
+  "accessibility.statusCardType": "<span class=\"a11y-status-card__icon\" aria-hidden=\"true\">✓</span><span class=\"a11y-status-card__label\">Zveřejněno</span><h3>Větší text</h3><p>Obsah karet, ovládací prvky i omezená rozvržení se škálují podle systémové velikosti textu.</p>",
+  "bf.soon": "Začíná v pátek 27. listopadu",
+  "bf.live": "Právě běží · končí v úterý 1. prosince",
+  "bf.kicker": "Black Friday · 27. 11. – 1. 12. 2026",
+  "bf.title": "JustFlip Pro Navždy <em>za polovic</em>",
+  "bf.body": "V Česku <s>449 Kč</s> → <strong>229 Kč</strong>. Zaplatíš jednou a všechny funkce Pro máš napořád, bez předplatného.",
+  "bf.note": "Žádný kód: cena platí v aplikaci automaticky.",
+  "bf.cta": "Stáhnout JustFlip z App Storu"
 }
