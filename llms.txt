@@ -28,6 +28,10 @@ Do not hand-write `.flashcards` JSON from memory of this summary alone — alway
 
 - [Why classic studying is a myth](https://just-flip.app/learning.html): retrieval practice, spaced repetition and interleaving, and how JustFlip! implements them.
 
+## Comparisons
+
+- [JustFlip vs Anki](https://just-flip.app/vs-anki.html): an honest side-by-side, including when Anki is the better choice, with every Anki fact linked to its source.
+
 ## Policies
 
 - [Privacy Policy](https://just-flip.app/privacy.html)

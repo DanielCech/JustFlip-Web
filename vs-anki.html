@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#131313" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <title data-i18n="vsAnki.metaTitle">JustFlip vs Anki — an honest comparison | JustFlip!</title>
+  <meta name="description" data-i18n-attr="content" data-i18n-content="vsAnki.metaDescription" content="Anki is free, powerful and open. JustFlip is a native app for iPhone, iPad, Mac and Apple Watch. An honest side-by-side, including when Anki wins." />
+
+  <link rel="canonical" href="https://just-flip.app/vs-anki.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="JustFlip!" />
+  <meta property="og:url" content="https://just-flip.app/vs-anki.html" />
+  <meta property="og:title" content="JustFlip vs Anki — an honest comparison" />
+  <meta property="og:description" content="Anki is free, powerful and open. JustFlip is a native app for iPhone, iPad, Mac and Apple Watch. An honest side-by-side, including when Anki wins." />
+  <meta property="og:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="JustFlip vs Anki — an honest comparison" />
+  <meta name="twitter:description" content="Anki is free, powerful and open. JustFlip is a native app for iPhone, iPad, Mac and Apple Watch. An honest side-by-side, including when Anki wins." />
+  <meta name="twitter:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is JustFlip made by the Anki team?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. JustFlip is an independent app by Daniel Čech, an iOS engineer in Prague. It imports Anki’s .apkg format but isn’t affiliated with Anki."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does JustFlip support FSRS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. FSRS-5 is available as a Pro option called “Smart schedule (beta)”. SM-2 is the default."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does JustFlip work on Android or Windows?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. JustFlip is Apple-only (iPhone, iPad, Mac, Apple Watch), by choice, and there are no plans for Android or web."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I import my Anki decks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, as .apkg files. Images, formulas, code, emphasis and legacy Image Occlusion decks are kept. Unusual note types may come across imperfectly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Sync runs through your own iCloud, and the app works fully offline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does JustFlip cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A free tier of 3 interests × 5 decks with no time limit. Pro is $3.99/month, $19.99/year or $24.99 lifetime (US prices; other storefronts use Apple’s local equivalents)."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="index.html#top" aria-label="JustFlip! - home">
+      <span class="nav__mark" aria-hidden="true">
+        <img src="images/Icon.png" alt="" width="26" height="26">
+      </span>
+      <span class="nav__name">JustFlip!</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" data-i18n="nav.features">Features</a>
+      <a href="news/" data-i18n="nav.news">News</a>
+      <a href="decks/" data-i18n="nav.demo">Demo</a>
+      <a href="index.html#ai" data-i18n="nav.aiDecks">AI Decks</a>
+      <a href="ai-prompt.html" data-i18n="nav.aiPrompt">AI Prompt</a>
+      <a href="ai-skill.html" data-i18n="nav.richDecks">Rich Decks</a>
+      <a href="learning.html" data-i18n="nav.learning">Learning</a>
+      <a href="advanced.html" data-i18n="nav.advanced">Advanced</a>
+      <a href="accessibility/" data-i18n="accessibility.navLabel">Accessibility</a>
+      <a href="manual/" data-i18n="nav.manual">Manual</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="btn btn--primary nav__cta" href="https://apps.apple.com/app/id6770141421?ct=web-vs-anki" target="_blank" rel="noopener" aria-label="App Store" data-i18n-attr="aria-label" data-i18n-aria-label="nav.appStore">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M17.6 13.3c0-2.7 2.2-4 2.3-4-1.3-1.8-3.3-2.1-4-2.1-1.7-.2-3.3 1-4.1 1-.9 0-2.2-1-3.6-1-1.8 0-3.6 1.1-4.5 2.7-1.9 3.4-.5 8.4 1.4 11.1.9 1.3 2 2.8 3.5 2.7 1.4-.1 1.9-.9 3.6-.9s2.1.9 3.6.9c1.5 0 2.5-1.3 3.4-2.7.7-1 1.3-2.2 1.6-3.4-1.5-.6-3.2-2.3-3.2-4.3zM14.9 5.2c.8-.9 1.3-2.2 1.1-3.5-1.1.1-2.4.7-3.2 1.6-.7.8-1.4 2.1-1.2 3.4 1.2.1 2.5-.6 3.3-1.5z"/></svg>
+        <span data-i18n="nav.appStore">App Store</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top" class="prompt-page learning-page">
+
+    <!-- Hero -->
+    <section class="prompt-hero" data-section>
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__beam"></div>
+        <div class="hero__grain"></div>
+      </div>
+
+      <div class="prompt-hero__copy">
+        <p class="eyebrow" data-i18n="vsAnki.hero.1">An honest comparison</p>
+        <h1 class="display" data-i18n="vsAnki.hero.2">JustFlip vs Anki:<br/><em>which one should you use?</em></h1>
+        <p class="lede" data-i18n="vsAnki.hero.3"><strong>We make JustFlip, so read this with that in mind.</strong> We’ve tried to be fair: where Anki is the better choice, we say so, and every fact about Anki links to its source.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#short-answer" data-i18n="vsAnki.hero.4">Start reading</a>
+          <a class="btn btn--ghost" href="https://apps.apple.com/app/id6770141421?ct=web-vs-anki" target="_blank" rel="noopener" data-i18n="vsAnki.hero.5">Get JustFlip!</a>
+        </div>
+      </div>
+
+      <aside class="prompt-hero__panel">
+        <span class="prompt-hero__panel-kicker" data-i18n="vsAnki.hero.6">In one line</span>
+        <p data-i18n="vsAnki.hero.7">Anki is the free, open, endlessly customisable standard. JustFlip is Anki-style scheduling rebuilt as a native Apple app, with a hold button that never touches your memory data.</p>
+      </aside>
+    </section>
+
+    <section class="section section--prompt" id="short-answer" data-section>
+      <header class="section__head">
+        <span class="section__number">01</span>
+        <div>
+          <h2 class="headline" data-i18n="vsAnki.short.1">What’s the <em>short answer?</em></h2>
+        </div>
+      </header>
+      <div class="article-prose">
+        <p data-i18n="vsAnki.short.2">If you want free, cross-platform, endlessly customisable spaced repetition, and you’re on Windows, Linux or Android, <strong>use Anki.</strong> It is excellent, and on desktop and Android it costs nothing.</p>
+        <p data-i18n="vsAnki.short.3">If you study mostly on Apple devices and want the same kind of scheduling (SM-2 or FSRS, with the interval shown on every grade button) in an app that feels native on iPhone, iPad, Mac and Apple Watch, <strong>JustFlip is built for that.</strong> Your Anki decks import.</p>
+      </div>
+    </section>
+    <section class="section section--prompt" id="anki-better" data-section>
+      <header class="section__head section__head--right">
+        <span class="section__number">02</span>
+        <div>
+          <h2 class="headline" data-i18n="vsAnki.ankiBetter.1">What does Anki <em>do better?</em></h2>
+        </div>
+      </header>
+      <div class="article-prose">
+        <p data-i18n="vsAnki.ankiBetter.2"><strong>Price on most platforms.</strong> Anki desktop (Windows, macOS, Linux) and AnkiDroid are free, and so is AnkiWeb sync (<a class="legal-link" href="https://apps.ankiweb.net/" target="_blank" rel="noopener">apps.ankiweb.net</a>).</p>
+        <p data-i18n="vsAnki.ankiBetter.3"><strong>Every platform.</strong> Anki runs on Windows, Linux and Android. JustFlip is Apple-only and has no plans for Android or web.</p>
+        <p data-i18n="vsAnki.ankiBetter.4"><strong>Ecosystem.</strong> Anki has add-ons and a large library of shared decks built over many years. JustFlip has no deck sharing between users yet, only import/export and a small <a class="legal-link" href="decks/">curated catalogue</a>.</p>
+        <p data-i18n="vsAnki.ankiBetter.5"><strong>Depth of customisation.</strong> Anki’s note types, card templates and CSS go further than any other flashcard app. JustFlip’s Anki import handles images, formulas, code, emphasis and legacy Image Occlusion decks, but unusual note types may still come across imperfectly.</p>
+        <p data-i18n="vsAnki.ankiBetter.6"><strong>Open source, with a long track record.</strong></p>
+      </div>
+    </section>
+    <section class="section section--prompt" id="justflip-different" data-section>
+      <header class="section__head">
+        <span class="section__number">03</span>
+        <div>
+          <h2 class="headline" data-i18n="vsAnki.different.1">What does JustFlip <em>do differently?</em></h2>
+        </div>
+      </header>
+      <div class="article-prose">
+        <p data-i18n="vsAnki.different.2"><strong>The same visible scheduling Anki users expect.</strong> Like Anki (<a class="legal-link" href="https://docs.ankiweb.net/studying.html" target="_blank" rel="noopener">Anki manual</a>), every grade button shows the interval it will produce before you press it. SM-2 by default, FSRS-5 as a Pro option (“Smart schedule (beta)”).</p>
+        <p data-i18n="vsAnki.different.3"><strong>Postpone without lying to the algorithm.</strong> Put a card, deck or whole interest on hold (tomorrow, 3 days, 1 week or custom) without touching its scheduling data. There’s no ease change and no lapse, so you never have to press “Again” on a card you simply weren’t ready for.</p>
+        <p data-i18n="vsAnki.different.4"><strong>Native on every Apple device.</strong> iPhone, iPad, Mac and Apple Watch, with a home-screen widget showing your due count, Siri Shortcuts (“How many cards are due?” answers without opening the app), and Spotlight search of your cards.</p>
+        <p data-i18n="vsAnki.different.5"><strong>No account.</strong> iCloud sync is included free, with no sign-up. It works fully offline. No ads.</p>
+        <p data-i18n="vsAnki.different.6"><strong>Your Anki decks come with you.</strong> .apkg import keeps images, formulas, code, emphasis and legacy Image Occlusion decks, and there’s CSV import/export plus a one-file backup.</p>
+      </div>
+    </section>
+    <section class="section section--prompt" id="compare" data-section>
+      <header class="section__head section__head--right">
+        <span class="section__number">04</span>
+        <div>
+          <h2 class="headline" data-i18n="vsAnki.compare.1">How do they compare, <em>feature by feature?</em></h2>
+        </div>
+      </header>
+      <!-- Reuses the accessibility-report table styles; a dedicated .compare-table class would be cleaner. -->
+      <div class="a11y-task-table-wrap">
+        <table class="a11y-task-table">
+          <caption data-i18n="vsAnki.compare.2">Anki vs JustFlip. Anki facts are linked to their sources, checked 25 September 2026.</caption>
+          <thead><tr><th scope="col"></th><th scope="col">Anki</th><th scope="col">JustFlip</th></tr></thead>
+          <tbody>
+            <tr><th scope="row" data-i18n="vsAnki.compare.3">Platforms</th><td data-i18n="vsAnki.compare.4">Windows, macOS, Linux, Android (AnkiDroid), iPhone/iPad (AnkiMobile) · <a class="legal-link" href="https://apps.ankiweb.net/" target="_blank" rel="noopener">source</a></td><td data-i18n="vsAnki.compare.5">iPhone, iPad, Mac, Apple Watch. No Android, no web</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.6">Price on iPhone</th><td data-i18n="vsAnki.compare.7">AnkiMobile $24.99 one-time · <a class="legal-link" href="https://apps.apple.com/us/app/ankimobile-flashcards/id373493387" target="_blank" rel="noopener">App Store</a></td><td data-i18n="vsAnki.compare.8">Free tier (3 interests × 5 decks, no time limit). Pro $3.99/month, $19.99/year or $24.99 lifetime</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.9">Price elsewhere</th><td data-i18n="vsAnki.compare.10">Desktop and AnkiDroid free · <a class="legal-link" href="https://apps.ankiweb.net/" target="_blank" rel="noopener">source</a></td><td data-i18n="vsAnki.compare.11">Mac is included (same app)</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.12">Sync</th><td data-i18n="vsAnki.compare.13">AnkiWeb, free · <a class="legal-link" href="https://apps.ankiweb.net/" target="_blank" rel="noopener">source</a></td><td data-i18n="vsAnki.compare.14">iCloud, included free, no account</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.15">Scheduling</th><td data-i18n="vsAnki.compare.16">SM-2 or FSRS · <a class="legal-link" href="https://docs.ankiweb.net/deck-options.html" target="_blank" rel="noopener">manual</a></td><td data-i18n="vsAnki.compare.17">SM-2 by default, FSRS-5 as a Pro toggle (beta)</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.18">Interval shown before you grade</th><td data-i18n="vsAnki.compare.19">Yes, on each answer button · <a class="legal-link" href="https://docs.ankiweb.net/studying.html" target="_blank" rel="noopener">manual</a></td><td data-i18n="vsAnki.compare.20">Yes, on every grade button</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.21">Set cards aside</th><td data-i18n="vsAnki.compare.22">Bury (until tomorrow) or Suspend (until unsuspended) · <a class="legal-link" href="https://docs.ankiweb.net/studying.html" target="_blank" rel="noopener">manual</a></td><td data-i18n="vsAnki.compare.23">Hold a card, deck or interest until tomorrow, 3 days, 1 week or a custom date; scheduling data untouched</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.24">Image Occlusion</th><td data-i18n="vsAnki.compare.25">Built in since 23.10 · <a class="legal-link" href="https://docs.ankiweb.net/editing.html" target="_blank" rel="noopener">manual</a></td><td data-i18n="vsAnki.compare.26">Yes, including legacy Anki Image Occlusion decks</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.27">Cloze</th><td data-i18n="vsAnki.compare.28">Yes</td><td data-i18n="vsAnki.compare.29">Yes, Anki-compatible {{c1::…}}</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.30">Add-ons</th><td data-i18n="vsAnki.compare.31">Yes · <a class="legal-link" href="https://apps.ankiweb.net/" target="_blank" rel="noopener">source</a></td><td data-i18n="vsAnki.compare.32">No</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.33">Shared decks</th><td data-i18n="vsAnki.compare.34">Large community library</td><td data-i18n="vsAnki.compare.35">Small curated catalogue; no user sharing yet</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.36">Apple Watch</th><td data-i18n="vsAnki.compare.37">No Watch app in the AnkiMobile listing · <a class="legal-link" href="https://apps.apple.com/us/app/ankimobile-flashcards/id373493387" target="_blank" rel="noopener">App Store</a></td><td data-i18n="vsAnki.compare.38">Due counts and flip-review on the wrist</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.39">Widget, Siri, Spotlight</th><td data-i18n="vsAnki.compare.40">—</td><td data-i18n="vsAnki.compare.41">Widget, Siri Shortcuts, Spotlight</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.42">Account needed</th><td data-i18n="vsAnki.compare.43">—</td><td data-i18n="vsAnki.compare.44">No, and no ads</td></tr>
+            <tr><th scope="row" data-i18n="vsAnki.compare.45">Open source</th><td data-i18n="vsAnki.compare.46">Yes</td><td data-i18n="vsAnki.compare.47">No</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section section--prompt" id="import" data-section>
+      <header class="section__head">
+        <span class="section__number">05</span>
+        <div>
+          <h2 class="headline" data-i18n="vsAnki.import.1">Can I move my Anki decks <em>to JustFlip?</em></h2>
+        </div>
+      </header>
+      <div class="article-prose">
+        <p data-i18n="vsAnki.import.2">Yes. Export an .apkg from Anki and open it in JustFlip. Images, formulas, code, emphasis and legacy Image Occlusion decks come across. Unusual note types may not come across perfectly, so check a few cards after the import. CSV works too.</p>
+      </div>
+    </section>
+    <section class="section section--prompt" id="free" data-section>
+      <header class="section__head section__head--right">
+        <span class="section__number">06</span>
+        <div>
+          <h2 class="headline" data-i18n="vsAnki.free.1">Is JustFlip <em>free?</em></h2>
+        </div>
+      </header>
+      <div class="article-prose">
+        <p data-i18n="vsAnki.free.2">Yes, for up to 3 interests with 5 decks each, with no time limit. Pro adds background listening, advanced statistics, progress trackers and Ask AI for a whole deck (Ask AI on a single card is free). There’s a 7-day in-app Pro trial. When it ends, nothing you made is locked away.</p>
+        <p data-i18n="vsAnki.free.3">Does it use AI to write your cards? No. “Ask AI” builds a prompt from a card or deck for the chat AI you already use (ChatGPT, Claude, …), and “Paste cards” imports its answer. The app itself calls no AI service.</p>
+      </div>
+    </section>
+    <section class="section section--prompt" id="who" data-section>
+      <header class="section__head">
+        <span class="section__number">07</span>
+        <div>
+          <h2 class="headline" data-i18n="vsAnki.who.1">Who should <em>pick which?</em></h2>
+        </div>
+      </header>
+      <div class="article-prose">
+        <p data-i18n="vsAnki.who.2"><strong>Pick Anki</strong> if you use Windows, Linux or Android, rely on add-ons or community decks, want to heavily customise card templates, or want to pay nothing.</p>
+        <p data-i18n="vsAnki.who.3"><strong>Pick JustFlip</strong> if you study on iPhone, iPad, Mac and Apple Watch, want to postpone cards without disturbing your schedule, and would rather not manage an account.</p>
+        <p data-i18n="vsAnki.who.4"><strong>Or use both:</strong> keep Anki on your PC and try JustFlip on your phone. The free tier is enough to try it with a few imported decks.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--faq" id="faq" data-section>
+      <header class="section__head">
+        <span class="section__number">08</span>
+        <div>
+          <h2 class="headline" data-i18n="vsAnki.faq.1">Frequently asked <em>questions.</em></h2>
+        </div>
+      </header>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="vsAnki.faq.2">Is JustFlip made by the Anki team?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="vsAnki.faq.3">No. JustFlip is an independent app by Daniel Čech, an iOS engineer in Prague. It imports Anki’s .apkg format but isn’t affiliated with Anki.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="vsAnki.faq.4">Does JustFlip support FSRS?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="vsAnki.faq.5">Yes. FSRS-5 is available as a Pro option called “Smart schedule (beta)”. SM-2 is the default.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="vsAnki.faq.6">Does JustFlip work on Android or Windows?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="vsAnki.faq.7">No. JustFlip is Apple-only (iPhone, iPad, Mac, Apple Watch), by choice, and there are no plans for Android or web.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="vsAnki.faq.8">Can I import my Anki decks?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="vsAnki.faq.9">Yes, as .apkg files. Images, formulas, code, emphasis and legacy Image Occlusion decks are kept. Unusual note types may come across imperfectly.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="vsAnki.faq.10">Do I need an account?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="vsAnki.faq.11">No. Sync runs through your own iCloud, and the app works fully offline.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__summary">
+            <span data-i18n="vsAnki.faq.12">How much does JustFlip cost?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8.6 5.6 14.99 12l-6.4 6.4L7 16.8 11.8 12 7 7.2z"/></svg>
+          </summary>
+          <p class="faq__answer" data-i18n="vsAnki.faq.13">A free tier of 3 interests × 5 decks with no time limit. Pro is $3.99/month, $19.99/year or $24.99 lifetime (US prices; other storefronts use Apple’s local equivalents).</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--cta" data-section>
+      <div class="cta">
+        <p class="eyebrow" data-i18n="vsAnki.cta.1">Try it with your own decks</p>
+        <h2 class="display display--sm" data-i18n="vsAnki.cta.2">Bring one Anki deck.<br/><em>See how it feels.</em></h2>
+        <p class="lede" data-i18n="vsAnki.cta.3">Import an .apkg, review for a week, and decide. The free tier covers 3 interests × 5 decks with no time limit.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://apps.apple.com/app/id6770141421?ct=web-vs-anki" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.6 13.3c0-2.7 2.2-4 2.3-4-1.3-1.8-3.3-2.1-4-2.1-1.7-.2-3.3 1-4.1 1-.9 0-2.2-1-3.6-1-1.8 0-3.6 1.1-4.5 2.7-1.9 3.4-.5 8.4 1.4 11.1.9 1.3 2 2.8 3.5 2.7 1.4-.1 1.9-.9 3.6-.9s2.1.9 3.6.9c1.5 0 2.5-1.3 3.4-2.7.7-1 1.3-2.2 1.6-3.4-1.5-.6-3.2-2.3-3.2-4.3zM14.9 5.2c.8-.9 1.3-2.2 1.1-3.5-1.1.1-2.4.7-3.2 1.6-.7.8-1.4 2.1-1.2 3.4 1.2.1 2.5-.6 3.3-1.5z"/></svg>
+            <span data-i18n="cta.download">Download on the App Store</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="about">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="20" height="20">
+            <rect x="4" y="6" width="20" height="22" rx="3" fill="#ffcd57" opacity=".25" transform="rotate(-8 14 17)"/>
+            <rect x="7" y="4" width="20" height="22" rx="3" fill="#ffcd57"/>
+          </svg>
+        </span>
+        <strong>JustFlip!</strong>
+        <span class="footer__tag" data-i18n="footer.tagline">A flashcard companion for lifelong learners.</span>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="index.html" data-i18n="footer.features">Features</a>
+        <a href="index.html#ai" data-i18n="footer.aiDecks">AI Decks</a>
+        <a href="decks/" data-i18n="footer.decks">Decks</a>
+        <a href="ai-prompt.html" data-i18n="footer.aiPrompt">AI Prompt</a>
+        <a href="ai-skill.html" data-i18n="footer.richDecks">Rich Decks</a>
+        <a href="learning.html" data-i18n="footer.learning">Learning</a>
+        <a href="advanced.html" data-i18n="footer.advanced">Advanced</a>
+        <a href="vs-anki.html" aria-current="page" data-i18n="footer.vsAnki">JustFlip vs Anki</a>
+        <a href="accessibility/" data-i18n="accessibility.navLabel">Accessibility</a>
+        <a href="news/" data-i18n="footer.news">News</a>
+        <a href="about.html" data-i18n="footer.about">About</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a>
+        <a href="mailto:daniel.cech@gmail.com" data-i18n="footer.support">Support</a>
+        <a href="mailto:daniel.cech@gmail.com" data-i18n="footer.contact">Contact</a>
+      </nav>
+
+      <p class="footer__copy" data-i18n="footer.copyright">© <span id="year"></span> JustFlip! Crafted in Prague. Apple, the Apple logo, iPhone, iPad and Mac are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
