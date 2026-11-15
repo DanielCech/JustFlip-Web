@@ -1,0 +1,12 @@
+{
+  "_comment": "Seasonal offers announced by the JustFlip app (Today card, paywall label) and the homepage (#black-friday). The price itself is set in App Store Connect. To end a sale: set \"end\" to an ISO date-time (or remove the entry) AND restore the price in App Store Connect. \"end\": null means until further notice.",
+  "offers": [
+    {
+      "id": "black-friday-2026",
+      "theme": "blackFriday",
+      "plan": "lifetime",
+      "start": "2026-11-27T08:00:00Z",
+      "end": null
+    }
+  ]
+}

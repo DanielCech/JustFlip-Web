@@ -13,27 +13,36 @@
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------------------------------------------------
-   * Black Friday deal (#black-friday): visible until data-end,
-   * "starts" chip before data-start, "on now" chip during the sale,
-   * removed afterwards. Merging early is safe. Preview with ?bf=soon|live|over
+   * Seasonal deal (#black-friday), switched by /offers.json, the same file the app reads:
+   * "starts" chip before the offer's start, "on now" during it, removed when the offer has
+   * an end that passed or is gone from the file. "end": null runs until further notice.
+   * No file (offline, file://) means no deal. Preview with ?bf=soon|live|over
    * --------------------------------------------------- */
   (() => {
-    const deal = document.getElementById('black-friday');
+    const deal = document.querySelector('[data-offer]');
     if (!deal) return;
-    let state;
-    try { state = new URLSearchParams(location.search).get('bf'); } catch (_) { /* ignore */ }
-    if (!['soon', 'live', 'over'].includes(state)) {
-      const now = Date.now();
-      const start = Date.parse(deal.dataset.start);
-      const end = Date.parse(deal.dataset.end);
-      if (!(now < end)) state = 'over';
-      else state = now >= start ? 'live' : 'soon';
-    }
-    if (state === 'over') { deal.remove(); return; }
-    deal.querySelectorAll('[data-bf-state]').forEach((el) => {
-      el.hidden = el.dataset.bfState !== state;
-    });
-    deal.hidden = false;
+    const show = (state) => {
+      if (state === 'over') { deal.remove(); return; }
+      deal.querySelectorAll('[data-bf-state]').forEach((el) => {
+        el.hidden = el.dataset.bfState !== state;
+      });
+      deal.hidden = false;
+    };
+    let preview;
+    try { preview = new URLSearchParams(location.search).get('bf'); } catch (_) { /* ignore */ }
+    if (['soon', 'live', 'over'].includes(preview)) { show(preview); return; }
+    fetch('/offers.json', { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then((file) => {
+        const offer = (file.offers || []).find((o) => o.id === deal.dataset.offer);
+        if (!offer) return show('over');
+        const now = Date.now();
+        const start = Date.parse(offer.start);
+        const end = offer.end ? Date.parse(offer.end) : Infinity;
+        if (Number.isNaN(start) || !(now < end)) return show('over');
+        show(now >= start ? 'live' : 'soon');
+      })
+      .catch(() => show('over'));
   })();
 
   // Year in footer

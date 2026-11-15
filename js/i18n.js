@@ -18,8 +18,8 @@
   const BUNDLE = {
     "cs": {
       "bf.soon": "Začíná v pátek 27. listopadu",
-      "bf.live": "Právě běží · končí v úterý 1. prosince",
-      "bf.kicker": "Black Friday · 27. 11. – 1. 12. 2026",
+      "bf.live": "Právě běží",
+      "bf.kicker": "Black Friday · od 27. listopadu 2026",
       "bf.title": "JustFlip Pro Navždy <em>za polovic</em>",
       "bf.body": "V Česku <s>449 Kč</s> → <strong>229 Kč</strong>. Zaplatíš jednou a všechny funkce Pro máš napořád, bez předplatného.",
       "bf.note": "Žádný kód: cena platí v aplikaci automaticky.",
@@ -789,8 +789,8 @@
     },
     "de": {
       "bf.soon": "Ab Freitag, 27. November",
-      "bf.live": "Jetzt · bis Dienstag, 1. Dezember",
-      "bf.kicker": "Black Friday · 27. Nov. – 1. Dez. 2026",
+      "bf.live": "Jetzt",
+      "bf.kicker": "Black Friday · ab 27. November 2026",
       "bf.title": "JustFlip Pro Auf Lebenszeit <em>zum halben Preis</em>",
       "bf.body": "In Deutschland und Österreich <s>29,99 €</s> → <strong>14,99 €</strong>. Einmal zahlen, alle Pro-Funktionen für immer, kein Abo.",
       "bf.note": "Kein Code nötig: Der Preis gilt automatisch in der App.",
@@ -1506,8 +1506,8 @@
     },
     "es": {
       "bf.soon": "Empieza el viernes 27 de noviembre",
-      "bf.live": "Ya disponible · hasta el martes 1 de diciembre",
-      "bf.kicker": "Black Friday · 27 nov – 1 dic 2026",
+      "bf.live": "Ya disponible",
+      "bf.kicker": "Black Friday · desde el 27 de noviembre de 2026",
       "bf.title": "JustFlip Pro de por vida <em>a mitad de precio</em>",
       "bf.body": "En España <s>29,99 €</s> → <strong>14,99 €</strong>. Un solo pago, todas las funciones Pro para siempre, sin suscripción.",
       "bf.note": "Sin código: el precio se aplica automáticamente en la app.",
@@ -2223,8 +2223,8 @@
     },
     "fr": {
       "bf.soon": "À partir du vendredi 27 novembre",
-      "bf.live": "En ce moment · jusqu'au mardi 1er décembre",
-      "bf.kicker": "Black Friday · 27 nov. – 1er déc. 2026",
+      "bf.live": "En ce moment",
+      "bf.kicker": "Black Friday · dès le 27 novembre 2026",
       "bf.title": "JustFlip Pro À vie <em>à moitié prix</em>",
       "bf.body": "En France <s>29,99 €</s> → <strong>14,99 €</strong>. Un seul paiement, toutes les fonctions Pro pour toujours, sans abonnement.",
       "bf.note": "Aucun code : le prix s'applique automatiquement dans l'app.",
@@ -2940,8 +2940,8 @@
     },
     "it": {
       "bf.soon": "Da venerdì 27 novembre",
-      "bf.live": "In corso · fino a martedì 1° dicembre",
-      "bf.kicker": "Black Friday · 27 nov – 1 dic 2026",
+      "bf.live": "In corso",
+      "bf.kicker": "Black Friday · dal 27 novembre 2026",
       "bf.title": "JustFlip Pro per sempre <em>a metà prezzo</em>",
       "bf.body": "In Italia <s>29,99 €</s> → <strong>14,99 €</strong>. Un solo pagamento, tutte le funzioni Pro per sempre, niente abbonamento.",
       "bf.note": "Nessun codice: il prezzo si applica automaticamente nell'app.",
@@ -3657,8 +3657,8 @@
     },
     "ja": {
       "bf.soon": "11月27日（金）スタート",
-      "bf.live": "セール中・12月1日（火）まで",
-      "bf.kicker": "ブラックフライデー · 2026年11月27日〜12月1日",
+      "bf.live": "セール中",
+      "bf.kicker": "ブラックフライデー · 2026年11月27日から",
       "bf.title": "JustFlip Pro 買い切りプランが<em>半額</em>",
       "bf.body": "日本では <s>¥4,000</s> → <strong>¥2,000</strong>。一度の購入でPro機能をずっと使えます。サブスクなし。",
       "bf.note": "コード不要：アプリ内で自動的にセール価格になります。",
@@ -4374,8 +4374,8 @@
     },
     "ko": {
       "bf.soon": "11월 27일(금) 시작",
-      "bf.live": "진행 중 · 12월 1일(화)까지",
-      "bf.kicker": "블랙 프라이데이 · 2026년 11월 27일 – 12월 1일",
+      "bf.live": "진행 중",
+      "bf.kicker": "블랙 프라이데이 · 2026년 11월 27일부터",
       "bf.title": "JustFlip Pro 평생 소장 <em>반값</em>",
       "bf.body": "한국 <s>₩44,000</s> → <strong>₩22,000</strong>. 한 번 결제로 모든 Pro 기능을 계속 사용하세요. 구독 없음.",
       "bf.note": "코드 필요 없음: 앱에서 할인 가격이 자동으로 적용됩니다.",
@@ -5091,8 +5091,8 @@
     },
     "pt-br": {
       "bf.soon": "Começa na sexta, 27 de novembro",
-      "bf.live": "Agora · até terça, 1º de dezembro",
-      "bf.kicker": "Black Friday · 27 nov – 1º dez 2026",
+      "bf.live": "Agora",
+      "bf.kicker": "Black Friday · a partir de 27 de novembro de 2026",
       "bf.title": "JustFlip Pro Vitalício <em>pela metade do preço</em>",
       "bf.body": "No Brasil <s>R$ 149,90</s> → <strong>R$ 79,90</strong>. Um único pagamento, todos os recursos Pro para sempre, sem assinatura.",
       "bf.note": "Sem código: o preço vale automaticamente no app.",
