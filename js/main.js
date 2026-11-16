@@ -13,34 +13,39 @@
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------------------------------------------------
-   * Seasonal deal (#black-friday), switched by /offers.json, the same file the app reads:
-   * "starts" chip before the offer's start, "on now" during it, removed when the offer has
-   * an end that passed or is gone from the file. "end": null runs until further notice.
-   * No file (offline, file://) means no deal. Preview with ?bf=soon|live|over
+   * Seasonal deal (#black-friday), switched by /offers.json, the same file the app reads.
+   * The offer that started last and hasn't ended is shown ("on now"); its theme picks the
+   * kicker (blackFriday, cyberMonday, anything else = special). Before any has started, the
+   * next one gets the "starts" chip. "end": null runs until further notice, so an offer stays
+   * up until its end is set by hand. No file (offline, file://) means no deal.
+   * Preview with ?bf=soon|live|over and optionally &theme=cyberMonday
    * --------------------------------------------------- */
   (() => {
     const deal = document.querySelector('[data-offer]');
     if (!deal) return;
-    const show = (state) => {
+    const THEMES = ['blackFriday', 'cyberMonday', 'special'];
+    const show = (state, theme) => {
       if (state === 'over') { deal.remove(); return; }
-      deal.querySelectorAll('[data-bf-state]').forEach((el) => {
-        el.hidden = el.dataset.bfState !== state;
-      });
+      const t = THEMES.includes(theme) ? theme : 'special';
+      deal.querySelectorAll('[data-bf-state]').forEach((el) => { el.hidden = el.dataset.bfState !== state; });
+      deal.querySelectorAll('[data-bf-theme]').forEach((el) => { el.hidden = el.dataset.bfTheme !== t; });
       deal.hidden = false;
     };
-    let preview;
-    try { preview = new URLSearchParams(location.search).get('bf'); } catch (_) { /* ignore */ }
-    if (['soon', 'live', 'over'].includes(preview)) { show(preview); return; }
+    let params;
+    try { params = new URLSearchParams(location.search); } catch (_) { params = new URLSearchParams(); }
+    const preview = params.get('bf');
+    if (['soon', 'live', 'over'].includes(preview)) { show(preview, params.get('theme') || 'blackFriday'); return; }
     fetch('/offers.json', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then((file) => {
-        const offer = (file.offers || []).find((o) => o.id === deal.dataset.offer);
-        if (!offer) return show('over');
         const now = Date.now();
-        const start = Date.parse(offer.start);
-        const end = offer.end ? Date.parse(offer.end) : Infinity;
-        if (Number.isNaN(start) || !(now < end)) return show('over');
-        show(now >= start ? 'live' : 'soon');
+        const offers = (file.offers || [])
+          .map((o) => ({ theme: o.theme, start: Date.parse(o.start), end: o.end ? Date.parse(o.end) : Infinity }))
+          .filter((o) => !Number.isNaN(o.start) && !Number.isNaN(o.end) && now < o.end);
+        const live = offers.filter((o) => o.start <= now).sort((a, b) => b.start - a.start)[0];
+        if (live) return show('live', live.theme);
+        const next = offers.sort((a, b) => a.start - b.start)[0];
+        return next ? show('soon', next.theme) : show('over');
       })
       .catch(() => show('over'));
   })();
