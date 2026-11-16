@@ -14,10 +14,9 @@
 
   /* ---------------------------------------------------
    * Seasonal deal (#black-friday), switched by /offers.json, the same file the app reads.
-   * The offer that started last and hasn't ended is shown ("on now"); its theme picks the
-   * kicker (blackFriday, cyberMonday, anything else = special). Before any has started, the
-   * next one gets the "starts" chip. "end": null runs until further notice, so an offer stays
-   * up until its end is set by hand. No file (offline, file://) means no deal.
+   * "show": "off" | "blackFriday" | "cyberMonday" names the entry to show; its theme picks the
+   * kicker (blackFriday, cyberMonday, anything else = special). No dates: the deal is on exactly
+   * while the switch says so. No file (offline, file://), "off" or an unknown value means no deal.
    * Preview with ?bf=soon|live|over and optionally &theme=cyberMonday
    * --------------------------------------------------- */
   (() => {
@@ -38,14 +37,9 @@
     fetch('/offers.json', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then((file) => {
-        const now = Date.now();
-        const offers = (file.offers || [])
-          .map((o) => ({ theme: o.theme, start: Date.parse(o.start), end: o.end ? Date.parse(o.end) : Infinity }))
-          .filter((o) => !Number.isNaN(o.start) && !Number.isNaN(o.end) && now < o.end);
-        const live = offers.filter((o) => o.start <= now).sort((a, b) => b.start - a.start)[0];
-        if (live) return show('live', live.theme);
-        const next = offers.sort((a, b) => a.start - b.start)[0];
-        return next ? show('soon', next.theme) : show('over');
+        const on = typeof file.show === 'string' && file.show !== 'off' ? file.show : null;
+        const offer = on && (file.offers || []).find((o) => (o.theme || 'special') === on);
+        return offer ? show('live', offer.theme) : show('over');
       })
       .catch(() => show('over'));
   })();

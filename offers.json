@@ -1,28 +1,17 @@
 {
-  "_comment": "Seasonal offers announced by the JustFlip app (Today card, paywall label) and the homepage (#black-friday). The offer that started last and has no passed \"end\" is shown, so Black Friday hands over to Cyber Monday on its start, and Cyber Monday stays until you set its \"end\". \"end\": null means until further notice. theme: blackFriday | cyberMonday | anything else = generic special offer. plans: the discounted plans, the first is preselected on the paywall. The prices are set in App Store Connect (Lifetime price schedule; subscriptions as introductory offers, see ios/Tools/Offers/subscription-sale.py in the app repo). The app labels a plan only while the store backs it: Lifetime when it costs at most maxPriceVsYearly x Yearly, a subscription when the customer is offered a paid introductory price. To end the sale: set \"end\" on the running offer to an ISO date-time AND restore the price in App Store Connect on the same day.",
+  "_comment": "THE SWITCH for the seasonal deal on the homepage (#black-friday) and in the JustFlip app (Today card, paywall labels). \"show\": \"off\" | \"blackFriday\" | \"cyberMonday\" (the theme of one entry below). Change it, commit, push: the website follows within a minute, the app at its next launch or return to the foreground (at most every 10 minutes). No dates: nothing turns on or off by itself. Missing or unknown value = off. The prices are set separately in App Store Connect (Lifetime price schedule; subscriptions as introductory offers, see ios/Tools/Offers/subscription-sale.py in the app repo). The app labels a plan only while the store price backs it (Lifetime at most maxPriceVsYearly x Yearly; a subscription when the customer is offered a paid introductory price), so switching on before the price drops shows nothing in the app, but the website trusts this file. plans: the discounted plans, the first is preselected on the paywall. id: a new id shows the Today card again to people who closed the previous one.",
+  "show": "off",
   "offers": [
     {
       "id": "black-friday-2026",
       "theme": "blackFriday",
-      "start": "2026-11-27T08:00:00Z",
-      "end": null,
-      "plans": [
-        "lifetime",
-        "yearly",
-        "monthly"
-      ],
+      "plans": ["lifetime", "yearly", "monthly"],
       "maxPriceVsYearly": 1.0
     },
     {
       "id": "cyber-monday-2026",
       "theme": "cyberMonday",
-      "start": "2026-11-30T08:00:00Z",
-      "end": null,
-      "plans": [
-        "lifetime",
-        "yearly",
-        "monthly"
-      ],
+      "plans": ["lifetime", "yearly", "monthly"],
       "maxPriceVsYearly": 1.0
     }
   ]
