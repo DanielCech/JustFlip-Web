@@ -26,7 +26,7 @@
    * (project justflip-prod), the same one the app reads: "off" | "blackFriday" | "cyberMonday".
    * It names an entry in /offers.json by theme; the theme picks the kicker (blackFriday,
    * cyberMonday, anything else = special). Firebase not reachable, "off" or an unknown value
-   * means no deal. A returning visitor sees a change within FETCH_INTERVAL.
+   * means no deal. Read fresh on every page load, so a change shows at the next reload.
    * Preview with ?bf=soon|live|over and optionally &theme=cyberMonday
    * --------------------------------------------------- */
   (() => {
@@ -46,7 +46,8 @@
     if (['soon', 'live', 'over'].includes(preview)) { show(preview, params.get('theme') || 'blackFriday'); return; }
 
     const SDK = 'https://www.gstatic.com/firebasejs/12.6.0';
-    const FETCH_INTERVAL = 5 * 60 * 1000;
+    // Fetch on every page load: a saved value would keep showing a deal that was just switched off.
+    const FETCH_INTERVAL = 0;
     const readSwitch = async () => {
       const [{ initializeApp }, rc] = await Promise.all([
         import(`${SDK}/firebase-app.js`),
