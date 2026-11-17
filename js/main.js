@@ -2,6 +2,15 @@
    ----------------------------------------------------- */
 
 (() => {
+  // Firebase web app "JustFlip Web" in project justflip-prod. Public by design (not a secret).
+  const FIREBASE_WEB_CONFIG = {
+    apiKey: 'AIzaSyB5nYDg4bFAatqw-tT7IPwDtaAIYuKJCio',
+    authDomain: 'justflip-prod.firebaseapp.com',
+    projectId: 'justflip-prod',
+    messagingSenderId: '488166040461',
+    appId: '1:488166040461:web:b33add7eb03aac818393c4',
+  };
+
   // Embed mode (?embed=1): the in-app "What's new" view hides site chrome.
   // news/index.html sets this inline in <head> too, to avoid a nav flash.
   try {
@@ -13,10 +22,11 @@
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------------------------------------------------
-   * Seasonal deal (#black-friday), switched by /offers.json, the same file the app reads.
-   * "show": "off" | "blackFriday" | "cyberMonday" names the entry to show; its theme picks the
-   * kicker (blackFriday, cyberMonday, anything else = special). No dates: the deal is on exactly
-   * while the switch says so. No file (offline, file://), "off" or an unknown value means no deal.
+   * Seasonal deal (#black-friday). The switch is `seasonal_offer` in Firebase Remote Config
+   * (project justflip-prod), the same one the app reads: "off" | "blackFriday" | "cyberMonday".
+   * It names an entry in /offers.json by theme; the theme picks the kicker (blackFriday,
+   * cyberMonday, anything else = special). Firebase not reachable, "off" or an unknown value
+   * means no deal. A returning visitor sees a change within FETCH_INTERVAL.
    * Preview with ?bf=soon|live|over and optionally &theme=cyberMonday
    * --------------------------------------------------- */
   (() => {
@@ -34,11 +44,27 @@
     try { params = new URLSearchParams(location.search); } catch (_) { params = new URLSearchParams(); }
     const preview = params.get('bf');
     if (['soon', 'live', 'over'].includes(preview)) { show(preview, params.get('theme') || 'blackFriday'); return; }
-    fetch('/offers.json', { cache: 'no-store' })
-      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
-      .then((file) => {
-        const on = typeof file.show === 'string' && file.show !== 'off' ? file.show : null;
-        const offer = on && (file.offers || []).find((o) => (o.theme || 'special') === on);
+
+    const SDK = 'https://www.gstatic.com/firebasejs/12.6.0';
+    const FETCH_INTERVAL = 5 * 60 * 1000;
+    const readSwitch = async () => {
+      const [{ initializeApp }, rc] = await Promise.all([
+        import(`${SDK}/firebase-app.js`),
+        import(`${SDK}/firebase-remote-config.js`),
+      ]);
+      const remoteConfig = rc.getRemoteConfig(initializeApp(FIREBASE_WEB_CONFIG));
+      remoteConfig.settings.minimumFetchIntervalMillis = FETCH_INTERVAL;
+      remoteConfig.settings.fetchTimeoutMillis = 8000;
+      remoteConfig.defaultConfig = { seasonal_offer: 'off' };
+      await rc.fetchAndActivate(remoteConfig);
+      return rc.getString(remoteConfig, 'seasonal_offer');
+    };
+    Promise.all([
+      readSwitch(),
+      fetch('/offers.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : Promise.reject(r.status))),
+    ])
+      .then(([on, file]) => {
+        const offer = on && on !== 'off' && (file.offers || []).find((o) => (o.theme || 'special') === on);
         return offer ? show('live', offer.theme) : show('over');
       })
       .catch(() => show('over'));

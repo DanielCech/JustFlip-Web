@@ -227,9 +227,9 @@
       </div>
     </section>
 
-    <!-- Seasonal deal — switched by /offers.json, the file the app reads too. The offer that started
-         last is shown (its theme picks the kicker) until the file gives it an end; js/main.js removes
-         the section when nothing is on. Preview: ?bf=soon | live | over & theme=blackFriday | cyberMonday | special -->
+    <!-- Seasonal deal — switched by seasonal_offer in Firebase Remote Config (the app reads it too),
+         details in /offers.json; js/main.js removes the section when it's off.
+         Preview: ?bf=soon | live | over & theme=blackFriday | cyberMonday | special -->
     <section class="bf-deal" id="black-friday" data-section aria-labelledby="bf-title"
              data-offer hidden>
       <div class="bf-deal__card">

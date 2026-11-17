@@ -1,17 +1,24 @@
 {
-  "_comment": "THE SWITCH for the seasonal deal on the homepage (#black-friday) and in the JustFlip app (Today card, paywall labels). \"show\": \"off\" | \"blackFriday\" | \"cyberMonday\" (the theme of one entry below). Change it, commit, push: the website follows within a minute, the app at its next launch or return to the foreground (at most every 10 minutes). No dates: nothing turns on or off by itself. Missing or unknown value = off. The prices are set separately in App Store Connect (Lifetime price schedule; subscriptions as introductory offers, see ios/Tools/Offers/subscription-sale.py in the app repo). The app labels a plan only while the store price backs it (Lifetime at most maxPriceVsYearly x Yearly; a subscription when the customer is offered a paid introductory price), so switching on before the price drops shows nothing in the app, but the website trusts this file. plans: the discounted plans, the first is preselected on the paywall. id: a new id shows the Today card again to people who closed the previous one.",
-  "show": "off",
+  "_comment": "Details of the seasonal deals announced on the homepage (#black-friday) and in the JustFlip app (Today card, paywall labels). THE SWITCH is not here: it is seasonal_offer in Firebase Remote Config (project justflip-prod, console > Remote Config, or ios/Tools/RemoteConfig/remote-config.py in the app repo): off | blackFriday | cyberMonday, naming an entry below by its theme. Website and app follow within minutes; no app release. The prices are set separately in App Store Connect (Lifetime price schedule; subscriptions as introductory offers, see ios/Tools/Offers/subscription-sale.py). The app labels a plan only while the store price backs it (Lifetime at most maxPriceVsYearly x Yearly; a subscription when the customer is offered a paid introductory price), but the website trusts the switch. plans: the discounted plans, the first is preselected on the paywall. id: a new id shows the Today card again to people who closed the previous one.",
   "offers": [
     {
       "id": "black-friday-2026",
       "theme": "blackFriday",
-      "plans": ["lifetime", "yearly", "monthly"],
+      "plans": [
+        "lifetime",
+        "yearly",
+        "monthly"
+      ],
       "maxPriceVsYearly": 1.0
     },
     {
       "id": "cyber-monday-2026",
       "theme": "cyberMonday",
-      "plans": ["lifetime", "yearly", "monthly"],
+      "plans": [
+        "lifetime",
+        "yearly",
+        "monthly"
+      ],
       "maxPriceVsYearly": 1.0
     }
   ]
