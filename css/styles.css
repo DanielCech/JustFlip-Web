@@ -5318,9 +5318,39 @@ main { display: block; }
 .news-cta .lede { margin-inline: auto; }
 .news-cta .hero__actions { justify-content: center; }
 
+/* A release that opens with a one-line story under its version number */
+.news-release__tagline {
+  margin: 0.7rem 0 0;
+  max-width: 46rem;
+  font-size: clamp(1.02rem, 1.6vw, 1.15rem);
+  color: var(--on-surface-variant);
+}
+
+/* Portrait phone captures: keep them phone-sized beside the copy */
+.news-shot--phone {
+  justify-self: center;
+  width: 100%;
+  max-width: 340px;
+  border-style: solid;
+  border-color: var(--outline-variant);
+  border-radius: 28px;
+  padding: 0;
+}
+.news-shot--phone img { border-radius: 27px; }
+
+/* Alternate the screenshot side on wide screens */
+.news-feature--flip .news-shot { order: -1; }
+
+/* Text tiles that follow screenshot features */
+.news-grid--after-feature {
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+}
+
 @media (max-width: 860px) {
   .news-feature { grid-template-columns: 1fr; }
   .news-grid { grid-template-columns: 1fr; }
+  .news-feature--flip .news-shot { order: 0; }
+  .news-shot--phone { max-width: 300px; }
 }
 @media (max-width: 600px) {
   .news-hero { padding-top: 4rem; }

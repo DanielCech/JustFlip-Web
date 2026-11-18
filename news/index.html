@@ -7,7 +7,7 @@
   <!-- Embed mode (?embed=1, used by the in-app "What's new" sheet): set the class before first paint so the nav never flashes. js/main.js does the same as a fallback. -->
   <script>try{if(new URLSearchParams(location.search).get('embed')==='1'){document.documentElement.classList.add('is-embedded');}}catch(e){}</script>
   <title data-i18n="news.metaTitle">What's new — JustFlip</title>
-  <meta name="description" content="What's new in JustFlip: a Today screen that flips like a card, faithful Anki imports, card text at your size and a roomier Mac — plus Mermaid diagrams, tags and TeX maths, release by release." data-i18n-attr="content" data-i18n-content="news.metaDescription" />
+  <meta name="description" content="What's new in JustFlip: a Discover screen that shows you every feature, a welcome built around one card and help in one place — plus a Today screen that flips like a card, faithful Anki imports, diagrams and TeX maths, release by release." data-i18n-attr="content" data-i18n-content="news.metaDescription" />
 
   <link rel="canonical" href="https://just-flip.app/news/" />
 
@@ -15,12 +15,12 @@
   <meta property="og:site_name" content="JustFlip!" />
   <meta property="og:url" content="https://just-flip.app/news/" />
   <meta property="og:title" content="What's new — JustFlip" />
-  <meta property="og:description" content="What's new in JustFlip: a Today screen that flips like a card, faithful Anki imports, card text at your size and a roomier Mac — plus Mermaid diagrams, tags and TeX maths, release by release." />
+  <meta property="og:description" content="What's new in JustFlip: a Discover screen that shows you every feature, a welcome built around one card and help in one place — plus a Today screen that flips like a card, faithful Anki imports, diagrams and TeX maths, release by release." />
   <meta property="og:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="What's new — JustFlip" />
-  <meta name="twitter:description" content="What's new in JustFlip: a Today screen that flips like a card, faithful Anki imports, card text at your size and a roomier Mac — plus Mermaid diagrams, tags and TeX maths, release by release." />
+  <meta name="twitter:description" content="What's new in JustFlip: a Discover screen that shows you every feature, a welcome built around one card and help in one place — plus a Today screen that flips like a card, faithful Anki imports, diagrams and TeX maths, release by release." />
   <meta name="twitter:image" content="https://just-flip.app/images/web-app-manifest-512x512.png" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,18 +64,79 @@
       <div class="news-hero__inner">
         <p class="eyebrow" data-i18n="news.eyebrow">What's new</p>
         <h1 class="display display--sm" data-i18n="news.title">Fresh in <em>JustFlip</em></h1>
-        <p class="lede" data-i18n="news.lede">The newest features, release by release — from a Today screen that flips like a card to diagrams, tags and beautifully typeset maths.</p>
+        <p class="lede" data-i18n="news.lede">The newest features, release by release — from a Discover screen that shows you where to tap to diagrams, tags and beautifully typeset maths.</p>
       </div>
     </section>
 
     <section class="news-timeline" aria-label="Release history" data-i18n-attr="aria-label" data-i18n-aria-label="news.timelineLabel" data-section>
       <ol class="news-timeline__list">
 
-        <!-- ─── Release: 1.4.0 ─────────────────────────────────── -->
+        <!-- ─── Release: 1.5.0 ─────────────────────────────────── -->
         <li class="news-timeline__item">
-          <article class="news-release news-release--latest" id="v1-4-0" data-version="1.4.0">
+          <article class="news-release news-release--latest" id="v1-5-0" data-version="1.5.0">
             <header class="news-release__head">
               <p class="news-release__kicker kicker"><span class="news-chip" data-i18n="news.latest">Latest</span></p>
+              <h2 class="news-release__version"><span data-i18n="news.version">Version</span> <span class="news-release__number">1.5.0</span></h2>
+              <p class="news-release__tagline" data-i18n="news.v150.tagline">Find your way around. Everything JustFlip can do is now one tap from Today, and every feature shows you where to tap.</p>
+            </header>
+
+            <section class="news-feature" aria-labelledby="feature-discover">
+              <div class="news-feature__copy">
+                <h3 class="news-feature__title" id="feature-discover" data-i18n="news.v150.discover.title">Discover JustFlip</h3>
+                <p data-i18n="news.v150.discover.body">Tap <strong>More about JustFlip</strong> under Today to see what the app can do: spoken cards, maths and code, Anki import, AI decks, Apple Watch and more. Each row takes you to the feature and a short guide shows you where to tap.</p>
+                <ul class="news-feature__points">
+                  <li data-i18n="news.v150.discover.point1">A progress ring counts what you've tried</li>
+                  <li data-i18n="news.v150.discover.point2">Guides are lighter and never block the screen</li>
+                  <li data-i18n="news.v150.discover.point3">Try importing with the bundled examples: a Spanish Basics Anki deck and a World Capitals CSV</li>
+                </ul>
+              </div>
+              <figure class="news-shot news-shot--phone" data-shot="discover-hub">
+                <img src="../images/news/discover-hub.jpg" alt="The Discover JustFlip screen: spoken cards, cards that render properly, AI decks, Anki import and more, each with a button to try it" width="1000" height="1360" loading="lazy" data-i18n-attr="alt" data-i18n-alt="news.v150.discover.alt">
+              </figure>
+            </section>
+
+            <section class="news-feature news-feature--flip" aria-labelledby="feature-intro">
+              <div class="news-feature__copy">
+                <h3 class="news-feature__title" id="feature-intro" data-i18n="news.v150.intro.title">A welcome built around one card</h3>
+                <p data-i18n="news.v150.intro.body">New to JustFlip? The intro now hands you a real card. Flip it, grade it with a tap or a swipe, and see exactly when it comes back. Then choose how to start: with a ready deck in your language, or with your own cards from Anki or CSV.</p>
+                <ul class="news-feature__points">
+                  <li data-i18n="news.v150.intro.point1">Spaced repetition explained in under a minute</li>
+                  <li data-i18n="news.v150.intro.point2">Your first five cards, reviewed straight away</li>
+                  <li data-i18n="news.v150.intro.point3">Seen it all before? <strong>Replay the intro</strong> any time from Settings › Help</li>
+                </ul>
+              </div>
+              <figure class="news-shot news-shot--phone" data-shot="intro">
+                <img src="../images/news/intro.jpg" alt="The JustFlip intro: a card with its answer showing and grade buttons below" width="1000" height="1426" loading="lazy" data-i18n-attr="alt" data-i18n-alt="news.v150.intro.alt">
+              </figure>
+            </section>
+
+            <div class="news-grid news-grid--after-feature">
+              <section class="news-feature" aria-labelledby="feature-help">
+                <h3 class="news-feature__title" id="feature-help" data-i18n="news.v150.help.title">Help in one place</h3>
+                <p data-i18n="news.v150.help.body"><strong>Settings › Help</strong> now gathers Discover, the guides, the starter decks, the manual and the website.</p>
+                <ul class="news-feature__points">
+                  <li data-i18n="news.v150.help.point1"><strong>Show guides</strong> brings every guide back</li>
+                  <li data-i18n="news.v150.help.point2">Adding a starter deck you already have never duplicates its cards</li>
+                </ul>
+              </section>
+              <section class="news-feature" aria-labelledby="feature-manual">
+                <h3 class="news-feature__title" id="feature-manual" data-i18n="news.v150.manual.title">The manual, right where you need it</h3>
+                <p data-i18n="news.v150.manual.body">The manual is one tap away from formatting help, importing, Ask AI and reminders, and it opens in your language.</p>
+                <ul class="news-feature__points">
+                  <li data-i18n="news.v150.manual.point1">Available in all nine app languages</li>
+                  <li data-i18n="news.v150.manual.point2">Everything, in depth, when a guide isn't enough</li>
+                </ul>
+              </section>
+            </div>
+            <p class="news-release__more" data-i18n="news.v150.more">Also new: a <strong>Stop</strong> button on the deck list while cards are spoken, Mac hints that say right-click instead of touch and hold, and plenty of small fixes.</p>
+          </article>
+        </li>
+
+        <!-- ─── Release: 1.4.0 ─────────────────────────────────── -->
+        <li class="news-timeline__item">
+          <article class="news-release" id="v1-4-0" data-version="1.4.0">
+            <header class="news-release__head">
+              <p class="news-release__kicker kicker" data-i18n="news.earlier">Earlier release</p>
               <h2 class="news-release__version"><span data-i18n="news.version">Version</span> <span class="news-release__number">1.4.0</span></h2>
             </header>
 
