@@ -19,7 +19,7 @@
     "cs": {
       "bf.soon": "Začíná v pátek 27. listopadu",
       "bf.live": "Právě běží",
-      "bf.kicker": "Black Friday · od 27. listopadu 2026",
+      "bf.kicker": "Black Friday 2026",
       "bf.kickerCyberMonday": "Cyber Monday",
       "bf.kickerSpecial": "Zvláštní nabídka",
       "bf.title": "JustFlip Pro <em>za polovic</em>",
@@ -814,7 +814,7 @@
     "de": {
       "bf.soon": "Ab Freitag, 27. November",
       "bf.live": "Jetzt",
-      "bf.kicker": "Black Friday · ab 27. November 2026",
+      "bf.kicker": "Black Friday 2026",
       "bf.kickerCyberMonday": "Cyber Monday",
       "bf.kickerSpecial": "Sonderangebot",
       "bf.title": "JustFlip Pro <em>zum halben Preis</em>",
@@ -1555,7 +1555,7 @@
     "es": {
       "bf.soon": "Empieza el viernes 27 de noviembre",
       "bf.live": "Ya disponible",
-      "bf.kicker": "Black Friday · desde el 27 de noviembre de 2026",
+      "bf.kicker": "Black Friday 2026",
       "bf.kickerCyberMonday": "Cyber Monday",
       "bf.kickerSpecial": "Oferta especial",
       "bf.title": "JustFlip Pro <em>a mitad de precio</em>",
@@ -2296,7 +2296,7 @@
     "fr": {
       "bf.soon": "À partir du vendredi 27 novembre",
       "bf.live": "En ce moment",
-      "bf.kicker": "Black Friday · dès le 27 novembre 2026",
+      "bf.kicker": "Black Friday 2026",
       "bf.kickerCyberMonday": "Cyber Monday",
       "bf.kickerSpecial": "Offre spéciale",
       "bf.title": "JustFlip Pro <em>à moitié prix</em>",
@@ -3037,7 +3037,7 @@
     "it": {
       "bf.soon": "Da venerdì 27 novembre",
       "bf.live": "In corso",
-      "bf.kicker": "Black Friday · dal 27 novembre 2026",
+      "bf.kicker": "Black Friday 2026",
       "bf.kickerCyberMonday": "Cyber Monday",
       "bf.kickerSpecial": "Offerta speciale",
       "bf.title": "JustFlip Pro <em>a metà prezzo</em>",
@@ -3778,7 +3778,7 @@
     "ja": {
       "bf.soon": "11月27日（金）スタート",
       "bf.live": "セール中",
-      "bf.kicker": "ブラックフライデー · 2026年11月27日から",
+      "bf.kicker": "ブラックフライデー 2026",
       "bf.kickerCyberMonday": "サイバーマンデー",
       "bf.kickerSpecial": "特別オファー",
       "bf.title": "JustFlip Pro が<em>約半額</em>",
@@ -4519,7 +4519,7 @@
     "ko": {
       "bf.soon": "11월 27일(금) 시작",
       "bf.live": "진행 중",
-      "bf.kicker": "블랙 프라이데이 · 2026년 11월 27일부터",
+      "bf.kicker": "블랙 프라이데이 2026",
       "bf.kickerCyberMonday": "사이버 먼데이",
       "bf.kickerSpecial": "특별 혜택",
       "bf.title": "JustFlip Pro <em>약 반값</em>",
@@ -5260,7 +5260,7 @@
     "pt-br": {
       "bf.soon": "Começa na sexta, 27 de novembro",
       "bf.live": "Agora",
-      "bf.kicker": "Black Friday · a partir de 27 de novembro de 2026",
+      "bf.kicker": "Black Friday 2026",
       "bf.kickerCyberMonday": "Cyber Monday",
       "bf.kickerSpecial": "Oferta especial",
       "bf.title": "JustFlip Pro <em>pela metade do preço</em>",
